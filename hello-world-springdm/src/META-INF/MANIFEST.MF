@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Spring DM Hello World
+Bundle-SymbolicName: com.manning.sdmia.helloworld
+Bundle-Version: 1.0.0
+Export-Package: com.manning.sdmia
