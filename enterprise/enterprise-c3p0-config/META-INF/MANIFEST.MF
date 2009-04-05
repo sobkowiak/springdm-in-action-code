@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Private-Package: .
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: Enterprise C3P0 bundle fragment
+Created-By: Apache Maven Bundle Plugin
+Fragment-Host: com.springsource.com.mchange.v2.c3p0;bundle-version="0.
+ 9.1.2"
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1238935923421
+Bundle-ManifestVersion: 2
+Bundle-Description: ENTERPRISE : an enterprise application with Spring
+  Dynamic Modules
+Import-Package: org.hsqldb;version="1.8.0.9"
+Bundle-SymbolicName: com.manning.sdmia.enterprise.c3p0-config
+
