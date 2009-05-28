@@ -16,7 +16,7 @@ import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
  * @author acogoluegnes
  * 
  */
-public class SpringContextHeaderTest extends
+public class LoadingFromFileSystemTest extends
 		AbstractConfigurableBundleCreatorTests {
 
 	public void testLoadBundle() throws Exception {
@@ -41,7 +41,7 @@ public class SpringContextHeaderTest extends
 		// let the testing framework create/load the manifest
 		Manifest mf = super.getManifest();
 		mf.getMainAttributes().putValue("Spring-Context",
-				"/com/manning/sdmia/ch04/SpringContextHeaderTest-context.xml");
+				"file:src/test/resources/com/manning/sdmia/ch04/SpringContextHeaderTest-context.xml");
 		return mf;
 	}
 
