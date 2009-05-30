@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project>
+	<parent>
+		<artifactId>ch04-samples</artifactId>
+		<groupId>com.manning.sdmia</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia</groupId>
+	<artifactId>ch04-load-fragment-bundle
+	</artifactId>
+	<packaging>bundle</packaging>
+	<name>ch04-load-fragment-bundle</name>
+	<version>1.0-SNAPSHOT</version>
+	<description>This bundle complements its host bundle Spring configuration.</description>
+	<url>http://maven.apache.org</url>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${felix.bundle.plugin.version}
+				</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Fragment-Host>com.manning.sdmia.ch04-load-host-bundle</Fragment-Host>	
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+</project>

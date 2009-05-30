@@ -86,8 +86,10 @@
 	</build>
 	
 	<modules>
+		<module>ch04-simplebundle</module>
 		<module>ch04-load-host-bundle</module>
 		<module>ch04-load-fragment-bundle</module>
+		<module>ch04-springbundle-wp</module>
 		<module>ch04-integration-tests</module>    
   </modules>
 </project>

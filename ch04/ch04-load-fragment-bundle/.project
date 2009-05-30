@@ -1,0 +1,13 @@
+<projectDescription>
+  <name>ch04-load-fragment-bundle</name>
+  <comment>This bundle complements its host bundle Spring configuration.</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

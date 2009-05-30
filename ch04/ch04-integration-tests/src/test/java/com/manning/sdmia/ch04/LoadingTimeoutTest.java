@@ -28,7 +28,7 @@ public class LoadingTimeoutTest extends
 		// let the testing framework create/load the manifest
 		Manifest mf = super.getManifest();
 		mf.getMainAttributes().putValue("Spring-Context",
-			"/com/manning/sdmia/ch04/LoadingTimeout-context.xml;timeout:=120");
+			"/com/manning/sdmia/ch04/LoadingTimeoutTest-context.xml;timeout:=120");
 		return mf;
 	}
 
