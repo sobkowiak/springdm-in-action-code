@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+	<osgi:bundle id="springDmExtenderBundle" 
+	             symbolic-name="org.springframework.osgi.extender" />
+
+	<osgi:bundle id="simpleBundle"
+	             location="file:./src/test/resources/com/manning/sdmia/ch04/ch04-simplebundle-1.0-SNAPSHOT.jar"
+	             action="start" />        
+
+</beans>

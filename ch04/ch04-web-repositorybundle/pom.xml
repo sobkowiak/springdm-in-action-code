@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project>
+	<parent>
+		<artifactId>ch04-samples</artifactId>
+		<groupId>com.manning.sdmia</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia</groupId>
+	<artifactId>ch04-web-repositorybundle
+	</artifactId>
+	<packaging>bundle</packaging>
+	<name>ch04-web-repositorybundle</name>
+	<version>1.0-SNAPSHOT</version>
+	<url>http://maven.apache.org</url>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${felix.bundle.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>						
+						<Export-Package>com.manning.sdmia.dataaccess</Export-Package>
+						<Private-Package>com.manning.sdmia.dataaccess.impl</Private-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+</project>

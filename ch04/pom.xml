@@ -10,6 +10,7 @@
 	
 	<properties>
 		<springdm.version>1.2.0</springdm.version>
+		<spring.version>2.5.6.A</spring.version>
 		<equinox.version>3.2.2</equinox.version>
 		<felix.bundle.plugin.version>2.0.0</felix.bundle.plugin.version>
 	</properties>
@@ -41,6 +42,13 @@
 			<groupId>org.springframework.osgi</groupId>
 			<artifactId>spring-osgi-test</artifactId>
 			<version>${springdm.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.web</artifactId>
+			<version>${spring.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -86,6 +94,8 @@
 	</build>
 	
 	<modules>
+		<module>ch04-web-repositorybundle</module>
+		<module>ch04-web-webapp</module>
 		<module>ch04-simplebundle</module>
 		<module>ch04-load-host-bundle</module>
 		<module>ch04-load-fragment-bundle</module>
