@@ -4,8 +4,6 @@
 package com.manning.sdmia.ch04.web;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -14,7 +12,6 @@ import java.util.Collection;
 
 import junit.framework.Assert;
 
-import org.osgi.framework.Bundle;
 import org.osgi.framework.ServiceReference;
 import org.springframework.context.ApplicationContext;
 import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
@@ -27,10 +24,6 @@ public class ShareServicesTest extends
 		AbstractConfigurableBundleCreatorTests {
 
 	public void testShareServices() throws Exception {
-		for(Bundle bundle : bundleContext.getBundles()) {
-//			System.out.println(bundle.getSymbolicName()+" "+bundle.getLocation());
-		}
-		
 		// waits a little so that everything is properlly deployed
 		Thread.sleep(3 * 1000);
 		ServiceReference [] refs = bundleContext.getAllServiceReferences(ApplicationContext.class.getName(), null);
