@@ -1,0 +1,43 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>ch06-samples</artifactId>
+    <groupId>com.manning.sdmia</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.manning.sdmia</groupId>
+  <artifactId>commons-pool.osgi</artifactId>
+  <packaging>bundle</packaging>
+  <name>commons-pool.osgi</name>
+  <version>1.3.0-SNAPSHOT</version>
+  <description>OSGified version of Commons Pool</description>
+  <url>http://maven.apache.org</url>
+  
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${felix.bundle.plugin.version}
+				</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Export-Package>org.apache.commons.pool*;version=${project.version}</Export-Package>
+						<Embed-Dependency>true</Embed-Dependency>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+  
+  <dependencies>
+    <dependency>
+    <groupId>commons-pool</groupId>
+    <artifactId>commons-pool</artifactId>
+    <version>1.3</version>
+	<scope>provided</scope>
+</dependency>
+  </dependencies>
+</project>

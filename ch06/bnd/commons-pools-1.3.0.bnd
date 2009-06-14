@@ -1,0 +1,5 @@
+version=1.3.0
+Export-Package: org.apache.commons.pool*;version=${version}
+Bundle-Version: ${version}
+Bundle-Description: c3p0 connection pool
+Bundle-Name: org.apache.commons.pool

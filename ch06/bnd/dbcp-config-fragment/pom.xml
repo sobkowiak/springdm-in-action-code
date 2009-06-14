@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia.ch06</groupId>
+	<artifactId>dbcp-fragment-config</artifactId>
+	<packaging>bundle</packaging>
+	<name>DBCP bundle fragment</name>
+	<version>1.0-SNAPSHOT</version>
+	<url>http://www.springframework.org/osgi</url>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>2.0.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Fragment-Host>org.apache.commons.dbcp;bundle-version="1.2.2"</Fragment-Host>
+						<Import-Package>org.hsqldb;version="1.8.0.9"</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	
+	
+</project>
