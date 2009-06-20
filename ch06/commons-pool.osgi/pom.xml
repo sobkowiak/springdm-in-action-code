@@ -23,6 +23,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
+						<Bundle-SymbolicName>org.apache.commons.pool</Bundle-SymbolicName>
 						<Export-Package>org.apache.commons.pool*;version=${project.version}</Export-Package>
 						<Embed-Dependency>true</Embed-Dependency>
 					</instructions>

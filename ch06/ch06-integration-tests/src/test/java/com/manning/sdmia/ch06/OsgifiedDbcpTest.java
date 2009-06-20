@@ -27,8 +27,8 @@ public class OsgifiedDbcpTest extends AbstractConfigurableBundleCreatorTests {
 		// check commons-pool and commons-dbcp are active
 		int countBundleChecked = 0;
 		for(Bundle bundle : bundleContext.getBundles()) {
-			if("com.manning.sdmia.commons-pool.osgi".equals(bundle.getSymbolicName()) ||
-				"com.manning.sdmia.commons-dbcp.osgi".equals(bundle.getSymbolicName())) {
+			if("org.apache.commons.pool".equals(bundle.getSymbolicName()) ||
+			   "org.apache.commons.dbcp".equals(bundle.getSymbolicName())) {
 				Assert.assertEquals("OSGified library not activated",Bundle.ACTIVE,bundle.getState());
 				countBundleChecked++;
 			}			

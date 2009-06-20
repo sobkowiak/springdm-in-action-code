@@ -1,4 +1,5 @@
-<?xml version="1.0"?><project>
+<?xml version="1.0"?>
+<project>
   <parent>
     <artifactId>ch06-samples</artifactId>
     <groupId>com.manning.sdmia</groupId>
@@ -7,35 +8,39 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.manning.sdmia</groupId>
   <artifactId>commons-dbcp.osgi</artifactId>
-  <packaging>bundle</packaging>
-  <name>commons-dbcp.osgi</name>
   <version>1.2.2-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>commons-dbcp.osgi</name>  
   <description>OSGified version of Commons DBCP</description>
-  <url>http://maven.apache.org</url>
   
   <build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-bundle-plugin</artifactId>
-				<version>${felix.bundle.plugin.version}
-				</version>
-				<extensions>true</extensions>
-				<configuration>
-					<instructions>
-						<Export-Package>org.apache.commons.dbcp*,org.apache.commons.jocl*;version=${project.version}</Export-Package>
-						<Import-Package>
-							org.apache.commons.pool*;version="1.3.0",
-							org.hsqldb;version="1.8.0.9";resolution:=optional,
-							*						
-						</Import-Package>
-						<Embed-Dependency>*;scope=provided;type=!pom;inline=true</Embed-Dependency>
-					</instructions>
-				</configuration>
-			</plugin>
-		</plugins>
-
-	</build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>${felix.bundle.plugin.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+		  <instructions>
+            <Bundle-SymbolicName>
+			  org.apache.commons.dbcp
+			</Bundle-SymbolicName>
+            <Export-Package>
+			  org.apache.commons.dbcp*;version=${project.version}
+			</Export-Package>
+            <Import-Package>
+              org.apache.commons.pool*;version="1.3.0",
+              org.hsqldb;version="1.8.0.9";resolution:=optional,
+			  *;resolution:=optional				
+            </Import-Package>
+			<Embed-Dependency>
+			  *;scope=provided;type=!pom;inline=true
+			</Embed-Dependency>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   
   <dependencies>
     <dependency>
