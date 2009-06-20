@@ -16,7 +16,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Fragment-Host>org.apache.commons.dbcp;bundle-version="1.2.2"</Fragment-Host>
+						<Fragment-Host>org.apache.commons.dbcp</Fragment-Host>
 						<Import-Package>org.hsqldb;version="1.8.0.9"</Import-Package>
 					</instructions>
 				</configuration>
