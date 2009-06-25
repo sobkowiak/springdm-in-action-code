@@ -1,0 +1,7 @@
+<classpath>
+  <classpathentry kind="src" path="src/main/java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/org/eclipse/osgi/org.eclipse.osgi/3.2.2/org.eclipse.osgi-3.2.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/osgi-providing-services/1.0-SNAPSHOT/osgi-providing-services-1.0-SNAPSHOT.jar"/>
+</classpath>
