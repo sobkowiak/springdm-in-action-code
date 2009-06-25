@@ -1,0 +1,6 @@
+javac com/manning/osgi/nativecode/Hello2.java
+javah -jni com.manning.osgi.nativecode.Hello2
+gcc -I/usr/lib/jvm/java-6-sun/include -I/usr/lib/jvm/java-6-sun/include/linux -c -o Hello2.o Hello2.c
+gcc -I/usr/lib/jvm/java-6-sun/include -I/usr/lib/jvm/java-6-sun/include/linux -shared -o libhello2.so Hello2.o com_manning_osgi_nativecode_Hello2.h
+cp libhello2.so ../workspaces/ws-springdm-sandbox/com.manning.osgi.native.code/lib/
+cp com/manning/osgi/nativecode/Hello2.java ../workspaces/ws-springdm-sandbox/com.manning.osgi.native.code/src/com/manning/osgi/nativecode/
