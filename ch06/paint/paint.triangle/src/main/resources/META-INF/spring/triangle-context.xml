@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="triangleShape" class="com.manning.sdmia.paint.shape.triangle.TriangleShape" /> 
+
+	<bean id="triangleIcon" class="javax.swing.ImageIcon">
+		<constructor-arg value="com/manning/sdmia/paint/shape/triangle/triangle.png" type="java.net.URL"/>
+	</bean> 
+
+</beans>

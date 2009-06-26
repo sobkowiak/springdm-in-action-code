@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+	<osgi:service ref="circleShape" interface="com.manning.sdmia.paint.shape.SimpleShape">
+		<osgi:service-properties>
+			<entry key-ref="nameProperty" value="circle"/>
+    		<entry key-ref="iconProperty" value-ref="circleIcon"/>			
+		</osgi:service-properties>
+	</osgi:service>
+	
+	<util:constant id="nameProperty" static-field="com.manning.sdmia.paint.shape.SimpleShape.NAME_PROPERTY"/>
+	<util:constant id="iconProperty" static-field="com.manning.sdmia.paint.shape.SimpleShape.ICON_PROPERTY"/>
+	
+	
+
+</beans>
