@@ -1,0 +1,11 @@
+!SESSION 2009-07-01 13:31:32.609 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_10
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=fr_FR
+
+!ENTRY org.eclipse.osgi 4 0 2009-07-01 13:31:33.297
+!MESSAGE Bundle org.eclipse.equinox.weaving.hook not found.
+
+!ENTRY org.eclipse.osgi 4 0 2009-07-01 13:31:33.297
+!MESSAGE Bundle null not found.
