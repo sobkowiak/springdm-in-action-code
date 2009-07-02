@@ -18,13 +18,13 @@ public class LibraryServiceTest extends AbstractConfigurableBundleCreatorTests {
 	/*
 	 * -Dosgi.framework.extensions=org.eclipse.equinox.weaving.hook -Dorg.aspectj.osgi.verbose=true
 	 */
-	/*private void initializeSystemProperties() {
-		System.getProperties().put("osgi.framework.extensions", "org.eclipse.equinox.weaving.hook");
+	private void initializeSystemProperties() {
+		//System.getProperties().put("osgi.framework.extensions", "org.eclipse.equinox.weaving.hook");
 		System.getProperties().put("org.aspectj.osgi.verbose", "true");
-	}*/
+	}
 
 	protected String getPlatformName() {
-		//initializeSystemProperties();
+		initializeSystemProperties();
 		return Platforms.EQUINOX;
 	}
 	
