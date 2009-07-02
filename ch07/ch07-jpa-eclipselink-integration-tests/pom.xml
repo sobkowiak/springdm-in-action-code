@@ -12,7 +12,7 @@
         <slf4j.version>1.5.0</slf4j.version>
         <spring.maven.artifact.version>2.5.5</spring.maven.artifact.version>
         <spring.osgi.version>1.1.2</spring.osgi.version>
-        <equinox.ver>3.4.0</equinox.ver>
+        <equinox.ver>3.5.0.v20090513</equinox.ver>
         <felix.ver>1.0.4</felix.ver>
     </properties>
 
@@ -98,7 +98,7 @@
 
         <dependency>
             <groupId>org.eclipse.osgi</groupId>
-            <artifactId>equinox</artifactId>
+            <artifactId>org.eclipse.osgi</artifactId>
             <version>${equinox.ver}</version>
             <type>jar</type>
             <!-- Uncomment the following line if you want it to be available only in test-->
@@ -114,4 +114,14 @@
             <scope>test</scope>
         </dependency>
      </dependencies>
+     
+     <repositories>
+		<repository>
+        	<id>spring-ext</id>
+        	<name>Spring External Dependencies Repository</name>
+        	<url>
+        	http://springframework.svn.sourceforge.net/svnroot/springframework/repos/repo-ext/
+        	</url>
+    	</repository>
+    </repositories>
   </project>
