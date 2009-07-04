@@ -22,30 +22,30 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 
 /**
- * This interface defines the <tt>SimpleShape</tt> service. This service
- * is used to draw shapes. It has two service properties:
+ * This interface defines the <tt>SimpleShape</tt> service. This service is used
+ * to draw shapes. It has two service properties:
  * <ul>
- *   <li>simple.shape.name - A <tt>String</tt> name for the shape.
- *   </li>
- *   <li>simple.shape.icon - An <tt>Icon</tt> for the shape.
- *   </li>
+ * <li>simple.shape.name - A <tt>String</tt> name for the shape.</li>
+ * <li>simple.shape.icon - An <tt>Icon</tt> for the shape.</li>
  * </ul>
-**/
-public interface SimpleShape
-{
-    /**
-     * A service property for the name of the shape.
-    **/
-    public static final String NAME_PROPERTY = "simple.shape.name";
-    /**
-     * A service property for the icon of the shape.
-    **/
-    public static final String ICON_PROPERTY = "simple.shape.icon";
+ **/
+public interface SimpleShape {
+	/**
+	 * A service property for the name of the shape.
+	 **/
+	public static final String NAME_PROPERTY = "simple.shape.name";
+	/**
+	 * A service property for the icon of the shape.
+	 **/
+	public static final String ICON_PROPERTY = "simple.shape.icon";
 
-    /**
-     * Method to draw the shape of the service.
-     * @param g2 The graphics object used for painting.
-     * @param p The position to paint the triangle.
-    **/
-    public void draw(Graphics2D g2, Point p);
+	/**
+	 * Method to draw the shape of the service.
+	 * 
+	 * @param g2
+	 *            The graphics object used for painting.
+	 * @param p
+	 *            The position to paint the triangle.
+	 **/
+	public void draw(Graphics2D g2, Point p);
 }

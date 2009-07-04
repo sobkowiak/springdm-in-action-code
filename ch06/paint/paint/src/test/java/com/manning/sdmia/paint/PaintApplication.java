@@ -17,7 +17,7 @@ public class PaintApplication {
 	 */
 	public static void main(String[] args) {
 		
-		DrawingFrame frame = new DrawingFrame();
+		DrawingFrame frame = new DrawingFrame(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 		

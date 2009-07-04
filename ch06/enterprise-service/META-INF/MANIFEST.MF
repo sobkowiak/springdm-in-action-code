@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.enterprise.service;version="1.0.0.SN
+ APSHOT"
+Private-Package: com.manning.sdmia.enterprise.service,
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: Enterprise Service
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1246722676781
+Bundle-ManifestVersion: 2
+Bundle-Description: ENTERPRISE : an enterprise application with Spring
+  Dynamic Modules
+Import-Package: com.manning.sdmia.enterprise.domain;version="1.0.0.SNA
+ PSHOT",com.manning.sdmia.enterprise.service;version="1.0.0.SNAPSHOT"
+Bundle-SymbolicName: com.manning.sdmia.enterprise-service
+Originally-Created-By: Apache Maven Bundle Plugin
+

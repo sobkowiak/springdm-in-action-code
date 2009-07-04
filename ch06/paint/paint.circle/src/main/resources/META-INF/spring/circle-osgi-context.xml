@@ -10,7 +10,7 @@
 	<osgi:service ref="circleShape" interface="com.manning.sdmia.paint.shape.SimpleShape">
 		<osgi:service-properties>
 			<entry key-ref="nameProperty" value="circle"/>
-    		<entry key-ref="iconProperty" value-ref="circleIcon"/>			
+<!--    		<entry key-ref="iconProperty" value-ref="circleIcon"/>			-->
 		</osgi:service-properties>
 	</osgi:service>
 	

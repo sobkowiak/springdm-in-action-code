@@ -4,7 +4,7 @@
 	<groupId>com.manning.sdmia</groupId>
 	<artifactId>ch06-samples</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>ch06-samples</name>
 	<url>http://maven.apache.org</url>
 	
@@ -93,9 +93,18 @@
 		</plugins>
 	</build>
 	
-  <modules>
-    <module>ch06-integration-tests</module>
+  <modules>    
     <module>commons-pool.osgi</module>
     <module>commons-dbcp.osgi</module>
+	<module>enterprise-domain</module>
+    <module>enterprise-modular-dao</module>
+	<module>enterprise-modular-dao-jdbc</module>
+    <module>enterprise-service</module>
+    <module>enterprise-modular-service-impl</module>
+	<!--<module>enterprise-soa-service-impl</module>-->
+    <module>enterprise-web</module>    
+    <!--<module>enterprise-c3p0-config</module>-->
+    <!--<module>enterprise-datasource</module>-->
+	<module>ch06-integration-tests</module>    
   </modules>
 </project>

@@ -5,8 +5,10 @@
 
 	<bean id="circleShape" class="com.manning.sdmia.paint.shape.circle.CircleShape" /> 
 
-	<bean id="circleIcon" class="javax.swing.ImageIcon">
-		<constructor-arg value="com/manning/sdmia/paint/shape/circle/circle.png" type="java.net.URL"/>
-	</bean> 
+<!--	<bean id="circleIcon" class="javax.swing.ImageIcon">-->
+<!--		<constructor-arg value="com/manning/sdmia/paint/shape/circle/circle.png" type="java.net.URL"/>-->
+<!--	</bean> -->
+
+<bean class="com.manning.sdmia.paint.shape.circle.SomeInit" />
 
 </beans>

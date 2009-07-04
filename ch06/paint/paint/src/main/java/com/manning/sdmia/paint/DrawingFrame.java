@@ -48,7 +48,7 @@ public class DrawingFrame extends JFrame implements MouseListener,
 	/**
 	 * Default constructor that populates the main window.
 	 **/
-	public DrawingFrame() {
+	public DrawingFrame(WindowListener windowListener) {
 		super("Spring DM Apache Felix Paint application");
 
 		m_toolbar = new JToolBar("Toolbar");
@@ -60,6 +60,8 @@ public class DrawingFrame extends JFrame implements MouseListener,
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().add(m_toolbar, BorderLayout.NORTH);
 		getContentPane().add(m_panel, BorderLayout.CENTER);
+		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+		addWindowListener(windowListener);
 		setSize(400, 400);
 	}
 

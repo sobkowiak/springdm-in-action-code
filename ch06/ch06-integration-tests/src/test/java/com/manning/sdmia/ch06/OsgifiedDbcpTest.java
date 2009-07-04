@@ -26,7 +26,7 @@ public class OsgifiedDbcpTest extends AbstractConfigurableBundleCreatorTests {
 	public void testOsgifiedDbcp() {
 		// check commons-pool and commons-dbcp are active
 		int countBundleChecked = 0;
-		for(Bundle bundle : bundleContext.getBundles()) {
+		for(Bundle bundle : bundleContext.getBundles()) {	
 			if("org.apache.commons.pool".equals(bundle.getSymbolicName()) ||
 			   "org.apache.commons.dbcp".equals(bundle.getSymbolicName())) {
 				Assert.assertEquals("OSGified library not activated",Bundle.ACTIVE,bundle.getState());
@@ -40,7 +40,7 @@ public class OsgifiedDbcpTest extends AbstractConfigurableBundleCreatorTests {
 		Connection connection = null;
 		try {
 			connection = dataSource.getConnection();
-			Assert.assertTrue(connection.getMetaData().getDatabaseProductName().toLowerCase().contains("hsql"));
+			Assert.assertTrue(connection.getMetaData().getDatabaseProductName().toLowerCase().contains("h2"));
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		} finally {
@@ -59,7 +59,7 @@ public class OsgifiedDbcpTest extends AbstractConfigurableBundleCreatorTests {
 		return new String [] {
 			"com.manning.sdmia, commons-pool.osgi, 1.3.0-SNAPSHOT",
 			"com.manning.sdmia, commons-dbcp.osgi, 1.2.2-SNAPSHOT",
-			"org.hsqldb, com.springsource.org.hsqldb, 1.8.0.9"
+			"com.h2database, h2, 1.1.115"
 		};
 	}
 	
