@@ -8,7 +8,12 @@
             http://www.springframework.org/schema/context
             http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.manning.sdmia.enterprise.web" />
+<!--    <context:component-scan base-package="com.manning.sdmia.enterprise.web" />-->
+
+	<!-- component scanning and autowiring does not seem to work on Eclipse -->
+	<bean class="com.manning.sdmia.enterprise.web.UserController">
+		<property name="userService" ref="userService" />
+	</bean>
     
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
     

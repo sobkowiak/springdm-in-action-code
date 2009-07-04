@@ -19,4 +19,6 @@ public interface UserDao {
 	 */
 	public List<User> getUsers();
 	
+	public void dummyOnceAgain();
+	
 }

@@ -7,7 +7,7 @@
 
   	<osgi:service id="userServiceOsgi" ref="userService" interface="com.manning.sdmia.enterprise.service.UserService" />
   
-  	<osgi:reference id="userDao" interface="com.manning.sdmia.enterprise.dao.UserDao" />
+  	<osgi:reference id="userDao" interface="com.manning.sdmia.enterprise.dao.UserDao" cardinality="0..1"/>
   	
   	<osgi:reference id="dataSource" interface="javax.sql.DataSource" />
   

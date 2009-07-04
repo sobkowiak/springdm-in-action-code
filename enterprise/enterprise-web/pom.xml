@@ -59,6 +59,7 @@
 							org.apache.taglibs.standard.tlv;version="1.1.2",
 							org.springframework.aop;version="2.5.6",
 							org.springframework.core;version="2.5.6",
+							org.springframework.core.io;version="2.5.6",
 							org.springframework.ui;version="2.5.6",
 							org.springframework.stereotype;version="2.5.6",
 							org.springframework.context.support;version="2.5.6",

@@ -28,7 +28,8 @@ public class UserDaoJdbc extends SimpleJdbcDaoSupport implements UserDao {
 	 */
 	@Override
 	public List<User> getUsers() {
-		return getSimpleJdbcTemplate().query(SQL_SELECT_USERS, userRowMapper);
+		List<User> users = getSimpleJdbcTemplate().query(SQL_SELECT_USERS, userRowMapper);	
+		return users;
 	}
 	
 	private class UserRowMapper implements ParameterizedRowMapper<User> {
@@ -42,6 +43,11 @@ public class UserDaoJdbc extends SimpleJdbcDaoSupport implements UserDao {
 			return user;
 		}
 		
+	}
+	
+	@Override
+	public void dummyOnceAgain() {
+		System.out.println("DUMMY ONCE AGAIN");		
 	}
 
 }

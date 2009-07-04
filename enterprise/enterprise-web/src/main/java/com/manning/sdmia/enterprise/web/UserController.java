@@ -22,6 +22,11 @@ public class UserController {
 	
 	@RequestMapping("/users.htm")
 	public ModelAndView users() {
+		userService.alert();
 		return new ModelAndView("users","users",userService.getUsers());
+	}
+	
+	public void setUserService(UserService userService) {
+		this.userService = userService;
 	}
 }

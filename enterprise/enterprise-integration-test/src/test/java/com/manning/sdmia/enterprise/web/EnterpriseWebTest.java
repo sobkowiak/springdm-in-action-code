@@ -19,7 +19,7 @@ public class EnterpriseWebTest extends AbstractConfigurableBundleCreatorTests {
 		boolean bundleIsThere = false;
 		for(Bundle currentBundle : bundleContext.getBundles()) {
 //			String version = currentBundle.getHeaders("Bundle-Version").get("Bundle-Version").toString();
-				System.out.println(currentBundle.getSymbolicName());
+				System.out.println(currentBundle.getSymbolicName()+" "+currentBundle.getState());
 		}
 		Thread.sleep(1000000);
 		
@@ -34,7 +34,7 @@ public class EnterpriseWebTest extends AbstractConfigurableBundleCreatorTests {
 		List<String> col = new ArrayList<String>();
 
 		// Servlet/JSP artifacts
-		col.add(SPRING_OSGI_GROUP + ", servlet-api.osgi, 2.5-SNAPSHOT");
+		col.add(SPRING_OSGI_GROUP + ", servlet-api.osgi, 2.4-SNAPSHOT");
 		col.add(SPRING_OSGI_GROUP + ", jsp-api.osgi, 2.0-SNAPSHOT");
 
 		// JSP compiler

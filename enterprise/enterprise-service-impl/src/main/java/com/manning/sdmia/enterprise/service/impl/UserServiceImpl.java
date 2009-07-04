@@ -25,7 +25,16 @@ public class UserServiceImpl implements UserService {
 	 */
 	@Override
 	public List<User> getUsers() {
-		return userDao.getUsers();
+		System.out.println("----------- GET USERS -----------");
+		List<User> users = userDao.getUsers();
+		userDao.dummyOnceAgain();
+//		users.add(new User(-1L,"Spring","OSGi"));
+		return users; 
+	}
+	
+	@Override
+	public void alert() {
+		System.out.println("----------- ALERT -----------");		
 	}
 
 	public void setUserDao(UserDao userDao) {
