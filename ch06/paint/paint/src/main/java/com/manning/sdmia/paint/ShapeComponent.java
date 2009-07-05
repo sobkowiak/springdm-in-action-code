@@ -29,6 +29,8 @@ import com.manning.sdmia.paint.shape.SimpleShape;
 /**
  * Simple component class used to represent a drawn shape. This component
  * uses a shape service to paint its contents.
+ * @author Richard S. Hall
+ * @author Arnaud Cogoluegnes
 **/
 public class ShapeComponent extends JComponent
 {

@@ -4,7 +4,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="drawingFrame" class="com.manning.sdmia.paint.DrawingFrame" 
-		init-method="init" destroy-method="destroy" /> 
+		init-method="init" destroy-method="destroy">
+		<constructor-arg ref="windowListener" />
+	</bean> 
 
+	<bean id="windowListener" class="com.manning.sdmia.paint.CloseWindowListener">
+		<property name="bundleContext" ref="bundleContext" />
+	</bean>
 
 </beans>

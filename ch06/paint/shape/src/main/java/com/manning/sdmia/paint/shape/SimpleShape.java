@@ -28,6 +28,8 @@ import java.awt.Point;
  * <li>simple.shape.name - A <tt>String</tt> name for the shape.</li>
  * <li>simple.shape.icon - An <tt>Icon</tt> for the shape.</li>
  * </ul>
+ * @author Richard S. Hall
+ * @author Arnaud Cogoluegnes
  **/
 public interface SimpleShape {
 	/**

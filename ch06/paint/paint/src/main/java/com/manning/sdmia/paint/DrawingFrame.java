@@ -32,6 +32,8 @@ import com.manning.sdmia.paint.shape.SimpleShape;
  * directly interact with the underlying OSGi framework; instead, it is injected
  * with the available <tt>SimpleShape</tt> instances to eliminate any
  * dependencies on the OSGi application programming interfaces.
+ * @author Richard S. Hall
+ * @author Arnaud Cogoluegnes
  **/
 public class DrawingFrame extends JFrame implements MouseListener,
 		MouseMotionListener {

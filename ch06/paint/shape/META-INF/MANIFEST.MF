@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.paint.shape;version="1.0.0.SNAPSHOT"
+Private-Package: com.manning.sdmia.paint.shape,
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: shape
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1246802895671
+Bundle-ManifestVersion: 2
+Bundle-Description: Paint API
+Import-Package: com.manning.sdmia.paint.shape;version="1.0"
+Bundle-SymbolicName: com.manning.sdmia.paint.shape
+Originally-Created-By: Apache Maven Bundle Plugin
+

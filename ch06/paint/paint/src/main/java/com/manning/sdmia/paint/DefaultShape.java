@@ -42,6 +42,8 @@ import com.manning.sdmia.paint.shape.SimpleShape;
  * laziness in the example, but the proxy approach is still used to demonstrate
  * how to make laziness possible and to keep it similar to the extender-based
  * approach.
+ * @author Richard S. Hall
+ * @author Arnaud Cogoluegnes
  **/
 class DefaultShape implements SimpleShape {
 	private SimpleShape m_shape;
