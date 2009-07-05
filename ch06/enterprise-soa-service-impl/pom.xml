@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <project>
 	<parent>
 		<artifactId>ch06-samples</artifactId>
@@ -6,9 +6,9 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>enterprise-modular-service-impl</artifactId>
 	<packaging>bundle</packaging>
-	<name>Enterprise Modular Service Impl</name>
+	<artifactId>enterprise-soa-service-impl</artifactId>
+	<name>Enterprise SOA Service Impl</name>
 	<build>
 		<resources>
 			<resource>
@@ -38,7 +38,8 @@
 						org.aopalliance.aop,
 						com.manning.sdmia.enterprise*;version="${project.version}",
 						*</Import-Package>
-						<Private-Package>com.manning.sdmia.enterprise.modular.service.impl</Private-Package>
+						<Export-Package></Export-Package>
+						<Private-Package>com.manning.sdmia.enterprise.soa*</Private-Package>
 					</instructions>
 				</configuration>
 			</plugin>
@@ -46,11 +47,6 @@
 	</build>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.manning.sdmia</groupId>
-			<artifactId>enterprise-modular-dao-jdbc</artifactId>
-			<version>${project.version}</version>
-		</dependency>	
 		<dependency>
 			<groupId>com.manning.sdmia</groupId>
 			<artifactId>enterprise-service</artifactId>
@@ -67,5 +63,4 @@
 			<version>${spring.version}</version>
 		</dependency>
 	</dependencies>
-
 </project>

@@ -59,6 +59,7 @@
 							org.springframework.web.servlet.mvc;version="${spring.version}",
 							org.springframework.web.servlet.view;version="${spring.version}",
 							org.springframework.web.servlet.mvc.annotation;version="${spring.version}",
+							org.springframework*=;version="${spring.version}",
 							org.springframework.osgi.web.context.support;version="${springdm.version}",
 							!com.manning.sdmia.enterprise.web,
 							com.manning.sdmia.enterprise*;version="${project.version}",

@@ -8,7 +8,7 @@ Bundle-Name: Enterprise Domain
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1246722676328
+Bnd-LastModified: 1246796530390
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.enterprise.domain;version="1.0"
 Bundle-SymbolicName: com.manning.sdmia.enterprise-domain

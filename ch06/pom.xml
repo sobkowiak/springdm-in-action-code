@@ -101,10 +101,9 @@
 	<module>enterprise-modular-dao-jdbc</module>
     <module>enterprise-service</module>
     <module>enterprise-modular-service-impl</module>
-	<!--<module>enterprise-soa-service-impl</module>-->
+	<module>enterprise-soa-service-impl</module>
     <module>enterprise-web</module>    
-    <!--<module>enterprise-c3p0-config</module>-->
-    <!--<module>enterprise-datasource</module>-->
+    <module>enterprise-datasource</module>
 	<module>ch06-integration-tests</module>    
   </modules>
 </project>

@@ -8,7 +8,7 @@ Bundle-Name: Enterprise Service
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1246722676781
+Bnd-LastModified: 1246796531140
 Bundle-ManifestVersion: 2
 Bundle-Description: ENTERPRISE : an enterprise application with Spring
   Dynamic Modules
