@@ -104,6 +104,7 @@
 	<module>enterprise-soa-service-impl</module>
     <module>enterprise-web</module>    
     <module>enterprise-datasource</module>
+	<module>paint</module>
 	<module>ch06-integration-tests</module>    
   </modules>
 </project>
