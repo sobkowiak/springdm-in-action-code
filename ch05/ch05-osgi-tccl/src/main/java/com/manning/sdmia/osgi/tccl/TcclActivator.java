@@ -1,7 +1,5 @@
 package com.manning.sdmia.osgi.tccl;
 
-import java.io.File;
-
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -12,8 +10,6 @@ public class TcclActivator implements BundleActivator {
 	private void loadClasspathApplicationContext() throws Exception {
 		ClassPathXmlApplicationContext context = null;
 		try {
-			File f = new File(".");
-			System.out.println("f = "+f.getAbsolutePath());
 			context = new ClassPathXmlApplicationContext("META-INF/spring/bundle-context.xml");
 		} finally {
 			if (context!=null) {
