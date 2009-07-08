@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Private-Package: !*
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: standard-extender-configuration
+Created-By: Apache Maven Bundle Plugin
+ImportPackage: org.springframework.scheduling.concurrent;version=2.5.6
+ .A
+Fragment-Host: org.springframework.osgi.extender
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1247086377031
+Bundle-ManifestVersion: 2
+Import-Package: org.springframework.scheduling.backportconcurrent;vers
+ ion="2.5.6.A",org.springframework.scheduling.concurrent;version="2.5.
+ 6.A"
+Bundle-SymbolicName: com.manning.sdmia.ch09.standard-extender-configur
+ ation
+Originally-Created-By: Apache Maven Bundle Plugin
+

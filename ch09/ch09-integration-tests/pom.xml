@@ -67,6 +67,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- for overriding standard extender executor -->
+		<dependency>
+			<groupId>edu.emory.mathcs.backport</groupId>
+			<artifactId>com.springsource.edu.emory.mathcs.backport</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
 		<!-- web container -->
 		<dependency>
 			<groupId>org.mortbay.jetty</groupId>

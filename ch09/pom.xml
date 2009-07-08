@@ -94,6 +94,7 @@
 	</build>
 	
   <modules>    
-	<module>ch09-integration-tests</module>    
+	<module>ch09-integration-tests</module>
+    <module>standard-extender-configuration</module>
   </modules>
 </project>
