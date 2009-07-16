@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.ch09.webextenderconf;uses:="org.spri
+ ngframework.osgi.web.deployer,org.osgi.framework,org.springframework.
+ osgi.web.deployer.support"
+Private-Package: com.manning.sdmia.ch09.webextenderconf,
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: web-extender-configuration
+Created-By: Apache Maven Bundle Plugin
+Fragment-Host: org.springframework.osgi.web.extender
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1247777448656
+Bundle-ManifestVersion: 2
+Import-Package: com.manning.sdmia.ch09.webextenderconf,org.mortbay.jet
+ ty,org.osgi.framework,org.springframework.osgi.web.deployer;version="
+ 1.2",org.springframework.osgi.web.deployer.support;version="1.2"
+Bundle-SymbolicName: com.manning.sdmia.ch09.web-extender-configuration
+Originally-Created-By: Apache Maven Bundle Plugin
+

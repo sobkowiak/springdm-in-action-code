@@ -1,19 +1,26 @@
 Manifest-Version: 1.0
-Private-Package: !*
+Export-Package: com.manning.sdmia.ch09.stdextenderconf;uses:="org.spri
+ ngframework.osgi.context.event,org.springframework.beans,org.osgi.fra
+ mework,org.springframework.beans.factory.config,org.springframework.o
+ sgi.extender,org.springframework.osgi.extender.support,org.springfram
+ ework.osgi.extender.support.scanning"
+Private-Package: com.manning.sdmia.ch09.stdextenderconf,
 Built-By: acogoluegnes
 Tool: Bnd-0.0.311
 Bundle-Name: standard-extender-configuration
 Created-By: Apache Maven Bundle Plugin
-ImportPackage: org.springframework.scheduling.concurrent;version=2.5.6
- .A
 Fragment-Host: org.springframework.osgi.extender
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1247086377031
+Bnd-LastModified: 1247567019859
 Bundle-ManifestVersion: 2
-Import-Package: org.springframework.scheduling.backportconcurrent;vers
- ion="2.5.6.A",org.springframework.scheduling.concurrent;version="2.5.
- 6.A"
+Import-Package: com.manning.sdmia.ch09.stdextenderconf,org.osgi.framew
+ ork,org.springframework.beans,org.springframework.beans.factory.confi
+ g,org.springframework.osgi.context.event,org.springframework.osgi.ext
+ ender,org.springframework.osgi.extender.support,org.springframework.o
+ sgi.extender.support.scanning,org.springframework.scheduling.backport
+ concurrent;version="2.5.6.A",org.springframework.scheduling.concurren
+ t;version="2.5.6.A"
 Bundle-SymbolicName: com.manning.sdmia.ch09.standard-extender-configur
  ation
 Originally-Created-By: Apache Maven Bundle Plugin

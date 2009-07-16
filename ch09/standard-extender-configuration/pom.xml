@@ -6,7 +6,6 @@
 		<version>1.0.0.SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.manning.sdmia.ch09</groupId>
 	<artifactId>standard-extender-configuration</artifactId>
 	<name>standard-extender-configuration</name>
 	<packaging>bundle</packaging>
@@ -33,7 +32,8 @@
 					<instructions>
 						<Fragment-Host>org.springframework.osgi.extender</Fragment-Host>
 						<Import-Package>org.springframework.scheduling.concurrent;version=${spring.version},
-						org.springframework.scheduling.backportconcurrent;version=${spring.version}
+						org.springframework.scheduling.backportconcurrent;version=${spring.version},
+						*
 						</Import-Package>
 					</instructions>
 				</configuration>
