@@ -16,6 +16,12 @@
 	</properties>
 
 	<dependencies>
+	
+		<dependency>
+			<groupId>org.eclipse.osgi</groupId>
+			<artifactId>org.eclipse.osgi</artifactId>
+			<version>${equinox.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
@@ -66,12 +72,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.eclipse.osgi</groupId>
-			<artifactId>org.eclipse.osgi</artifactId>
-			<version>${equinox.version}</version>
-			<scope>test</scope>
-		</dependency>
+		
 
 	</dependencies>
 
@@ -106,6 +107,7 @@
     <module>ch09-simplebundle</module>
     <module>jetty-configuration-fragment</module>
 	<module>tomcat-configuration-fragment</module>
-	<module>ch09-integration-tests</module>    
+	<module>ch09-integration-tests</module>
+    <module>catalina-config</module>
   </modules>
 </project>

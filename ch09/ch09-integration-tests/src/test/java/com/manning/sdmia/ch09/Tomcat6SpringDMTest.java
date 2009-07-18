@@ -3,31 +3,31 @@
  */
 package com.manning.sdmia.ch09;
 
+import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author acogoluegnes
- * 
- */
-public class ConfigureWebExtenderTest extends
-		AbstractOsgiTest {
+import junit.framework.Assert;
 
-	public void testConfigureExtender() throws Exception {
+/**
+ * Tomcat 6.0 with Spring DM's Tomcat and Jasper bundle.
+ * Does not support JSP (see http://jira.springframework.org/browse/OSGI-689).
+ * @author acogoluegnes
+ *
+ */
+public class Tomcat6SpringDMTest extends AbstractOsgiTest {
+
+	public void testTomcat6SpringDMTest() throws Exception {
 		// waits a little for everything to be deployed correctly
 		Thread.sleep(5 *1000);
 		
-		// the context path is modified by the Web extender's configuration fragment
-		testConnection("http://localhost:8080/manningcontextpathstrategy/hello.htm");	
+		String pageContent = getTextResponse("http://localhost:8080/simplewebmvcapp/index.html");
+		Assert.assertTrue(pageContent.contains("<p>Hello from chapter 09!</p>"));
 		
-		findBundle("org.springframework.osgi.web.extender").stop();
-		Thread.sleep(500 * 1000);
-		findBundle("org.springframework.osgi.web.extender").start();
-		Thread.sleep(5 * 1000);
+		// JSP not supported
+		Assert.assertEquals(HttpURLConnection.HTTP_INTERNAL_ERROR,getResponseCode("http://localhost:8080/simplewebmvcapp/hello.htm"));
 	}
-
 	
-
 	@Override
 	protected String[] getTestBundlesNames() {
 		List<String> col = new ArrayList<String>();
@@ -36,20 +36,16 @@ public class ConfigureWebExtenderTest extends
 
 		// JSP compiler
 		col.add(SPRING_OSGI_GROUP + ", jasper.osgi, 6.0.16-SNAPSHOT");
-		col.add(SPRING_OSGI_GROUP + ", commons-el.osgi, 1.0-SNAPSHOT");
+//		col.add(SPRING_OSGI_GROUP + ", commons-el.osgi, 1.0-SNAPSHOT");
 
 		// standard tag library
-		col.add(SPRING_OSGI_GROUP+", jstl.osgi, 1.1.2-SNAPSHOT");		
+//		col.add(SPRING_OSGI_GROUP+", jstl.osgi, 1.1.2-SNAPSHOT");
 		
 		// web container
-		col.addAll(getJettyArtifacts());
+		col.addAll(getTomcat6Artifacts());		
 
 		// Spring DM web extender
-		// the Web extender configuration fragment
-		col.add("com.manning.sdmia.ch09, web-extender-configuration, 1.0.0.SNAPSHOT");
 		col.addAll(getSpringDmWebArtifacts());
-		// for Jetty Server proxying
-		col.add("net.sourceforge.cglib, com.springsource.net.sf.cglib, 2.1.3");
 		
 		// Spring Web
 		col.add("org.springframework, org.springframework.web, "+getSpringVersion());
@@ -60,7 +56,5 @@ public class ConfigureWebExtenderTest extends
 		
 		return (String[]) col.toArray(new String[col.size()]);
 	}
-
 	
-
 }

@@ -22,4 +22,7 @@
 		<prop key="undeploy.wars.at.shutdown">true</prop>
 	</util:properties>
 	
+	<!-- //////// warScanner //////// -->
+	<bean id="warScanner" class="com.manning.sdmia.ch09.webextenderconf.ManningWarScanner" />
+	
 </beans>

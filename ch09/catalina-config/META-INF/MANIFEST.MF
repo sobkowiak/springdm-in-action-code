@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Private-Package: conf
+Fragment-Host: com.springsource.org.apache.catalina
+Built-By: acogoluegnes
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0.SNAPSHOT
+Tool: Bnd-0.0.311
+Bundle-Name: catalina-config
+Bnd-LastModified: 1247934622718
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.manning.sdmia.ch09.catalina-config
+

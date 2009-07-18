@@ -35,7 +35,7 @@ public abstract class AbstractOsgiTest extends AbstractConfigurableBundleCreator
 	protected Collection<String> getJavaEe5WebArtifacts() {
 		List<String> col = new ArrayList<String>();
 		// Servlet/JSP artifacts
-		col.add(SPRING_OSGI_GROUP + ", servlet-api.osgi, 2.5-SNAPSHOT");
+		col.add("org.mortbay.jetty, servlet-api-2.5, 6.1.14");
 		col.add("org.mortbay.jetty, jsp-api-2.1, 6.1.14");
 		return col;
 	}
@@ -60,6 +60,13 @@ public abstract class AbstractOsgiTest extends AbstractConfigurableBundleCreator
 	protected Collection<String> getTomcat5Artifacts() {
 		List<String> col = new ArrayList<String>();
 		col.add("org.springframework.osgi, catalina.osgi, 5.5.23-SNAPSHOT");
+		col.add("org.springframework.osgi, catalina.start.osgi, 1.0.0");
+		return col;
+	}
+	
+	protected Collection<String> getTomcat6Artifacts() {
+		List<String> col = new ArrayList<String>();
+		col.add("org.springframework.osgi, catalina.osgi, 6.0.16-SNAPSHOT");
 		col.add("org.springframework.osgi, catalina.start.osgi, 1.0.0");
 		return col;
 	}
@@ -102,6 +109,18 @@ public abstract class AbstractOsgiTest extends AbstractConfigurableBundleCreator
 	
 	protected String getTextResponse(String address) throws Exception {
 		return getTextResponse(address, false);
+	}
+	
+	protected int getResponseCode(String address) throws Exception {
+		URL url = new URL(address);
+		HttpURLConnection con = (HttpURLConnection) url.openConnection();
+		con.setUseCaches(false);
+		try {
+			con.connect();
+			return con.getResponseCode();
+		} finally {
+			con.disconnect();
+		}
 	}
 	
 	protected void testConnection(String address) throws Exception {
