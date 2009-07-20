@@ -36,7 +36,6 @@ public class ExtenderEventsTest extends
 				testBundle = bundle;
 			}
 		}
-//		System.out.println("STAAAAAAAAAAAAART");
 		Assert.assertNotNull("cannot find spring-powered bundle",springBundle);
 		Assert.assertNotNull("cannot find test bundle", testBundle);
 		// stops the bundle

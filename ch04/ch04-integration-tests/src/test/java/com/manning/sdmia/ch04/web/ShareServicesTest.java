@@ -55,7 +55,7 @@ public class ShareServicesTest extends
 	@Override
 	protected String[] getTestBundlesNames() {
 		return new String [] {
-			"org.springframework, org.springframework.web, 2.5.6.A",
+			"org.springframework, org.springframework.web, "+getSpringVersion(),
 			"org.springframework.osgi, spring-osgi-web," + getSpringDMVersion(),
 			"org.springframework.osgi, spring-osgi-web-extender," + getSpringDMVersion(),
 			"org.springframework.osgi, servlet-api.osgi, 2.5-SNAPSHOT",
