@@ -57,8 +57,8 @@ public class OsgifiedDbcpTest extends AbstractConfigurableBundleCreatorTests {
 	@Override
 	protected String[] getTestBundlesNames() {
 		return new String [] {
-			"com.manning.sdmia, commons-pool.osgi, 1.3.0-SNAPSHOT",
-			"com.manning.sdmia, commons-dbcp.osgi, 1.2.2-SNAPSHOT",
+			"com.manning.sdmia.ch06, commons-pool.osgi, 1.3.0",
+			"com.manning.sdmia.ch06, commons-dbcp.osgi, 1.2.2",
 			"com.h2database, h2, 1.1.115"
 		};
 	}

@@ -9,11 +9,11 @@
   <classpathentry kind="var" path="M2_REPO/org/objectweb/asm/com.springsource.org.objectweb.asm/2.2.3/com.springsource.org.objectweb.asm-2.2.3.jar" sourcepath="M2_REPO/org/objectweb/asm/com.springsource.org.objectweb.asm/2.2.3/com.springsource.org.objectweb.asm-2.2.3-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-dbcp/commons-dbcp/1.2.2/commons-dbcp-1.2.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.3/commons-pool-1.3.jar" sourcepath="M2_REPO/commons-pool/commons-pool/1.3/commons-pool-1.3-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/enterprise-domain/1.0.0-SNAPSHOT/enterprise-domain-1.0.0-SNAPSHOT.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/enterprise-modular-dao/1.0.0-SNAPSHOT/enterprise-modular-dao-1.0.0-SNAPSHOT.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/enterprise-modular-dao-jdbc/1.0.0-SNAPSHOT/enterprise-modular-dao-jdbc-1.0.0-SNAPSHOT.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/enterprise-modular-service-impl/1.0.0-SNAPSHOT/enterprise-modular-service-impl-1.0.0-SNAPSHOT.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/enterprise-service/1.0.0-SNAPSHOT/enterprise-service-1.0.0-SNAPSHOT.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/ch06/directory-domain/1.0.0/directory-domain-1.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/ch06/directory-modular-dao/1.0.0/directory-modular-dao-1.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/ch06/directory-modular-dao-jdbc/1.0.0/directory-modular-dao-jdbc-1.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/ch06/directory-modular-service-impl/1.0.0/directory-modular-service-impl-1.0.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/manning/sdmia/ch06/directory-service/1.0.0/directory-service-1.0.0.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/h2database/h2/1.1.115/h2-1.1.115.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/eclipse/osgi/org.eclipse.osgi/3.2.2/org.eclipse.osgi-3.2.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/org.springframework.aop/2.5.6.A/org.springframework.aop-2.5.6.A.jar" sourcepath="M2_REPO/org/springframework/org.springframework.aop/2.5.6.A/org.springframework.aop-2.5.6.A-sources.jar"/>
@@ -26,8 +26,8 @@
   <classpathentry kind="var" path="M2_REPO/org/springframework/org.springframework.web/2.5.6.A/org.springframework.web-2.5.6.A.jar" sourcepath="M2_REPO/org/springframework/org.springframework.web/2.5.6.A/org.springframework.web-2.5.6.A-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/osgi/spring-osgi-annotation/1.2.0/spring-osgi-annotation-1.2.0.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/osgi/spring-osgi-core/1.2.0/spring-osgi-core-1.2.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/springframework/osgi/spring-osgi-extender/1.2.0/spring-osgi-extender-1.2.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/osgi/spring-osgi-extender/1.2.0/spring-osgi-extender-1.2.0.jar" sourcepath="M2_REPO/org/springframework/osgi/spring-osgi-extender/1.2.0/spring-osgi-extender-1.2.0-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/osgi/spring-osgi-io/1.2.0/spring-osgi-io-1.2.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/springframework/osgi/spring-osgi-test/1.2.0/spring-osgi-test-1.2.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/osgi/spring-osgi-test/1.2.0/spring-osgi-test-1.2.0.jar" sourcepath="M2_REPO/org/springframework/osgi/spring-osgi-test/1.2.0/spring-osgi-test-1.2.0-sources.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 </classpath>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.directory.service;version="1.0.0"
+Private-Package: com.manning.sdmia.directory.service,
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: Directory Service
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248529191796
+Bundle-ManifestVersion: 2
+Import-Package: com.manning.sdmia.directory.domain;version="1.0.0",com
+ .manning.sdmia.directory.service;version="1.0.0"
+Bundle-SymbolicName: com.manning.sdmia.ch06.directory-service
+Originally-Created-By: Apache Maven Bundle Plugin
+

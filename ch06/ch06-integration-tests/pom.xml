@@ -2,8 +2,8 @@
 <project>
 	<parent>
 		<artifactId>ch06-samples</artifactId>
-		<groupId>com.manning.sdmia</groupId>
-		<version>1.0.0-SNAPSHOT</version>
+		<groupId>com.manning.sdmia.ch06</groupId>
+		<version>1.0.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>ch06-integration-tests</artifactId>
@@ -25,32 +25,32 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.manning.sdmia</groupId>
-			<artifactId>enterprise-domain</artifactId>
+			<groupId>com.manning.sdmia.ch06</groupId>
+			<artifactId>directory-domain</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.manning.sdmia</groupId>
-			<artifactId>enterprise-modular-dao-jdbc</artifactId>
+			<groupId>com.manning.sdmia.ch06</groupId>
+			<artifactId>directory-modular-dao-jdbc</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.manning.sdmia</groupId>
-			<artifactId>enterprise-modular-dao</artifactId>
+			<groupId>com.manning.sdmia.ch06</groupId>
+			<artifactId>directory-modular-dao</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		
 		<dependency>
-			<groupId>com.manning.sdmia</groupId>
-			<artifactId>enterprise-service</artifactId>
+			<groupId>com.manning.sdmia.ch06</groupId>
+			<artifactId>directory-service</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		
 		<dependency>
-			<groupId>com.manning.sdmia</groupId>
-			<artifactId>enterprise-modular-service-impl</artifactId>
+			<groupId>com.manning.sdmia.ch06</groupId>
+			<artifactId>directory-modular-service-impl</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 

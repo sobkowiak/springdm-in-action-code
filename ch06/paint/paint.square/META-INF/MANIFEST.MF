@@ -7,12 +7,12 @@ Tool: Bnd-0.0.311
 Bundle-Name: paint.square
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
-Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1246802896031
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248529193218
 Bundle-ManifestVersion: 2
 Bundle-Description: Square Shape for paint application
-Import-Package: com.manning.sdmia.paint.shape;version="1.0.0.SNAPSHOT"
- ,com.manning.sdmia.paint.shape.square
+Import-Package: com.manning.sdmia.paint.shape;version="1.0.0",com.mann
+ ing.sdmia.paint.shape.square
 Bundle-SymbolicName: com.manning.sdmia.paint.square
 Originally-Created-By: Apache Maven Bundle Plugin
 

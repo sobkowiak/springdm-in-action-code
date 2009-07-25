@@ -1,15 +1,15 @@
 <?xml version="1.0"?><project>
   <parent>
-    <artifactId>ch06-samples</artifactId>
-    <groupId>com.manning.sdmia</groupId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
+		<artifactId>ch06-samples</artifactId>
+		<groupId>com.manning.sdmia.ch06</groupId>
+		<version>1.0.0</version>
+	</parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.manning.sdmia</groupId>
+  <groupId>com.manning.sdmia.ch06</groupId>
   <artifactId>commons-pool.osgi</artifactId>
   <packaging>bundle</packaging>
   <name>commons-pool.osgi</name>
-  <version>1.3.0-SNAPSHOT</version>
+  <version>1.3.0</version>
   <description>OSGified version of Commons Pool</description>
   <url>http://maven.apache.org</url>
   

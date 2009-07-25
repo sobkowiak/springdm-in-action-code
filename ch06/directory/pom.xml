@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<artifactId>ch06-samples</artifactId>
+		<groupId>com.manning.sdmia.ch06</groupId>
+		<version>1.0.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>directory-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>Directory parent</name>
+	
+  <modules>    
+    <module>directory-domain</module>
+    <module>directory-modular-dao</module>
+	<module>directory-modular-dao-jdbc</module>
+    <module>directory-service</module>
+    <module>directory-modular-service-impl</module>
+	<module>directory-soa-service-impl</module>
+    <module>directory-web</module>    
+    <module>directory-datasource</module>
+  </modules>
+</project>

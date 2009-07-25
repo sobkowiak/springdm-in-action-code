@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.directory.domain;version="1.0.0"
+Private-Package: com.manning.sdmia.directory.domain,
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: Directory Domain
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248529191406
+Bundle-ManifestVersion: 2
+Import-Package: com.manning.sdmia.directory.domain;version="1.0"
+Bundle-SymbolicName: com.manning.sdmia.ch06.directory-domain
+Originally-Created-By: Apache Maven Bundle Plugin
+

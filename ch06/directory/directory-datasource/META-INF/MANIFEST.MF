@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Private-Package: !*
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: Directory DataSource
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248529192484
+Bundle-ManifestVersion: 2
+Import-Package: org.apache.commons.dbcp
+Bundle-SymbolicName: com.manning.sdmia.ch06.directory-datasource
+Originally-Created-By: Apache Maven Bundle Plugin
+

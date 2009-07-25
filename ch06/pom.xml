@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.manning.sdmia</groupId>
+	<groupId>com.manning.sdmia.ch06</groupId>
 	<artifactId>ch06-samples</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>ch06-samples</name>
-	<url>http://maven.apache.org</url>
 	
 	<properties>
 		<springdm.version>1.2.0</springdm.version>
@@ -96,15 +95,33 @@
   <modules>    
     <module>commons-pool.osgi</module>
     <module>commons-dbcp.osgi</module>
-	<module>enterprise-domain</module>
-    <module>enterprise-modular-dao</module>
-	<module>enterprise-modular-dao-jdbc</module>
-    <module>enterprise-service</module>
-    <module>enterprise-modular-service-impl</module>
-	<module>enterprise-soa-service-impl</module>
-    <module>enterprise-web</module>    
-    <module>enterprise-datasource</module>
+	<module>directory</module>
 	<module>paint</module>
 	<module>ch06-integration-tests</module>    
   </modules>
+  
+  <repositories>
+		<repository>
+			<id>spring-ext</id>
+			<name>Spring External Dependencies Repository</name>
+			<url>
+			http://springframework.svn.sourceforge.net/svnroot/springframework/repos/repo-ext/
+        </url>
+		</repository>
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>
+		<repository>
+			<id>spring-osgified-artifacts</id>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<name>Springframework Maven OSGified Artifacts Repository</name>
+			<url>http://maven.springframework.org/osgi</url>
+		</repository>
+	</repositories>
+
+  
 </project>

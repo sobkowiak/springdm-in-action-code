@@ -7,12 +7,12 @@ Tool: Bnd-0.0.311
 Bundle-Name: paint.triangle
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
-Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1246802896156
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248529193406
 Bundle-ManifestVersion: 2
 Bundle-Description: Triangle Shape for paint application
-Import-Package: com.manning.sdmia.paint.shape;version="1.0.0.SNAPSHOT"
- ,com.manning.sdmia.paint.shape.triangle
+Import-Package: com.manning.sdmia.paint.shape;version="1.0.0",com.mann
+ ing.sdmia.paint.shape.triangle
 Bundle-SymbolicName: com.manning.sdmia.paint.triangle
 Originally-Created-By: Apache Maven Bundle Plugin
 
