@@ -33,6 +33,7 @@
 						<Export-Package></Export-Package>
 						<Import-Package>com.manning.sdmia*;version=${project.version},
 						org.springframework*;version=${spring.version},
+						javax.sql,
 						*</Import-Package>
 						<Private-Package>com.manning.sdmia.directory.modular.dao.jdbc</Private-Package>
 					</instructions>

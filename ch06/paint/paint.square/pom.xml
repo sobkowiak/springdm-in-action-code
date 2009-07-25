@@ -33,7 +33,8 @@
 					<instructions>
 						<Bundle-SymbolicName>com.manning.sdmia.paint.square</Bundle-SymbolicName>
 						<Import-Package>com.manning.sdmia.paint.shape;version=${project.version},
-							*</Import-Package>
+						javax.swing,
+						*</Import-Package>
 					</instructions>
 				</configuration>
 			</plugin>

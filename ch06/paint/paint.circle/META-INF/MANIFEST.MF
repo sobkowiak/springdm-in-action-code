@@ -8,11 +8,11 @@ Bundle-Name: paint.circle
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1248529192953
+Bnd-LastModified: 1248540483656
 Bundle-ManifestVersion: 2
 Bundle-Description: Circle shape for paint application
 Import-Package: com.manning.sdmia.paint.shape;version="1.0.0",com.mann
- ing.sdmia.paint.shape.circle
+ ing.sdmia.paint.shape.circle,javax.swing
 Bundle-SymbolicName: com.manning.sdmia.paint.circle
 Originally-Created-By: Apache Maven Bundle Plugin
 

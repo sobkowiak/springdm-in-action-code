@@ -36,7 +36,8 @@
 						org.springframework.aop;version=${spring.version},
 						org.springframework.aop.framework;version=${spring.version},
 						org.aopalliance.aop,
-						com.manning.sdmia.directory*;version="${project.version}",
+						javax.sql,
+						com.manning.sdmia.directory*;version="${project.version}",						
 						*</Import-Package>
 						<Private-Package>com.manning.sdmia.directory.modular.service.impl</Private-Package>
 					</instructions>

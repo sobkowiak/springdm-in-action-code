@@ -120,6 +120,7 @@ public class DrawingFrame extends JFrame implements MouseListener,
 		// add the shape to the tracking map
 		m_shapes.put(name, new ShapeInfo(name, icon, shape));
 		// create the button for the toolbar
+		System.out.println("ICON §§§§ "+icon);
 		JButton button = new JButton(icon);
 		// set a name to track the button in the toolbar
 		button.setActionCommand(name);

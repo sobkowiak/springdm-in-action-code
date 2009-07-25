@@ -33,6 +33,7 @@
 					<instructions>
 						<Bundle-SymbolicName>com.manning.sdmia.paint.triangle</Bundle-SymbolicName>
 						<Import-Package>com.manning.sdmia.paint.shape;version=${project.version},
+						javax.swing,
 						*</Import-Package>
 					</instructions>
 				</configuration>

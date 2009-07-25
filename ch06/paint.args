@@ -1,0 +1,8 @@
+mvn:com.manning.sdmia.ch06/shape/1.0.0@update
+mvn:com.manning.sdmia.ch06/paint/1.0.0@update
+mvn:com.manning.sdmia.ch06/paint.circle/1.0.0@update
+mvn:com.manning.sdmia.ch06/paint.square/1.0.0@update
+mvn:com.manning.sdmia.ch06/paint.triangle/1.0.0@update
+--p=equinox
+--profiles=spring.dm
+--bootDelegation=javax.swing.*

@@ -7,7 +7,7 @@ Bundle-Name: shape
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1248529192609
+Bnd-LastModified: 1248540481234
 Bundle-ManifestVersion: 2
 Bundle-Description: Paint API
 Import-Package: com.manning.sdmia.paint.shape;version="1.0"

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.paint;uses:="org.osgi.framework,java
+ x.swing,com.manning.sdmia.paint.shape"
+Private-Package: com.manning.sdmia.paint,
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: paint
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248540483109
+Bundle-ManifestVersion: 2
+Bundle-Description: Paint program
+Import-Package: com.manning.sdmia.paint,com.manning.sdmia.paint.shape;
+ version="1.0.0",javax.swing,org.osgi.framework;version="1.3"
+Bundle-SymbolicName: com.manning.sdmia.paint.application
+Originally-Created-By: Apache Maven Bundle Plugin
+

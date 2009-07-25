@@ -12,7 +12,7 @@ Created-By: Apache Maven Bundle Plugin
 Web-ContextPath: directory
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1248529192375
+Bnd-LastModified: 1248540480640
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.directory.service;version="1.0.0",ja
  vax.servlet;version="2.4.0",javax.servlet.http;version="2.4.0",javax.

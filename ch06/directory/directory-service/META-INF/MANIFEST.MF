@@ -7,7 +7,7 @@ Bundle-Name: Directory Service
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1248529191796
+Bnd-LastModified: 1248540478296
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.directory.domain;version="1.0.0",com
  .manning.sdmia.directory.service;version="1.0.0"
