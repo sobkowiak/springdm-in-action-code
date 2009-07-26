@@ -13,3 +13,5 @@ pax-run --args=file:paint.args
 If you use Windows:
 
 pax-run "--args=file:paint.args"
+
+do not forget to start the database (directory/database folder) before trying the directory samples!
