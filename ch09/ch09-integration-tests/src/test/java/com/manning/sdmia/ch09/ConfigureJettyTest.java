@@ -40,7 +40,7 @@ public class ConfigureJettyTest extends AbstractOsgiTest {
 		col.addAll(getJettyArtifacts());
 		
 		// web container configuration fragment
-		col.add("com.manning.sdmia.ch09, jetty-configuration-fragment, 1.0.0.SNAPSHOT");
+		col.add("com.manning.sdmia.ch09, jetty-configuration-fragment, 1.0.0");
 
 		// Spring DM web extender
 		col.addAll(getSpringDmWebArtifacts());
@@ -51,7 +51,7 @@ public class ConfigureJettyTest extends AbstractOsgiTest {
 		col.add("org.springframework, org.springframework.web.servlet, "+getSpringVersion());
 		
 		// simple web app
-		col.add("com.manning.sdmia.ch09, simple-web-mvc-app, 1.0.0.SNAPSHOT");
+		col.add("com.manning.sdmia.ch09, simple-web-mvc-app, 1.0.0");
 		
 		return (String[]) col.toArray(new String[col.size()]);
 	}

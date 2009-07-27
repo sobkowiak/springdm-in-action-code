@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" 
+"http://jetty.mortbay.org/configure.dtd">
 
 <!-- =============================================================== -->
 <!-- Configure the Jetty Server  (OSGi specific)                     -->

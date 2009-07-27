@@ -10,8 +10,8 @@ Bundle-Name: web-extender-configuration
 Created-By: Apache Maven Bundle Plugin
 Fragment-Host: org.springframework.osgi.web.extender
 Build-Jdk: 1.6.0_13
-Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1247926149546
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248721864781
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.ch09.webextenderconf,org.mortbay.jet
  ty,org.osgi.framework;version="1.3",org.springframework.osgi.web.depl

@@ -16,5 +16,4 @@ public class ManningConfigurationScanner extends DefaultConfigurationScanner {
 	public String[] getConfigurations(Bundle bundle) {
 		return super.getConfigurations(bundle);
 	}
-	
 }

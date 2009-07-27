@@ -20,7 +20,7 @@ public class Tomcat6BritsTest extends AbstractOsgiTest {
 		// waits a little for everything to be deployed correctly
 		Thread.sleep(5 *1000);
 		
-		String pageContent = getTextResponse("http://localhost:8080/simplewebmvcapp/hello.htm");
+		String pageContent = getTextResponse("http://localhost:8090/simplewebmvcapp/hello.htm");
 		
 		Assert.assertTrue(pageContent.contains("Hello from chapter 09! Today we are"));
 	}
@@ -28,11 +28,7 @@ public class Tomcat6BritsTest extends AbstractOsgiTest {
 	@Override
 	protected String[] getTestBundlesNames() {
 		
-		List<String> col = new ArrayList<String>();
-		
-		col.add("javax.el, com.springsource.javax.el, 1.0.0");
-		col.add("org.apache.el, com.springsource.org.apache.el, 6.0.18");
-		
+		List<String> col = new ArrayList<String>();		
 		// Servlet API
 		col.add("javax.servlet, com.springsource.javax.servlet, 2.5.0");
 		// standard tag library
@@ -40,7 +36,10 @@ public class Tomcat6BritsTest extends AbstractOsgiTest {
 		col.add("javax.servlet, com.springsource.javax.servlet.jsp.jstl, 1.1.2");
 		
 		// JSP API
-		col.add("javax.servlet, com.springsource.javax.servlet.jsp, 2.1.0");		
+		col.add("javax.servlet, com.springsource.javax.servlet.jsp, 2.1.0");	
+		
+		col.add("javax.el, com.springsource.javax.el, 1.0.0");
+		col.add("org.apache.el, com.springsource.org.apache.el, 6.0.18");
 		
 		// web container
 		col.add("javax.activation, com.springsource.javax.activation, 1.1.1");
@@ -65,17 +64,20 @@ public class Tomcat6BritsTest extends AbstractOsgiTest {
 		col.add("org.springframework.osgi, catalina.start.osgi, 1.0.0");
 		
 		// to add default web.xml
-		col.add("com.manning.sdmia.ch09, catalina-config, 1.0.0.SNAPSHOT");
+		col.add("com.manning.sdmia.ch09, catalina-config, 1.0.0");
 
 		// Spring DM web extender
 		col.addAll(getSpringDmWebArtifacts());
+		
+		// web container configuration fragment
+		col.add("com.manning.sdmia.ch09, tomcat-configuration-fragment, 1.0.0");
 		
 		// Spring Web
 		col.add("org.springframework, org.springframework.web, "+getSpringVersion());
 		col.add("org.springframework, org.springframework.web.servlet, "+getSpringVersion());
 		
 		// simple web app
-		col.add("com.manning.sdmia.ch09, simple-web-mvc-app, 1.0.0.SNAPSHOT");
+		col.add("com.manning.sdmia.ch09, simple-web-mvc-app, 1.0.0");
 		
 		return (String[]) col.toArray(new String[col.size()]);
 	}

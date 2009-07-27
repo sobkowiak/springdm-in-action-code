@@ -12,10 +12,7 @@ import org.springframework.osgi.extender.support.ConditionalApplicationContextCr
  */
 public class ManningBundleContextFilter implements BundleContextFilter {
 
-	/* (non-Javadoc)
-	 * @see org.springframework.osgi.extender.support.ConditionalApplicationContextCreator.BundleContextFilter#matches(org.osgi.framework.BundleContext)
-	 */
-	@Override
+	
 	public boolean matches(BundleContext bundleContext) {
 		return bundleContext.getBundle().getSymbolicName().startsWith("com.manning.sdmia.ch09");
 	}

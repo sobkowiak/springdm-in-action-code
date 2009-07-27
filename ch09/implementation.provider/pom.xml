@@ -6,9 +6,9 @@
 		<version>1.0.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>web-extender-configuration</artifactId>
-	<name>web-extender-configuration</name>
+	<artifactId>implementation.provider</artifactId>
 	<packaging>bundle</packaging>
+	<name>implementation.provider</name>	
 	<build>
 		<resources>
 			<resource>
@@ -30,13 +30,12 @@
 				<configuration>
 					<manifestLocation>META-INF</manifestLocation>
 					<instructions>
-						<Fragment-Host>org.springframework.osgi.web.extender</Fragment-Host>
-						<Import-Package>org.mortbay.jetty,*</Import-Package>
+						<Export-Package>com.manning.sdmia.db</Export-Package>
+						<Import-Package>*</Import-Package>
 					</instructions>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
-	
+
 </project>

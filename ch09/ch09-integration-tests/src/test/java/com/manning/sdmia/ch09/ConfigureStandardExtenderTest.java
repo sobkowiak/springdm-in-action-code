@@ -53,9 +53,9 @@ public class ConfigureStandardExtenderTest extends
 	@Override
 	protected String[] getTestBundlesNames() {
 		return new String[] {
-				"com.manning.sdmia.ch09, standard-extender-configuration, 1.0.0.SNAPSHOT",
+				"com.manning.sdmia.ch09, standard-extender-configuration, 1.0.0",
 				"edu.emory.mathcs.backport, com.springsource.edu.emory.mathcs.backport, 3.1.0",
-				"com.manning.sdmia.ch09, ch09-simplebundle, 1.0.0.SNAPSHOT" };
+				"com.manning.sdmia.ch09, ch09-simplebundle, 1.0.0" };
 	}
 
 	@Override

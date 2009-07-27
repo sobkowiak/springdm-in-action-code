@@ -11,16 +11,17 @@ Bundle-Name: standard-extender-configuration
 Created-By: Apache Maven Bundle Plugin
 Fragment-Host: org.springframework.osgi.extender
 Build-Jdk: 1.6.0_13
-Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1247567019859
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248721864062
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.ch09.stdextenderconf,org.osgi.framew
- ork,org.springframework.beans,org.springframework.beans.factory.confi
- g,org.springframework.osgi.context.event,org.springframework.osgi.ext
- ender,org.springframework.osgi.extender.support,org.springframework.o
- sgi.extender.support.scanning,org.springframework.scheduling.backport
- concurrent;version="2.5.6.A",org.springframework.scheduling.concurren
- t;version="2.5.6.A"
+ ork;version="1.3",org.springframework.beans;version="2.5",org.springf
+ ramework.beans.factory.config;version="2.5",org.springframework.osgi.
+ context.event;version="1.2",org.springframework.osgi.extender;version
+ ="1.2",org.springframework.osgi.extender.support;version="1.2",org.sp
+ ringframework.osgi.extender.support.scanning;version="1.2",org.spring
+ framework.scheduling.backportconcurrent;version="2.5.6.A",org.springf
+ ramework.scheduling.concurrent;version="2.5.6.A"
 Bundle-SymbolicName: com.manning.sdmia.ch09.standard-extender-configur
  ation
 Originally-Created-By: Apache Maven Bundle Plugin

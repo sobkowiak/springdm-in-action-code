@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.db
+Private-Package: com.manning.sdmia.db.internal
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: implementation.provider
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248727683921
+Bundle-ManifestVersion: 2
+Import-Package: com.manning.sdmia.db,org.springframework.beans;version
+ ="2.5",org.springframework.context;version="2.5"
+Bundle-SymbolicName: com.manning.sdmia.ch09.implementation.provider
+Originally-Created-By: Apache Maven Bundle Plugin
+

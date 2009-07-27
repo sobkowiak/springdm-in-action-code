@@ -1,14 +1,15 @@
 Manifest-Version: 1.0
 Private-Package: etc
-Fragment-Host: org.springframework.osgi.jetty.start.osgi
 Built-By: acogoluegnes
-Build-Jdk: 1.6.0_13
-Bundle-Version: 1.0.0.SNAPSHOT
 Tool: Bnd-0.0.311
 Bundle-Name: jetty-configuration-fragment
-Bnd-LastModified: 1247575557109
 Created-By: Apache Maven Bundle Plugin
+Fragment-Host: org.springframework.osgi.jetty.start.osgi
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248721865515
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: com.manning.sdmia.ch09.jetty-configuration-fragme
  nt
+Originally-Created-By: Apache Maven Bundle Plugin
 

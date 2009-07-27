@@ -23,18 +23,13 @@ public class LoggingOsgiBeanFactoryPostProcessor implements
 	
 	private Map<String, Integer> bundleToBeanCount = Collections.synchronizedMap(new HashMap<String, Integer>());
 
-	/* (non-Javadoc)
-	 * @see org.springframework.osgi.extender.OsgiBeanFactoryPostProcessor#postProcessBeanFactory(org.osgi.framework.BundleContext, org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
-	 */
-	@Override
 	public void postProcessBeanFactory(BundleContext bundleContext,
 			ConfigurableListableBeanFactory beanFactory) throws BeansException,
 			InvalidSyntaxException, BundleException {
 		System.out.println("Bundle "+bundleContext.getBundle().getSymbolicName()+ " defines "+beanFactory.getBeanDefinitionCount()+" bean(s).");
-		bundleToBeanCount.put(bundleContext.getBundle().getSymbolicName(), beanFactory.getBeanDefinitionCount());
+		bundleToBeanCount.put(bundleContext.getBundle().getSymbolicName(), beanFactory.getBeanDefinitionCount());		
 	}
 	
-	@Override
 	public String toString() {
 		return bundleToBeanCount.toString();
 	}

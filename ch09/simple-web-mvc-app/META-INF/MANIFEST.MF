@@ -9,8 +9,8 @@ Bundle-Name: Simple Web Mvc App
 Created-By: Apache Maven Bundle Plugin
 Web-ContextPath: simplewebmvcapp
 Build-Jdk: 1.6.0_13
-Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1247943660015
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248721867406
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.ch09.web,javax.servlet;version="2.4.
  0",javax.servlet.http;version="2.4.0",javax.servlet.jsp;version="2.0.

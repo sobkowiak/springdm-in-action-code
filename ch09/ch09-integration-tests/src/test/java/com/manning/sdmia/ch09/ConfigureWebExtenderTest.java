@@ -21,7 +21,7 @@ public class ConfigureWebExtenderTest extends
 		testConnection("http://localhost:8080/manningcontextpathstrategy/hello.htm");	
 		
 		findBundle("org.springframework.osgi.web.extender").stop();
-		Thread.sleep(500 * 1000);
+		Thread.sleep(5 * 1000);
 		findBundle("org.springframework.osgi.web.extender").start();
 		Thread.sleep(5 * 1000);
 	}
@@ -46,7 +46,7 @@ public class ConfigureWebExtenderTest extends
 
 		// Spring DM web extender
 		// the Web extender configuration fragment
-		col.add("com.manning.sdmia.ch09, web-extender-configuration, 1.0.0.SNAPSHOT");
+		col.add("com.manning.sdmia.ch09, web-extender-configuration, 1.0.0");
 		col.addAll(getSpringDmWebArtifacts());
 		// for Jetty Server proxying
 		col.add("net.sourceforge.cglib, com.springsource.net.sf.cglib, 2.1.3");
@@ -56,7 +56,7 @@ public class ConfigureWebExtenderTest extends
 		col.add("org.springframework, org.springframework.web.servlet, "+getSpringVersion());
 		
 		// simple web app
-		col.add("com.manning.sdmia.ch09, simple-web-mvc-app, 1.0.0.SNAPSHOT");
+		col.add("com.manning.sdmia.ch09, simple-web-mvc-app, 1.0.0");
 		
 		return (String[]) col.toArray(new String[col.size()]);
 	}

@@ -2,7 +2,7 @@
   <parent>
     <artifactId>ch09-samples</artifactId>
     <groupId>com.manning.sdmia.ch09</groupId>
-    <version>1.0.0.SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.manning.sdmia.ch09</groupId>
