@@ -110,7 +110,8 @@
 	<module>tomcat-configuration-fragment</module>
 	<module>catalina-config</module>
 	<module>simple-web-mvc-app</module>
-	<module>ch09-integration-tests</module>
-    <module>implementation.provider</module>
+	<module>implementation.provider</module>
+	<module>classloader.provider</module>
+	<module>ch09-integration-tests</module>    
   </modules>
 </project>

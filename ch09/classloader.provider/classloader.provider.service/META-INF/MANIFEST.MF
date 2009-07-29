@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.aop;uses:="org.aopalliance.aop"
+Private-Package: com.manning.sdmia.aop.internal
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: classloader.provider.service
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1248900793796
+Bundle-ManifestVersion: 2
+Import-Package: com.manning.sdmia.aop,org.aopalliance.aop,org.springfr
+ amework.aop;version="2.5",org.springframework.aop.framework;version="
+ 2.5"
+Bundle-SymbolicName: com.manning.sdmia.ch09.classloader.provider.servi
+ ce
+Originally-Created-By: Apache Maven Bundle Plugin
+
