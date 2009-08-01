@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.business,com.manning.sdmia.business.
+ impl;uses:="com.manning.sdmia.business"
+Private-Package: com.manning.sdmia.business,com.manning.sdmia.business
+ .impl,
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: chained.classloader.target
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1249144917671
+Bundle-ManifestVersion: 2
+Import-Package: com.manning.sdmia.business,com.manning.sdmia.business.
+ impl
+Bundle-SymbolicName: com.manning.sdmia.ch09.chained.classloader.target
+Originally-Created-By: Apache Maven Bundle Plugin
+

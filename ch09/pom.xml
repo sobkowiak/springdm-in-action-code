@@ -69,7 +69,7 @@
 			<groupId>org.aopalliance</groupId>
 			<artifactId>com.springsource.org.aopalliance</artifactId>
 			<version>1.0.0</version>
-			<scope>test</scope>
+			<scope>compile</scope>
 		</dependency>
 
 		
@@ -111,7 +111,7 @@
 	<module>catalina-config</module>
 	<module>simple-web-mvc-app</module>
 	<module>implementation.provider</module>
-	<module>classloader.provider</module>
+	<module>chained.classloader</module>
 	<module>ch09-integration-tests</module>    
   </modules>
 </project>

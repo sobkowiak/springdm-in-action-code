@@ -317,21 +317,21 @@
 		
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>classloader.provider.aspects</artifactId>
+			<artifactId>chained.classloader.aspects</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>classloader.provider.target</artifactId>
+			<artifactId>chained.classloader.target</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>classloader.provider.service</artifactId>
+			<artifactId>chained.classloader.service</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>

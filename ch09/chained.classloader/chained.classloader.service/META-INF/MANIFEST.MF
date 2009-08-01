@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.aop;uses:="org.aopalliance.aop"
+Private-Package: com.manning.sdmia.aop.internal
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: chained.classloader.service
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1249144917890
+Bundle-ManifestVersion: 2
+Import-Package: com.manning.sdmia.aop,org.aopalliance.aop;version="1.0
+ ",org.springframework.aop;version="2.5",org.springframework.aop.frame
+ work;version="2.5"
+Bundle-SymbolicName: com.manning.sdmia.ch09.chained.classloader.servic
+ e
+Originally-Created-By: Apache Maven Bundle Plugin
+

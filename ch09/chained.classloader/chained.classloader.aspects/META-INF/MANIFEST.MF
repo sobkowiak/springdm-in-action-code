@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.aspects;uses:="org.springframework.a
+ op"
+Private-Package: com.manning.sdmia.aspects,
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: chained.classloader.aspects
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1249144917375
+Bundle-ManifestVersion: 2
+Import-Package: com.manning.sdmia.aspects,org.springframework.aop;vers
+ ion="2.5"
+Bundle-SymbolicName: com.manning.sdmia.ch09.chained.classloader.aspect
+ s
+Originally-Created-By: Apache Maven Bundle Plugin
+
