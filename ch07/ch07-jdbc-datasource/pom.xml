@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia</groupId>
+	<artifactId>ch07-jdbc-datasource</artifactId>
+	<packaging>bundle</packaging>
+	<name>ch07-jdbc-datasource</name>
+	<description>Data source.</description>
+	<version>1.0-SNAPSHOT</version>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<felix.bundle.plugin.version>2.0.0</felix.bundle.plugin.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${felix.bundle.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Import-Package>com.mchange.v2.c3p0;version="0.9.1.2",org.hsqldb;version="1.8.0.9",org.springframework.beans.factory.config;version="2.5.5",org.springframework.context;version="2.5.5"</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+	
+</project>
