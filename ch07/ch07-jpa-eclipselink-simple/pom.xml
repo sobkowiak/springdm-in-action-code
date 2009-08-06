@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia</groupId>
+	<artifactId>ch07-jpa-eclipselink-simple</artifactId>
+	<packaging>bundle</packaging>
+	<name>ch07-jpa-eclipselink-simple</name>
+	<description>Data access with EclipseLink.</description>
+	<version>1.0-SNAPSHOT</version>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<javax.persistence.version>1.0</javax.persistence.version>
+		<spring.version>2.5.6</spring.version>
+		<dataaccess.simple.version>1.0-SNAPSHOT</dataaccess.simple.version>
+		<felix.bundle.plugin.version>2.0.0</felix.bundle.plugin.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.manning.sdmia</groupId>
+			<artifactId>ch07-dataaccess-simple</artifactId>
+			<version>${dataaccess.simple.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>${javax.persistence.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${felix.bundle.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Import-Package>
+							com.manning.sdmia.dataaccess.domain.dao,
+							com.manning.sdmia.dataaccess.domain.model,
+							javax.persistence;version="1.0.0",
+							org.aspectj.lang,org.aspectj.runtime.reflect,
+							org.eclipse.equinox.weaving.springweaver,
+							org.eclipse.persistence.descriptors.changetracking;version="1.0.0",
+							org.eclipse.persistence.internal.descriptors;version="1.0.0",
+							org.eclipse.persistence.internal.identitymaps;version="1.0.0",
+							org.eclipse.persistence.internal.weaving;version="1.0.0",
+							org.eclipse.persistence.queries;version="1.0.0",
+							org.eclipse.persistence.sessions;version="1.0.0",
+							org.hsqldb;version="1.8.0.9",
+							org.springframework.beans.factory;version="2.5.6",
+							org.springframework.beans.factory.aspectj;version="2.5.6",
+							org.springframework.context.weaving;version="2.5.6",
+							org.springframework.core;version="2.5.6",
+							org.springframework.dao.support;version="2.5.6",
+							org.springframework.instrument.classloading;version="2.5.6",
+							org.springframework.jdbc.datasource;version="2.5.6",
+							org.springframework.jdbc.datasource.lookup;version="2.5.6",
+							org.springframework.orm.jpa;version="2.5.6",
+							org.springframework.orm.jpa.support;version="2.5.6",
+							org.springframework.orm.jpa.persistenceunit;version="2.5.6",
+							org.springframework.orm.jpa.vendor;version="2.5.6",
+							org.springframework.transaction;version="2.5.6"
+						</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+	
+</project>
