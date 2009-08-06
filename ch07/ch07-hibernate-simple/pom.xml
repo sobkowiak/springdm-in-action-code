@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia</groupId>
+	<artifactId>ch07-hibernate-simple</artifactId>
+	<packaging>bundle</packaging>
+	<name>ch07-hibernate-simple</name>
+	<description>Data access with Hibernate (Annotations).</description>
+	<version>1.0-SNAPSHOT</version>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<hibernate.version>3.3.1.GA</hibernate.version>
+		<spring.version>2.5.6</spring.version>
+		<dataaccess.simple.version>1.0-SNAPSHOT</dataaccess.simple.version>
+		<felix.bundle.plugin.version>2.0.0</felix.bundle.plugin.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.manning.sdmia</groupId>
+			<artifactId>ch07-dataaccess-simple</artifactId>
+			<version>${dataaccess.simple.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate </groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${felix.bundle.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Import-Package>
+							com.manning.sdmia.dataaccess.domain.dao,
+							com.manning.sdmia.dataaccess.domain.model,
+							javax.persistence;version="1.0.0",
+							org.aopalliance.aop;version="1.0.0",
+							javassist.util.proxy;version="3.3.0.ga",
+							org.hibernate;version="3.3.1.GA",
+							org.hibernate.cfg;version="3.3.1.GA",
+							org.hibernate.hql.ast;version="3.3.1.GA",
+							org.hibernate.proxy;version="3.3.1.GA",
+							org.springframework.aop;version="2.5.6",
+							org.springframework.aop.framework;version="2.5.6",
+							org.springframework.beans.factory;version="2.5.6",
+							org.springframework.core;version="2.5.6",
+							org.springframework.dao.support;version="2.5.6",
+							org.springframework.orm.hibernate3;version="2.5.6",
+							org.springframework.orm.hibernate3.support;version="2.5.6",
+							org.springframework.transaction;version="2.5.6",
+ 						</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+	
+</project>
+
