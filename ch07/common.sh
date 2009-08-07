@@ -4,6 +4,10 @@ cd ch07-dataaccess-simple
 /home/templth/developpement/applications/apache-maven-2.0.9/bin/mvn install
 cd -
 
+cd ch07-jdbc-datasource
+/home/templth/developpement/applications/apache-maven-2.0.9/bin/mvn install
+cd -
+
 cd com.springsource.com.mchange.v2.c3p0.config
 /home/templth/developpement/applications/apache-maven-2.0.9/bin/mvn install
 cd -
@@ -17,6 +21,14 @@ cd ch07-jpa-openjpa-simple
 cd -
 
 cd ch07-jpa-hibernatejpa-simple
+/home/templth/developpement/applications/apache-maven-2.0.9/bin/mvn install
+cd -
+
+cd ch07-hibernate-simple
+/home/templth/developpement/applications/apache-maven-2.0.9/bin/mvn install
+cd -
+
+cd ch07-jdbc-simple
 /home/templth/developpement/applications/apache-maven-2.0.9/bin/mvn install
 cd -
 
