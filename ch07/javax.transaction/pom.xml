@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia</groupId>
+	<artifactId>javax.transaction</artifactId>
+	<packaging>bundle</packaging>
+	<name>javax.transaction</name>
+	<description>Java Transaction API.</description>
+	<version>1.1.0</version>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<felix.bundle.plugin.version>2.0.0</felix.bundle.plugin.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>1.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${felix.bundle.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-Version>1.1.0</Bundle-Version>
+						<Bundle-Name>javax.transaction</Bundle-Name>
+						<Bundle-Description>Java Transaction API</Bundle-Description>
+						<Bundle-SymbolicName>javax.transaction</Bundle-SymbolicName>
+						<Export-Package>javax.transaction.xa;version="1.1",javax.transaction;uses:="javax.transaction.xa";version="1.1</Export-Package>
+						<Embed-Dependency>dependencies</Embed-Dependency>
+						<Include-Resource>{maven-dependencies}</Include-Resource>
+						<Bundle-ClassPath>.,{maven-dependencies}</Bundle-ClassPath>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+	
+</project>
