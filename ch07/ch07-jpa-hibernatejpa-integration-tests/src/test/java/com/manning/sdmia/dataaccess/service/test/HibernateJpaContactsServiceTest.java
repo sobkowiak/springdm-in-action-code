@@ -60,7 +60,7 @@ public class HibernateJpaContactsServiceTest extends AbstractConfigurableBundleC
 				"org.springframework, org.springframework.jdbc, 2.5.6.A",
 				"com.manning.sdmia, com.springsource.com.mchange.v2.c3p0.config, 1.0-SNAPSHOT",
 				"com.mchange.c3p0, com.springsource.com.mchange.v2.c3p0, 0.9.1.2",
-				"com.manning.sdmia, javax.transaction, 1.1.0",
+				"javax.transaction, com.springsource.javax.transaction, 1.1.0",
 				"org.hsqldb, com.springsource.org.hsqldb, 1.8.0.9",
 				"org.springframework, org.springframework.orm, 2.5.6.A",
 				"javax.persistence, com.springsource.javax.persistence, 1.0.0",
