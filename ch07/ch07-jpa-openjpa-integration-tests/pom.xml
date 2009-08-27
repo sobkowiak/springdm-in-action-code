@@ -1,127 +1,41 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.manning.sdmia</groupId>
-  <artifactId>ch07-jpa-openjpa-integration-tests</artifactId>
-  <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>ch07-jpa-openjpa-integration-tests</name>
-  <url>http://maven.apache.org</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<artifactId>ch07-parent</artifactId>
+		<groupId>com.manning.sdmia</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia</groupId>
+	<artifactId>ch07-jpa-openjpa-integration-tests</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>ch07-jpa-openjpa-integration-tests</name>
+	<url>http://maven.apache.org</url>
 
-    <properties>
-        <slf4j.version>1.5.0</slf4j.version>
-        <spring.maven.artifact.version>2.5.5</spring.maven.artifact.version>
-        <spring.osgi.version>1.1.2</spring.osgi.version>
-        <equinox.ver>3.5.0.v20090513</equinox.ver>
-        <felix.ver>1.0.4</felix.ver>
-    </properties>
+	<dependencies>
 
-  <dependencies>
+		<dependency>
+			<groupId>org.apache.openjpa</groupId>
+			<artifactId>com.springsource.org.apache.openjpa</artifactId>
+			<version>1.1.0</version>
+		</dependency>
 
-    <dependency>
-      <groupId>org.springframework.osgi</groupId>
-      <artifactId>spring-osgi-test</artifactId>
-      <version>${spring.osgi.version}</version>
-      <scope>provided</scope>
-    </dependency>
- 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>${spring.maven.artifact.version}</version>
-      <scope>test</scope>
-    </dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>
+				com.springsource.org.apache.commons.collections
+			</artifactId>
+			<version>3.2.1</version>
+		</dependency>
 
-        <dependency>
-          <groupId>org.slf4j</groupId>
-          <artifactId>com.springsource.slf4j.org.apache.commons.logging</artifactId>
-          <version>${slf4j.version}</version>
-          <scope>provided</scope>
-        </dependency>
-        <dependency>
-          <groupId>org.slf4j</groupId>
-          <artifactId>com.springsource.slf4j.api</artifactId>
-          <version>${slf4j.version}</version>
-          <scope>provided</scope>
-        </dependency>
-        <dependency>
-          <groupId>org.slf4j</groupId>
-          <artifactId>com.springsource.slf4j.log4j</artifactId>
-          <version>${slf4j.version}</version>
-          <scope>provided</scope>
-          <exclusions>
-            <exclusion>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-            </exclusion>
-            <exclusion>
-                <groupId>org.apache.log4j</groupId>
-                <artifactId>com.springsource.org.apache.log4j</artifactId>
-            </exclusion>
-          </exclusions>      
-        </dependency>
+		<dependency>
+			<groupId>com.manning.sdmia</groupId>
+			<artifactId>ch07-dataaccess-simple</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 
-
-        <dependency>
-            <groupId>org.springframework.osgi</groupId>
-            <artifactId>log4j.osgi</artifactId>
-            <version>1.2.15-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.osgi</groupId>
-            <artifactId>spring-osgi-test</artifactId>
-            <version>${spring.osgi.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.osgi</groupId>
-            <artifactId>spring-osgi-annotation</artifactId>
-            <version>${spring.osgi.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-    <!-- dependency>
-      <groupId>org.springframework.osgi</groupId>
-      <artifactId>junit.osgi</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
-      <scope>test</scope>
-    </dependency -->
-        <dependency>
-          <groupId>org.junit</groupId>
-          <artifactId>com.springsource.junit</artifactId>
-          <version>3.8.2</version>
-          <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.eclipse.osgi</groupId>
-            <artifactId>org.eclipse.osgi</artifactId>
-            <version>${equinox.ver}</version>
-            <type>jar</type>
-            <!-- Uncomment the following line if you want it to be available only in test-->
-            <!-- 
-            <scope>test</scope>
-             -->
-        </dependency>
-
-        <dependency>
-            <groupId>com.manning.sdmia</groupId>
-            <artifactId>ch07-dataaccess-simple</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
-     </dependencies>
-     
-     <repositories>
-		<repository>
-        	<id>spring-ext</id>
-        	<name>Spring External Dependencies Repository</name>
-        	<url>
-        	http://springframework.svn.sourceforge.net/svnroot/springframework/repos/repo-ext/
-        	</url>
-    	</repository>
-    </repositories>
-  </project>
+</project>
