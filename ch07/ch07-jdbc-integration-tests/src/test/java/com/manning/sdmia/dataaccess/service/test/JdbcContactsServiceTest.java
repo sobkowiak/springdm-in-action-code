@@ -15,8 +15,6 @@ import com.manning.sdmia.dataaccess.domain.model.Contact;
 import com.manning.sdmia.dataaccess.service.ContactsService;
 
 public class JdbcContactsServiceTest extends AbstractConfigurableBundleCreatorTests {
-	private final static String BUNDLES_LOCATION = "../container/bundles/bundles-jdbc/";
-
 	private ContactsService contactsService;
 
 	protected String getPlatformName() {
@@ -55,80 +53,48 @@ public class JdbcContactsServiceTest extends AbstractConfigurableBundleCreatorTe
 
 	protected String[] getTestBundlesNames() {
 		return new String[] {
-				"org.manning.sdmia, com.springsource.slf4j.log4j, 1.5.0",
-				"org.manning.sdmia, spring-aspects, 2.5.6",
-				"org.manning.sdmia, org.springframework.osgi.log4j.config, 1.0-SNAPSHOT",
-				"org.manning.sdmia, org.springframework.aop, 2.5.6",
-				"org.manning.sdmia, com.springsource.slf4j.org.apache.commons.logging, 1.5.0",
-				"org.manning.sdmia, org.springframework.transaction, 2.5.6",
-				"org.manning.sdmia, org.springframework.jdbc, 2.5.6",
-				"org.manning.sdmia, com.springsource.javax.persistence, 1.0.0",
-				"org.manning.sdmia, com.springsource.com.mchange.v2.c3p0.config, 1.0-SNAPSHOT",
-				"org.manning.sdmia, com.springsource.com.mchange.v2.c3p0, 0.9.1.2",
-				"org.manning.sdmia, com.springsource.org.hsqldb, 1.8.0.9",
-				"org.manning.sdmia, org.springframework.jdbc, 2.5.6",
-				"org.manning.sdmia, log4j.osgi, 1.2.15-SNAPSHOT",
-				"org.manning.sdmia, com.springsource.slf4j.api, 1.5.0",
-				"org.manning.sdmia, ch07-jdbc-datasource, 1.0-SNAPSHOT",
-				"org.manning.sdmia, ch07-dataaccess-simple-1.0, SNAPSHOT",
-				"org.manning.sdmia, ch07-jdbc-simple, 1.0-SNAPSHOT"
+				"org.slf4j, com.springsource.slf4j.log4j, 1.5.6",
+				"com.manning.sdmia, org.springframework.osgi.log4j.config, 1.0-SNAPSHOT",
+				"org.slf4j, com.springsource.slf4j.org.apache.commons.logging, 1.5.6",
+				"org.slf4j, com.springsource.slf4j.api, 1.5.6",
+				"org.springframework.osgi, log4j.osgi, 1.2.15-SNAPSHOT",
+				"org.springframework, org.springframework.transaction, 2.5.6.A",
+				"org.springframework, org.springframework.jdbc, 2.5.6.A",
+				"javax.persistence, com.springsource.javax.persistence, 1.0.0",
+				"com.manning.sdmia, com.springsource.com.mchange.v2.c3p0.config, 1.0-SNAPSHOT",
+				"com.mchange.c3p0, com.springsource.com.mchange.v2.c3p0, 0.9.1.2",
+				"org.hsqldb, com.springsource.org.hsqldb, 1.8.0.9",
+				"org.springframework, org.springframework.jdbc, 2.5.6.A",
+				"com.manning.sdmia, ch07-jdbc-datasource, 1.0-SNAPSHOT",
+				"com.manning.sdmia, ch07-dataaccess-simple-1.0, SNAPSHOT",
+				"com.manning.sdmia, ch07-jdbc-simple, 1.0-SNAPSHOT"
 		};
 	}
 
-	private void getResourceForBundle(String bundleFile, List<Resource> bundles) {
-		bundles.add(new FileSystemResource(BUNDLES_LOCATION + bundleFile));
-	}
-	
 	protected Resource[] getTestFrameworkBundles() {
-		List<Resource> testFrameworkBundles = new ArrayList<Resource>();
-
-		getResourceForBundle("com.springsource.org.aspectj.weaver-1.6.2.RELEASE.jar", testFrameworkBundles);
-		getResourceForBundle("com.springsource.org.aspectj.runtime-1.6.2.RELEASE.jar", testFrameworkBundles);
-		getResourceForBundle("com.springsource.junit-3.8.2.jar", testFrameworkBundles);
-		getResourceForBundle("com.springsource.org.objectweb.asm-2.2.3.jar", testFrameworkBundles);
-		getResourceForBundle("com.springsource.org.aopalliance-1.0.0.jar", testFrameworkBundles);
-		getResourceForBundle("org.springframework.aop-2.5.6.jar", testFrameworkBundles);
-		getResourceForBundle("org.springframework.beans-2.5.6.jar", testFrameworkBundles);
-		getResourceForBundle("org.springframework.context-2.5.6.jar", testFrameworkBundles);
-		getResourceForBundle("org.springframework.context.support-2.5.6.jar", testFrameworkBundles);
-		getResourceForBundle("org.springframework.core-2.5.6.jar", testFrameworkBundles);
-		getResourceForBundle("org.springframework.test-2.5.6.jar", testFrameworkBundles);
-		getResourceForBundle("spring-osgi-annotation-1.2.0.jar", testFrameworkBundles);
-		getResourceForBundle("spring-osgi-core-1.2.0.jar", testFrameworkBundles);
-		getResourceForBundle("spring-osgi-extender-1.2.0.jar", testFrameworkBundles);
-		getResourceForBundle("spring-osgi-io-1.2.0.jar", testFrameworkBundles);
-		getResourceForBundle("spring-osgi-test-1.2.0.jar", testFrameworkBundles);
-
-		return testFrameworkBundles.toArray(new Resource[testFrameworkBundles.size()]);
+		String[] testFrameworkBundles = new String[] {
+				"org.aspectj, com.springsource.org.aspectj.weaver, 1.6.2.RELEASE",
+				"org.aspectj, com.springsource.org.aspectj.runtime, 1.6.2.RELEASE",
+				"org.junit, com.springsource.junit, 3.8.2",
+				"org.objectweb.asm, com.springsource.org.objectweb.asm, 2.2.3",
+				"org.aopalliance, com.springsource.org.aopalliance, 1.0.0",
+				"org.springframework, org.springframework.aop, 2.5.6.A",
+				"org.springframework, org.springframework.beans, 2.5.6.A",
+				"org.springframework, org.springframework.context, 2.5.6.A",
+				"org.springframework, org.springframework.context.support, 2.5.6.A",
+				"org.springframework, org.springframework.core, 2.5.6.A",
+				"org.springframework, org.springframework.test, 2.5.6.A",
+				"org.springframework.osgi, spring-osgi-annotation, 1.2.0",
+				"org.springframework.osgi, spring-osgi-core, 1.2.0",
+				"org.springframework.osgi, spring-osgi-extender, 1.2.0",
+				"org.springframework.osgi, spring-osgi-io, 1.2.0",
+				"org.springframework.osgi, spring-osgi-test, 1.2.0"
+		};
+		return locateBundles(testFrameworkBundles);
 	}
 
 	protected String[] getConfigLocations() {
 		return new String[] { "classpath:/com/manning/sdmia/dataaccess/service/test/osgi-context.xml" };
-	}
-
-	protected ArtifactLocator getLocator() {
-		return new ArtifactLocator() {
-			private ArtifactLocator delegate = new LocalFileSystemMavenRepository();
-
-			public Resource locateArtifact(String group, String id, String version) {
-				return locateArtifact(group, id, version, "jar");
-			}
-
-			public Resource locateArtifact(String group, String id,
-										String version, String type) {
-				String filePath = BUNDLES_LOCATION + id + "-" + version + ".jar";
-				Resource resource = new FileSystemResource(filePath);
-				if (!resource.exists()) {
-					filePath = BUNDLES_LOCATION + id + "_" + version + ".jar";
-					resource = new FileSystemResource(filePath);
-					if (!resource.exists()) {
-						resource = delegate.locateArtifact(group, id, version, type);
-					}
-				}
-				return resource;
-			}
-			
-		};
 	}
 
 	protected String getManifestLocation() {
