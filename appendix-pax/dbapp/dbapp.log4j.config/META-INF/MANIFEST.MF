@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Fragment-Host: com.springsource.org.apache.log4j
+Built-By: acogoluegnes
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0.SNAPSHOT
+Tool: Bnd-0.0.255
+Bundle-Name: com.manning.smdia.paxconstruct.dbapp.log4j.config [com.ma
+ nning.sdmia]
+Bnd-LastModified: 1252231855968
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-Description: Generated using Pax-Construct
+Bundle-SymbolicName: com.manning.smdia.paxconstruct.dbapp.log4j.config
+

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.dbapp.client;uses:="javax.sql";versi
+ on="1.0.0.SNAPSHOT"
+Private-Package: com.manning.sdmia.dbapp.client.internal.*
+Bundle-ClassPath: .,target/pax-eclipse
+Built-By: acogoluegnes
+Tool: Bnd-0.0.255
+Bundle-Name: com.manning.smdia.paxconstruct.dbapp.client [com.manning.
+ sdmia.dbapp.client]
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1251920412515
+Bundle-ManifestVersion: 2
+Bundle-Description: Generated using Pax-Construct
+Import-Package: com.manning.sdmia.dbapp.client;version="1.0.0.SNAPSHOT
+ ",javax.sql
+Bundle-SymbolicName: com.manning.smdia.paxconstruct.dbapp.client
+
