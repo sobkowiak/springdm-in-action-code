@@ -1,0 +1,7 @@
+<dataset>
+
+	<directory_contact idcontact="-1" firstname="Arnaud" lastname="Cogoluegnes" /> 
+	<directory_contact idcontact="-2" firstname="Andy" lastname="Piper" />
+	<directory_contact idcontact="-3" firstname="Thierry" lastname="Templier" />
+	
+</dataset>

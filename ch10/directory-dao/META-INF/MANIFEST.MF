@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.directory.dao;uses:="com.manning.sdm
+ ia.directory.domain";version="1.0.0"
+Private-Package: com.manning.sdmia.directory.dao,
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: Directory DAO
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1252853123843
+Bundle-ManifestVersion: 2
+Import-Package: com.manning.sdmia.directory.dao;version="1.0.0",com.ma
+ nning.sdmia.directory.domain;version="1.0.0"
+Bundle-SymbolicName: com.manning.sdmia.ch10.directory-dao
+Originally-Created-By: Apache Maven Bundle Plugin
+

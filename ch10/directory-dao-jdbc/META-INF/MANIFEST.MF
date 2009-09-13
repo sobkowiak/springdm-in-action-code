@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Private-Package: com.manning.sdmia.directory.modular.dao.jdbc
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: Directory DAO JDBC impl
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.6.0_13
+Bundle-Version: 1.0.0
+Bnd-LastModified: 1252854027953
+Bundle-ManifestVersion: 2
+Import-Package: javax.sql
+Bundle-SymbolicName: com.manning.sdmia.ch10.directory-dao-jdbc
+Originally-Created-By: Apache Maven Bundle Plugin
+

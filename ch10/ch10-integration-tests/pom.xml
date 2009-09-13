@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<project>
+	<parent>
+		<artifactId>ch10-samples</artifactId>
+		<groupId>com.manning.sdmia.ch10</groupId>
+		<version>1.0.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>ch10-integration-tests</artifactId>
+	<name>ch10-integration-tests</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+	
+		<dependency>
+			<groupId>org.springframework.osgi</groupId>
+			<artifactId>spring-osgi-test</artifactId>
+			<version>${springdm.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.jdbc</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.manning.sdmia.ch10</groupId>
+			<artifactId>directory-domain</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.manning.sdmia.ch10</groupId>
+			<artifactId>directory-dao-jdbc</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.manning.sdmia.ch10</groupId>
+			<artifactId>directory-dao</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+</project>
