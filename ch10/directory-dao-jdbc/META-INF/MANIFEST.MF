@@ -1,4 +1,7 @@
 Manifest-Version: 1.0
+Export-Package: com.manning.sdmia.directory.dao.jdbc;uses:="com.mannin
+ g.sdmia.directory.domain,org.springframework.jdbc.core.simple,org.spr
+ ingframework.jdbc.core,com.manning.sdmia.directory.dao"
 Private-Package: com.manning.sdmia.directory.modular.dao.jdbc
 Built-By: acogoluegnes
 Tool: Bnd-0.0.311
@@ -6,9 +9,12 @@ Bundle-Name: Directory DAO JDBC impl
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1252854027953
+Bnd-LastModified: 1253460528640
 Bundle-ManifestVersion: 2
-Import-Package: javax.sql
+Import-Package: com.manning.sdmia.directory.dao;version="1.0.0",com.ma
+ nning.sdmia.directory.domain;version="1.0.0",javax.sql,org.springfram
+ ework.jdbc.core;version="2.5.6.A",org.springframework.jdbc.core.simpl
+ e;version="2.5.6.A"
 Bundle-SymbolicName: com.manning.sdmia.ch10.directory-dao-jdbc
 Originally-Created-By: Apache Maven Bundle Plugin
 

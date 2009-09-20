@@ -13,6 +13,7 @@
 		<equinox.version>3.2.2</equinox.version>
 		<felix.bundle.plugin.version>2.0.0</felix.bundle.plugin.version>
 		<h2.version>1.1.118</h2.version>
+		<osgi.version>4.1.0</osgi.version>
 	</properties>
 
 	<dependencies>
@@ -105,10 +106,13 @@
 		</plugins>
 	</build>
 	
-  <modules>    
+  <modules>
+  	<module>test.directory</module>
+	<module>test.mock</module>    
     <module>directory-domain</module>
     <module>directory-dao</module>
-	<module>directory-dao-jdbc</module>
+	<module>directory-dao-jdbc</module>	
+	<module>ch10-datasource-tests</module>
 	<module>ch10-integration-tests</module>    
   </modules>
   

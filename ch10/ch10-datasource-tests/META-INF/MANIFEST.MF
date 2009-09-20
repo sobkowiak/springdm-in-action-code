@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Private-Package: !*
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: ch10-datasource-tests
+Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 1.0.0
+Build-Jdk: 1.6.0_13
+Bnd-LastModified: 1253460528890
+Bundle-ManifestVersion: 2
+Import-Package: javax.sql,org.h2,org.springframework.jdbc.datasource;v
+ ersion="2.5.6.A"
+Bundle-SymbolicName: com.manning.sdmia.ch10.datasource-tests
+Originally-Created-By: Apache Maven Bundle Plugin
+

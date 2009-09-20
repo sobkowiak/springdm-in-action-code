@@ -30,11 +30,11 @@
 				<configuration>
 					<manifestLocation>META-INF</manifestLocation>
 					<instructions>
-						<Export-Package></Export-Package>
-						<Import-Package>com.manning.sdmia*;version=${project.version},
+						<Import-Package>
+							com.manning.sdmia.directory.domain;version=${project.version},
+							com.manning.sdmia.directory.dao;version=${project.version},
 							org.springframework*;version=${spring.version},
-							javax.sql,
-							*
+							javax.sql
 						</Import-Package>
 						<Private-Package>com.manning.sdmia.directory.modular.dao.jdbc
 						</Private-Package>

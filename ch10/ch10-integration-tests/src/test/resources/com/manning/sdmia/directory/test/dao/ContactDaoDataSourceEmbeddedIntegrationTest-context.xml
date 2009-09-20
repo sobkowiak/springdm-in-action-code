@@ -13,7 +13,7 @@
 	</bean>
 	
  	
- 	<bean class="com.manning.sdmia.directory.dao.DatabaseInitializer">
+ 	<bean class="com.manning.sdmia.directory.test.dao.DatabaseInitializer">
  		<constructor-arg ref="dataSource" />
  	</bean>
 	

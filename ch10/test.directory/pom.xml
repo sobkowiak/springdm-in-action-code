@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project>
+	<parent>
+		<artifactId>ch10-samples</artifactId>
+		<groupId>com.manning.sdmia.ch10</groupId>
+		<version>1.0.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia.ch10</groupId>
+	<artifactId>test.directory</artifactId>
+	<name>test.directory</name>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.test</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+</project>
