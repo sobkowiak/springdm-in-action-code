@@ -34,4 +34,4 @@ mvn:org.springframework/org.springframework.web/2.5.6.A@update
 mvn:org.springframework/org.springframework.web.servlet/2.5.6.A@update
 --p=equinox
 --version=3.5.0
---profiles=log
+--profiles=log,compendium
