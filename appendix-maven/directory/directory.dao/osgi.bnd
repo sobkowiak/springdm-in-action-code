@@ -1,0 +1,2 @@
+Export-Package: com.manning.sdmia.directory.dao;version="${project.version}"
+Import-Package: com.manning.sdmia.directory*;version="${project.version}"
