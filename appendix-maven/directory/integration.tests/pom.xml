@@ -9,7 +9,7 @@
 		<version>1.0.0</version>
 	</parent>
 	<artifactId>integration.tests</artifactId>
-	<name>integration.tests</name>
+	<name>Directory integration tests</name>
 	<dependencies>
 
 		<dependency>

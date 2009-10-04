@@ -1,48 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <artifactId>parent</artifactId>
-    <groupId>com.manning.sdmia.appb.directory</groupId>
-    <version>1.0.0</version>
-  </parent>
-  <artifactId>directory.dao.jdbc</artifactId>
-  <name>directory.dao.jdbc</name>
-  <packaging>bundle</packaging>
-  <dependencies>
-    
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
-    
-    <dependency>
-      <groupId>com.manning.sdmia.appb.directory</groupId>
-      <artifactId>directory.dao</artifactId>     
-      <version>${project.version}</version>
-    </dependency>
-    
-  </dependencies>
-  
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <version>${felix.bundle.plugin.version}</version>
-        <extensions>true</extensions>
-        <configuration>
-          <instructions>           
-            <Export-Package></Export-Package>
-            <Import-Package>com.manning.sdmia.directory*;version="${project.version}",
-            org.springframework.*;version="${spring.version.range}",
-            *</Import-Package>
-          </instructions>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-  
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>parent</artifactId>
+		<groupId>com.manning.sdmia.appb.directory</groupId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>directory.dao.jdbc</artifactId>
+	<name>Directory DAO JDBC implementation</name>
+	<packaging>jar</packaging>
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.manning.sdmia.appb.directory</groupId>
+			<artifactId>directory.dao</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+	</dependencies>
+	
+	<profiles>
+		<profile>
+			<id>felix.inline</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.felix</groupId>
+						<artifactId>maven-bundle-plugin</artifactId>
+						<version>${felix.bundle.plugin.version}</version>
+						<extensions>true</extensions>
+						<executions>
+							<execution>
+								<id>bundle-manifest</id>
+								<phase>package</phase>
+								<goals>
+									<goal>bundle</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<instructions>
+								<Export-Package></Export-Package>
+								<Import-Package>com.manning.sdmia.directory.*;version="${project.version}",
+									org.springframework.*;version="${spring.version.range}",
+									*</Import-Package>
+							</instructions>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+      <id>felix.externalized</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>maven-bundle-plugin</artifactId>
+            <version>${felix.bundle.plugin.version}</version>
+            <extensions>true</extensions>
+            <executions>
+              <execution>
+                <id>bundle-manifest</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>bundle</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <instructions>
+                <_include>osgi.bnd</_include>
+              </instructions>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+	</profiles>
+
 </project>
