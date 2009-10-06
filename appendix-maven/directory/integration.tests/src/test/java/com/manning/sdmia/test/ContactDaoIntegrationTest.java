@@ -3,11 +3,8 @@
  */
 package com.manning.sdmia.test;
 
-import javax.sql.DataSource;
-
 import junit.framework.Assert;
 
-import org.osgi.framework.Bundle;
 import org.osgi.framework.ServiceReference;
 import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 

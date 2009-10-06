@@ -28,6 +28,20 @@
 		</dependency>
 
 	</dependencies>
+	
+	<build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>.</directory>
+        <includes>
+          <include>META-INF/**</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
 
 	<profiles>
 		<profile>
@@ -49,6 +63,7 @@
 							</execution>
 						</executions>
 						<configuration>
+						  <manifestLocation>META-INF</manifestLocation>
 							<instructions>
 								<Private-Package>com.manning.*</Private-Package>
 								<Import-Package>org.springframework.*;version="${spring.version.range}",
@@ -80,6 +95,7 @@
               </execution>
             </executions>
             <configuration>
+              <manifestLocation>META-INF</manifestLocation>
               <instructions>
                 <_include>osgi.bnd</_include>
               </instructions>

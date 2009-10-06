@@ -27,6 +27,20 @@
 
 	</dependencies>
 	
+	<build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>.</directory>
+        <includes>
+          <include>META-INF/**</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+	
 	<profiles>
 		<profile>
 			<id>felix.inline</id>
@@ -47,6 +61,7 @@
 							</execution>
 						</executions>
 						<configuration>
+						  <manifestLocation>META-INF</manifestLocation>
 							<instructions>
 								<Export-Package></Export-Package>
 								<Import-Package>com.manning.sdmia.directory.*;version="${project.version}",
@@ -77,6 +92,7 @@
               </execution>
             </executions>
             <configuration>
+              <manifestLocation>META-INF</manifestLocation>
               <instructions>
                 <_include>osgi.bnd</_include>
               </instructions>

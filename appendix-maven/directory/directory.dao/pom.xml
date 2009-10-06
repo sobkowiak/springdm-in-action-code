@@ -20,6 +20,20 @@
 		</dependency>
 
 	</dependencies>
+	
+	<build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>.</directory>
+        <includes>
+          <include>META-INF/**</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
 
 	<profiles>
 		<profile>
@@ -41,6 +55,7 @@
 							</execution>
 						</executions>
 						<configuration>
+						  <manifestLocation>META-INF</manifestLocation>
 							<instructions>
 								<Export-Package>com.manning.sdmia.directory.dao;version="${project.version}"</Export-Package>
 								<Import-Package>com.manning.sdmia.directory*;version="${project.version}"</Import-Package>
@@ -69,6 +84,7 @@
               </execution>
             </executions>
             <configuration>
+              <manifestLocation>META-INF</manifestLocation>
               <instructions>
                 <_include>osgi.bnd</_include>
               </instructions>
