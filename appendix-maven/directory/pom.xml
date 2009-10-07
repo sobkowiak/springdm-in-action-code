@@ -17,6 +17,7 @@
 		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
 		<slf4j.version>1.5.6</slf4j.version>
 		<h2.version>1.1.119</h2.version>
+		<bundlor.version>1.0.0.M6</bundlor.version>
 	</properties>
 
 
@@ -39,8 +40,20 @@
 			<name>Springframework Maven Repository</name>
 			<url>http://s3.amazonaws.com/maven.springframework.org/milestone</url>
 		</repository>
+		
+		
 
 	</repositories>
+
+	<pluginRepositories>
+	
+		<pluginRepository>
+			<id>com.springsource.repository.bundles.milestone</id>
+			<name>SpringSource Enterprise Bundle Repository</name>
+			<url>http://repository.springsource.com/maven/bundles/milestone</url>
+		</pluginRepository>
+
+	</pluginRepositories>
 	
 	<build>
     <plugins>
@@ -74,4 +87,36 @@
 		<module>directory.datasource</module>
 		<module>integration.tests</module>
 	</modules>
+	
+  <profiles>
+    <profile>
+      <id>bundlor</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.springsource.bundlor</groupId>
+            <artifactId>com.springsource.bundlor.maven</artifactId>
+            <version>${bundlor.version}</version>
+            <executions>
+              <execution>
+                <id>bundlor</id>
+                <goals>
+                  <goal>transform</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <manifestHeaders><![CDATA[Bundle-Name: ${artifactId}
+Bundle-Version: ${project.version}
+Bundle-SymbolicName: com.manning.sdmia.appb.${artifactId}
+Bundle-ManifestVersion: 2
+Implementation-Version: ${pom.version}
+]]></manifestHeaders>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+	
 </project>

@@ -1,0 +1,2 @@
+Import-Template: com.manning.sdmia.directory.*;version="${project.version}",
+  org.springframework.*;version="${spring.version.range}"

@@ -46,8 +46,8 @@
 							</execution>
 						</executions>
 						<configuration>
-						  <manifestLocation>META-INF</manifestLocation>
-							<instructions>								
+							<manifestLocation>META-INF</manifestLocation>
+							<instructions>
 								<Export-Package>com.manning.sdmia.directory.domain;version="${project.version}"</Export-Package>
 								<Import-Package>com.manning.sdmia.directory.domain;version="${project.version}"</Import-Package>
 							</instructions>
@@ -75,11 +75,31 @@
 							</execution>
 						</executions>
 						<configuration>
-              <manifestLocation>META-INF</manifestLocation>
+							<manifestLocation>META-INF</manifestLocation>
 							<instructions>
 								<_include>osgi.bnd</_include>
 							</instructions>
 						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>bundlor</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.springsource.bundlor</groupId>
+						<artifactId>com.springsource.bundlor.maven</artifactId>
+						<version>${bundlor.version}</version>
+						<executions>
+							<execution>
+								<id>bundlor</id>
+								<goals>
+									<goal>transform</goal>
+								</goals>
+							</execution>
+						</executions>
 					</plugin>
 				</plugins>
 			</build>

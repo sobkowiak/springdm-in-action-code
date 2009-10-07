@@ -7,7 +7,7 @@ Bundle-Name: Directory Data Source
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_16
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1254859044622
+Bnd-LastModified: 1254944391780
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.appb.directory.datasource,javax.sql,
  org.h2,org.springframework.jdbc.core;version="[3.0.0.RC1,4.0)",org.sp
