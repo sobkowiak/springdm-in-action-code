@@ -106,11 +106,11 @@
               </execution>
             </executions>
             <configuration>
-              <manifestHeaders><![CDATA[Bundle-Name: ${artifactId}
+              <manifestHeaders><![CDATA[Bundle-Name: ${project.artifactId}
 Bundle-Version: ${project.version}
-Bundle-SymbolicName: com.manning.sdmia.appb.${artifactId}
+Bundle-SymbolicName: com.manning.sdmia.appb.${project.artifactId}
 Bundle-ManifestVersion: 2
-Implementation-Version: ${pom.version}
+Implementation-Version: ${project.version}
 ]]></manifestHeaders>
             </configuration>
           </plugin>
