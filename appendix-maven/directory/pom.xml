@@ -111,6 +111,7 @@ Bundle-Version: ${project.version}
 Bundle-SymbolicName: com.manning.sdmia.appb.${project.artifactId}
 Bundle-ManifestVersion: 2
 Implementation-Version: ${project.version}
+Version-Patterns: spring;pattern="[=.=.=.=, +1.0.0)"
 ]]></manifestHeaders>
             </configuration>
           </plugin>

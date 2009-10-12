@@ -1,2 +1,2 @@
-Import-Template: org.springframework.*;version="${spring.version.range}"
+Import-Template: org.springframework.*;version="${spring.version:spring}"
 Import-Package: org.h2
