@@ -1,0 +1,2 @@
+Private-Package: com.manning.*
+Import-Package: org.springframework.*;version="${spring.version.range}",org.h2,*

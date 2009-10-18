@@ -85,6 +85,7 @@
 		<module>directory.dao</module>
 		<module>directory.dao.jdbc</module>
 		<module>directory.datasource</module>
+		<module>directory.datasource.blueprint</module>
 		<module>integration.tests</module>
 	</modules>
 	
