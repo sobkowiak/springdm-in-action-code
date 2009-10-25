@@ -9,10 +9,10 @@
 	<url>http://maven.apache.org</url>
 	
 	<properties>
-		<springdm.version>1.2.0</springdm.version>
-		<spring.version>2.5.6.A</spring.version>
-		<equinox.version>3.2.2</equinox.version>
-		<felix.bundle.plugin.version>2.0.0</felix.bundle.plugin.version>
+		<springdm.version>2.0.0.M1</springdm.version>
+		<spring.version>3.0.0.RC1</spring.version>
+		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
+		<felix.bundle.plugin.version>2.0.1</felix.bundle.plugin.version>
 	</properties>
 
 	<dependencies>
@@ -40,6 +40,20 @@
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
 			<artifactId>spring-osgi-extender</artifactId>
+			<version>${springdm.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.osgi</groupId>
+			<artifactId>spring-osgi-web</artifactId>
+			<version>${springdm.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.osgi</groupId>
+			<artifactId>spring-osgi-web-extender</artifactId>
 			<version>${springdm.version}</version>
 			<scope>test</scope>
 		</dependency>
@@ -101,4 +115,28 @@
 		<module>ch04-springbundle-wp</module>
 		<module>ch04-integration-tests</module>    
   </modules>
+  
+  
+  <repositories>
+
+		<repository>
+			<id>com.springsource.repository.bundles.release</id>
+			<name>SpringSource EBR - SpringSource Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/release</url>
+		</repository>
+
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource EBR - External Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>		
+		
+		<repository>
+			<id>spring-maven-milestone</id>
+			<name>Springframework Maven Repository</name>
+			<url>http://s3.amazonaws.com/maven.springframework.org/milestone</url>
+		</repository>
+
+	</repositories>
+  
 </project>
