@@ -15,6 +15,7 @@ import org.apache.commons.dbcp.BasicDataSource;
 import org.osgi.framework.ServiceReference;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
+import org.springframework.osgi.test.platform.OsgiPlatform;
 
 import com.manning.sdmia.directory.domain.Contact;
 import com.manning.sdmia.directory.service.ContactService;
@@ -61,6 +62,16 @@ public class EnterpriseWebModularTest extends AbstractConfigurableBundleCreatorT
 	}	
 	
 	@Override
+	protected OsgiPlatform createPlatform() {
+		// needed starting from Spring DM 2.0.0: Spring 3.0 annotation handlers needs some XSLT
+		// and the default transformer factory implementation is resolved from the META-INF/services/jstl.osgi
+		// the following forces the default implementation; which is in the JDK
+		OsgiPlatform osgiPlatform = super.createPlatform();
+		osgiPlatform.getConfigurationProperties().setProperty("javax.xml.transform.TransformerFactory", "com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl");
+		return osgiPlatform;
+	}
+	
+	@Override
 	protected String[] getTestBundlesNames() {
 		List<String> col = new ArrayList<String>();
 
@@ -94,6 +105,7 @@ public class EnterpriseWebModularTest extends AbstractConfigurableBundleCreatorT
 		// Spring Web
 		col.add("org.springframework, org.springframework.web, "+getSpringVersion());
 		col.add("org.springframework, org.springframework.web.servlet, "+getSpringVersion());
+		col.add("org.springframework, org.springframework.context.support, "+getSpringVersion());
 		
 		// the application
 		col.add("com.manning.sdmia.ch06, directory-domain, 1.0.0");
