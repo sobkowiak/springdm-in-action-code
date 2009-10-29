@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Log4J Configuration
+Bundle-SymbolicName: com.springsource.org.apache.log4j.config
+Bundle-Version: 1.0.0
+Fragment-Host: com.springsource.org.apache.log4j
+
