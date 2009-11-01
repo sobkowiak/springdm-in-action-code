@@ -14,7 +14,7 @@ import org.springframework.osgi.context.event.OsgiBundleContextRefreshedEvent;
  *
  */
 public class ApplicationContextObserver implements
-		OsgiBundleApplicationContextListener {
+		OsgiBundleApplicationContextListener<OsgiBundleApplicationContextEvent> {
 
 	private transient int countRefreshed = 0;
 	private transient int countClosed = 0;
