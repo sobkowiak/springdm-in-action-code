@@ -1,7 +1,10 @@
 <projectDescription>
   <name>directory-dao-jdbc</name>
   <comment/>
-  <projects/>
+  <projects>
+    <project>directory-dao</project>
+    <project>directory-domain</project>
+  </projects>
   <buildSpec>
     <buildCommand>
       <name>org.eclipse.jdt.core.javabuilder</name>
