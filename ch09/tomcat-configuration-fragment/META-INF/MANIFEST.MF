@@ -1,13 +1,12 @@
 Manifest-Version: 1.0
-Private-Package: conf
 Built-By: acogoluegnes
-Tool: Bnd-0.0.311
+Tool: Bnd-0.0.357
 Bundle-Name: tomcat-configuration-fragment
 Created-By: Apache Maven Bundle Plugin
 Fragment-Host: org.springframework.osgi.catalina.start.osgi
-Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1248721865656
+Build-Jdk: 1.6.0_13
+Bnd-LastModified: 1257067248046
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: com.manning.sdmia.ch09.tomcat-configuration-fragm
  ent

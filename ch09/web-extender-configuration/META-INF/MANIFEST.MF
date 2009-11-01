@@ -1,22 +1,17 @@
 Manifest-Version: 1.0
-Export-Package: com.manning.sdmia.ch09.webextenderconf;uses:="org.spri
- ngframework.osgi.web.deployer,org.osgi.framework,org.springframework.
- osgi.web.deployer.support,org.springframework.osgi.web.extender.inter
- nal.scanner"
-Private-Package: com.manning.sdmia.ch09.webextenderconf,
+Ignore-Package: org.springframework.osgi.web.extender.internal.scanner
 Built-By: acogoluegnes
-Tool: Bnd-0.0.311
+Tool: Bnd-0.0.357
 Bundle-Name: web-extender-configuration
 Created-By: Apache Maven Bundle Plugin
 Fragment-Host: org.springframework.osgi.web.extender
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1248721864781
+Bnd-LastModified: 1257067242796
 Bundle-ManifestVersion: 2
-Import-Package: com.manning.sdmia.ch09.webextenderconf,org.mortbay.jet
- ty,org.osgi.framework;version="1.3",org.springframework.osgi.web.depl
- oyer;version="1.2",org.springframework.osgi.web.deployer.support;vers
- ion="1.2",org.springframework.osgi.web.extender.internal.scanner
+Import-Package: org.mortbay.jetty,org.osgi.framework;version="1.5",org
+ .springframework.osgi.web.deployer;version="2.0.0.M1",org.springframe
+ work.osgi.web.deployer.support;version="2.0.0.M1"
 Bundle-SymbolicName: com.manning.sdmia.ch09.web-extender-configuration
 Originally-Created-By: Apache Maven Bundle Plugin
 

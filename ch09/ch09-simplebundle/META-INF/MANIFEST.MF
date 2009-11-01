@@ -1,13 +1,12 @@
 Manifest-Version: 1.0
 Export-Package: com.manning.sdmia.ch09.simplebundle
-Private-Package: com.manning.sdmia.ch09.simplebundle,
 Built-By: acogoluegnes
-Tool: Bnd-0.0.311
+Tool: Bnd-0.0.357
 Bundle-Name: ch09-simplebundle
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1248721865390
+Bnd-LastModified: 1257067244750
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.ch09.simplebundle
 Bundle-SymbolicName: com.manning.sdmia.ch09.simplebundle

@@ -7,6 +7,8 @@ import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.osgi.test.platform.OsgiPlatform;
+
 import junit.framework.Assert;
 
 /**
@@ -50,11 +52,23 @@ public class Tomcat6SpringDMTest extends AbstractOsgiTest {
 		// Spring Web
 		col.add("org.springframework, org.springframework.web, "+getSpringVersion());
 		col.add("org.springframework, org.springframework.web.servlet, "+getSpringVersion());
+		col.add("org.springframework, org.springframework.context.support, "+getSpringVersion());
 		
 		// simple web app
 		col.add("com.manning.sdmia.ch09, simple-web-mvc-app, 1.0.0");
 		
 		return (String[]) col.toArray(new String[col.size()]);
+	}
+	
+	@Override
+	protected OsgiPlatform createPlatform() {
+		// needed starting from Spring DM 2.0.0: Spring 3.0 annotation handlers needs some XSLT
+		// and the default transformer factory implementation is resolved from the META-INF/services/jstl.osgi
+		// the following forces the default implementation; which is in the JDK
+		// (only needed here for the Spring MVC controller to start)
+		OsgiPlatform osgiPlatform = super.createPlatform();
+		osgiPlatform.getConfigurationProperties().setProperty("javax.xml.transform.TransformerFactory", "com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl");
+		return osgiPlatform;
 	}
 	
 }

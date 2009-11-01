@@ -1,7 +1,16 @@
 <projectDescription>
   <name>ch09-integration-tests</name>
   <comment/>
-  <projects/>
+  <projects>
+    <project>ch09-simplebundle</project>
+    <project>chained.classloader.aspects</project>
+    <project>chained.classloader.service</project>
+    <project>chained.classloader.target</project>
+    <project>implementation.provider</project>
+    <project>jetty-configuration-fragment</project>
+    <project>standard-extender-configuration</project>
+    <project>tomcat-configuration-fragment</project>
+  </projects>
   <buildSpec>
     <buildCommand>
       <name>org.eclipse.jdt.core.javabuilder</name>

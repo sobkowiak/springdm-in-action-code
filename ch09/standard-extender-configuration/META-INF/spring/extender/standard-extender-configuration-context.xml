@@ -70,14 +70,9 @@
 
 	<osgi:service ref="beanFactoryPostProcessor" interface="org.springframework.osgi.extender.OsgiBeanFactoryPostProcessor" />
 	
-	<!-- //////// osgi bean factory post-processor //////// -->
-	<bean id="osgiApplicationContextListener" class="org.springframework.osgi.extender.internal.activator.ListListenerAdapter">
-		<constructor-arg>
-			<list>
-				<bean class="org.springframework.osgi.extender.internal.support.DefaultOsgiBundleApplicationContextListener" />
-				<bean class="com.manning.sdmia.ch09.stdextenderconf.ConsoleApplicationContextListener" />
-			</list>
-		</constructor-arg>
-	</bean>
+	
+	<!-- //////// osgi bundle app. context listeners //////// -->
+	
+	<bean id="osgiApplicationContextListener" class="com.manning.sdmia.ch09.stdextenderconf.ConsoleApplicationContextListener" />
 
 </beans>

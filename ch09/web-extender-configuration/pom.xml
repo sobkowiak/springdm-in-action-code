@@ -31,7 +31,12 @@
 					<manifestLocation>META-INF</manifestLocation>
 					<instructions>
 						<Fragment-Host>org.springframework.osgi.web.extender</Fragment-Host>
-						<Import-Package>org.mortbay.jetty,*</Import-Package>
+						<Import-Package>
+						!org.springframework.osgi.web.extender.internal*,
+						org.mortbay.jetty,org.osgi.framework,
+						org.springframework.osgi*;version="${springdm.version}"
+						</Import-Package>
+						<Export-Package></Export-Package>
 					</instructions>
 				</configuration>
 			</plugin>

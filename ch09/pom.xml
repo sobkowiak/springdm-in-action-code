@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.manning.sdmia.ch09</groupId>
 	<artifactId>ch09-samples</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0.0</version>
 	<name>ch09-samples</name>
-	
+
 	<properties>
-		<springdm.version>1.2.0</springdm.version>
-		<spring.version>2.5.6.A</spring.version>
-		<equinox.version>3.2.2</equinox.version>
-		<felix.bundle.plugin.version>2.0.0</felix.bundle.plugin.version>
+		<springdm.version>2.0.0.M1</springdm.version>
+		<spring.version>3.0.0.RC1</spring.version>
+		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
+		<felix.bundle.plugin.version>2.0.1</felix.bundle.plugin.version>
 		<jetty.version>6.1.19</jetty.version>
 	</properties>
 
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>org.eclipse.osgi</groupId>
 			<artifactId>org.eclipse.osgi</artifactId>
@@ -49,7 +50,7 @@
 			<artifactId>spring-osgi-web-extender</artifactId>
 			<version>${springdm.version}</version>
 			<scope>compile</scope>
-		</dependency>	
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
@@ -57,10 +58,17 @@
 			<version>${springdm.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>org.springframework.web</artifactId>
+			<version>${spring.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.context.support</artifactId>
 			<version>${spring.version}</version>
 			<scope>compile</scope>
 		</dependency>
@@ -72,7 +80,7 @@
 			<scope>compile</scope>
 		</dependency>
 
-		
+
 
 	</dependencies>
 
@@ -98,20 +106,60 @@
 					<forkMode>always</forkMode>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<downloadSources>true</downloadSources>
+				</configuration>
+			</plugin>
 
 		</plugins>
 	</build>
-	
-  <modules>    
-    <module>standard-extender-configuration</module>
-	<module>web-extender-configuration</module>
-    <module>ch09-simplebundle</module>
-    <module>jetty-configuration-fragment</module>
-	<module>tomcat-configuration-fragment</module>
-	<module>catalina-config</module>
-	<module>simple-web-mvc-app</module>
-	<module>implementation.provider</module>
-	<module>chained.classloader</module>
-	<module>ch09-integration-tests</module>    
-  </modules>
+
+	<modules>
+		<module>standard-extender-configuration</module>
+		<module>web-extender-configuration</module>
+		<module>ch09-simplebundle</module>
+		<module>jetty-configuration-fragment</module>
+		<module>tomcat-configuration-fragment</module>
+		<module>catalina-config</module>
+		<module>simple-web-mvc-app</module>
+		<module>implementation.provider</module>
+		<module>chained.classloader</module>
+		<module>ch09-integration-tests</module>
+	</modules>
+
+	<repositories>
+
+		<repository>
+			<id>com.springsource.repository.bundles.release</id>
+			<name>SpringSource EBR - SpringSource Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/release</url>
+		</repository>
+
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource EBR - External Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>
+
+		<repository>
+			<id>spring-maven-milestone</id>
+			<name>Springframework Maven Repository</name>
+			<url>http://s3.amazonaws.com/maven.springframework.org/milestone</url>
+		</repository>
+
+		<repository>
+			<id>spring-osgified-artifacts</id>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<name>Springframework Maven OSGified Artifacts Repository</name>
+			<url>http://maven.springframework.org/osgi</url>
+		</repository>
+	</repositories>
+
 </project>

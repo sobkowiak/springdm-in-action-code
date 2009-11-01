@@ -2,15 +2,14 @@ Manifest-Version: 1.0
 Export-Package: com.manning.sdmia.ch09.web;uses:="org.springframework.
  web.servlet,org.springframework.web.bind.annotation,org.springframewo
  rk.stereotype"
-Private-Package: web.conf,.,WEB-INF,WEB-INF.jsp
 Built-By: acogoluegnes
-Tool: Bnd-0.0.311
+Tool: Bnd-0.0.357
 Bundle-Name: Simple Web Mvc App
 Created-By: Apache Maven Bundle Plugin
 Web-ContextPath: simplewebmvcapp
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1248721867406
+Bnd-LastModified: 1257067252640
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.ch09.web,javax.servlet;version="2.4.
  0",javax.servlet.http;version="2.4.0",javax.servlet.jsp;version="2.0.
@@ -23,17 +22,17 @@ Import-Package: com.manning.sdmia.ch09.web,javax.servlet;version="2.4.
  rg.apache.taglibs.standard.tag.rt.core;version="1.1.2";resolution:=op
  tional,org.apache.taglibs.standard.tei;version="1.1.2";resolution:=op
  tional,org.apache.taglibs.standard.tlv;version="1.1.2";resolution:=op
- tional,org.springframework.aop;version="2.5.6.A",org.springframework.
- context.support;version="2.5.6.A",org.springframework.core;version="2
- .5.6.A",org.springframework.core.io;version="2.5.6.A",org.springframe
- work.osgi.web.context.support;version="1.2.0",org.springframework.ste
- reotype;version="2.5.6.A",org.springframework.ui;version="2.5.6.A",or
- g.springframework.web.bind.annotation;version="2.5",org.springframewo
- rk.web.context;version="2.5.6.A",org.springframework.web.context.supp
- ort;version="2.5.6.A",org.springframework.web.servlet;version="2.5.6.
- A",org.springframework.web.servlet.handler;version="2.5.6.A",org.spri
- ngframework.web.servlet.mvc;version="2.5.6.A",org.springframework.web
- .servlet.mvc.annotation;version="2.5.6.A",org.springframework.web.ser
- vlet.view;version="2.5.6.A"
+ tional,org.springframework.aop;version="3.0.0.RC1",org.springframewor
+ k.context.support;version="3.0.0.RC1",org.springframework.core;versio
+ n="3.0.0.RC1",org.springframework.core.io;version="3.0.0.RC1",org.spr
+ ingframework.osgi.web.context.support;version="2.0.0.M1",org.springfr
+ amework.stereotype;version="3.0.0.RC1",org.springframework.ui;version
+ ="3.0.0.RC1",org.springframework.web.bind.annotation;version="3.0",or
+ g.springframework.web.context;version="3.0.0.RC1",org.springframework
+ .web.context.support;version="3.0.0.RC1",org.springframework.web.serv
+ let;version="3.0.0.RC1",org.springframework.web.servlet.handler;versi
+ on="3.0.0.RC1",org.springframework.web.servlet.mvc;version="3.0.0.RC1
+ ",org.springframework.web.servlet.mvc.annotation;version="3.0.0.RC1",
+ org.springframework.web.servlet.view;version="3.0.0.RC1"
 Bundle-SymbolicName: com.manning.sdmia.ch09.simple-web-mvc-app
 

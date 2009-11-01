@@ -17,11 +17,6 @@
 	<!-- //////// contextPathStrategy //////// -->
 	<bean id="contextPathStrategy" class="com.manning.sdmia.ch09.webextenderconf.ManningContextPathStrategy" />
 	
-	<!-- //////// extenderProperties //////// -->
-	<util:properties id="extenderProperties">
-		<prop key="undeploy.wars.at.shutdown">true</prop>
-	</util:properties>
-	
 	<!-- //////// warScanner //////// -->
 	<bean id="warScanner" class="com.manning.sdmia.ch09.webextenderconf.ManningWarScanner" />
 	

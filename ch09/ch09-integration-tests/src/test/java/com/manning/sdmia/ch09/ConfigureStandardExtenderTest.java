@@ -33,7 +33,7 @@ public class ConfigureStandardExtenderTest extends
 		
 		// OSGi bean factory post-processor
 		// just count
-		Assert.assertEquals(1,bundleContext.getServiceReferences(OsgiBeanFactoryPostProcessor.class.getName(), null).length);
+		Assert.assertEquals(2,bundleContext.getServiceReferences(OsgiBeanFactoryPostProcessor.class.getName(), null).length);
 		ServiceReference ref = bundleContext.getServiceReference(OsgiBeanFactoryPostProcessor.class.getName());
 		Assert.assertEquals(
 			"{com.manning.sdmia.ch09.simplebundle=1}",
