@@ -6,7 +6,7 @@ Bundle-Name: Directory Domain
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_13
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1257070177375
+Bnd-LastModified: 1258900650953
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.directory.domain;version="1.0"
 Bundle-SymbolicName: com.manning.sdmia.ch10.directory-domain

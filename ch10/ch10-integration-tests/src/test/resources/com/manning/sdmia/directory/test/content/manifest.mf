@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.manning.sdmia.directory.test.content
+ .ProgrammaticContentTest
+Bundle-SymbolicName: com.manning.sdmia.directory.test.content
+ .ProgrammaticContentTest
+Bundle-Description: on-the-fly test bundle
+Bundle-Activator: org.springframework.osgi.test.JUnitTestActivator
+Import-Package: org.springframework.osgi.test,
+ junit.framework,
+ org.osgi.framework,
+ com.manning.sdmia.directory.domain
+

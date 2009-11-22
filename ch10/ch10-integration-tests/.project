@@ -1,11 +1,7 @@
 <projectDescription>
   <name>ch10-integration-tests</name>
   <comment/>
-  <projects>
-    <project>directory-dao</project>
-    <project>directory-dao-jdbc</project>
-    <project>directory-domain</project>
-  </projects>
+  <projects/>
   <buildSpec>
     <buildCommand>
       <name>org.eclipse.jdt.core.javabuilder</name>
