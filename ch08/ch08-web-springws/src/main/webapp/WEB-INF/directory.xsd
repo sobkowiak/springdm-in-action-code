@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:directory="http://www.manning.com/directory/schemas"
+        elementFormDefault="qualified"
+        targetNamespace="http://www.manning.com/directory/schemas">
+
+    <xs:element name="GetContactsRequest">
+        <xs:complexType>
+        	<xs:sequence>
+        	</xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="GetContactsResponse">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Contacts" type="directory:ContactType"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="ContactType">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="LastName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

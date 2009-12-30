@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+				http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/osgi
+				http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+	<!-- Service contrat definitions -->
+
+	<bean id="directory"
+		class="org.springframework.ws.wsdl.wsdl11.DefaultWsdl11Definition">
+		<property name="schema" ref="schema" />
+		<property name="portTypeName" value="Directory" />
+		<property name="locationUri" value="http://localhost:9080/springws/directory/" />
+		<property name="targetNamespace"
+			value="http://www.manning.com/directory/definitions" />
+	</bean>
+
+	<bean id="schema"
+		class="org.springframework.xml.xsd.SimpleXsdSchema">
+		<property name="xsd" value="/WEB-INF/directory.xsd" />
+	</bean>
+
+	<!-- Method endpoint adapters -->
+
+	<!-- bean class="org.springframework.ws.server.endpoint.adapter.GenericMarshallingMethodEndpointAdapter">
+        <constructor-arg ref="castorMarshaller"/>
+    </bean>
+	
+	<bean class="org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping"/>
+
+	<bean class="org.springframework.ws.server.endpoint.adapter.MessageMethodEndpointAdapter"/ -->
+
+	<bean class="org.springframework.ws.server.endpoint.mapping.PayloadRootQNameEndpointMapping">
+	    <property name="mappings">
+	        <props>
+	            <prop key="{http://www.manning.com/directory/schemas}GetContactsRequest">contactEndpoint</prop>
+	        </props>
+	    </property>
+	</bean>
+
+	<!-- Marshaller -->
+
+	<!-- bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller" >
+        <property name="mappingLocation" value="classpath:/com/manning/sdmia/springws/bean/mapping.xml" />
+    </bean -->
+    
+    <!-- bean id="contactMarshaller" class="com.manning.sdmia.springws.marshaller.ContactMarshaller"/ -->
+
+	<!-- Endpoints -->
+
+	<!-- bean id="contactEndpoint" class="com.manning.sdmia.springws.endpoint.ContactEndpoint">
+		<property name="contactService" ref="contactService"/>
+	</bean -->
+
+	<bean id="contactEndpoint" class="com.manning.sdmia.springws.endpoint.ContactEndpoint">
+		<property name="contactService" ref="contactService"/>
+	</bean>
+
+</beans>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN" "http://castor.org/mapping.dtd">
+<mapping>
+
+	<class name="com.manning.sdmia.springws.bean.GetContactsRequest">
+
+   		<map-to xml="GetContactsRequest" ns-uri="http://www.manning.com/directory/schemas"/>
+
+	</class>
+
+
+	<class name="com.manning.sdmia.springws.bean.GetContactsResponse">
+
+   		<map-to xml="GetTodoListsResponse" ns-uri="http://www.manning.com/directory/schemas"/>
+   		
+	    <field name="contacts"
+           type="com.manning.sdmia.directory.model.Contact" collection="set" >
+      		<bind-xml name="Contact" />
+      	</field>
+   		
+	</class>
+
+	<class name="com.manning.sdmia.directory.model.Contact">
+           
+   		<map-to xml="Contact" ns-uri="http://www.manning.com/directory/schemas"/>
+
+		<field name="id" type="java.lang.Long">
+      		<bind-xml name="Id" node="element"/>
+	    </field>
+
+		<field name="firstname" type="java.lang.String">
+      		<bind-xml name="Firstname" node="element"/>
+	    </field>
+
+		<field name="lastname" type="java.lang.String">
+      		<bind-xml name="Lastname" node="element"/>
+	    </field>
+	</class>
+
+</mapping>
