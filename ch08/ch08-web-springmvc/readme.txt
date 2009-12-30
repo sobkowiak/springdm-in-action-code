@@ -52,3 +52,7 @@ org.springframework.osgi,spring-osgi-core,2.0.0.M1
 org.springframework.osgi,spring-osgi-extender,2.0.0.M1
 org.springframework.osgi,spring-osgi-io,2.0.0.M1
 org.springframework.osgi,spring-osgi-test,2.0.0.M1
+
+- URL to access the Web application:
+
+http://localhost:8080/springmvc/contacts.do
