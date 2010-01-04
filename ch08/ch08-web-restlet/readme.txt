@@ -1,0 +1,3 @@
+/home/templth/developpement/applications/apache-maven-2.0.9/bin/mvn install:install-file -DgroupId=com.noelios.restlet -DartifactId=org.restlet.ext.servlet -Dversion=2.0.0-SNAPSHOT -Dfile=org.restlet.ext.servlet-2.0.0.jar -Dpackaging=jar -DgeneratePom=true
+/home/templth/developpement/applications/apache-maven-2.0.9/bin/mvn install:install-file -DgroupId=com.noelios.restlet -DartifactId=org.restlet.ext.spring -Dversion=2.0.0-SNAPSHOT -Dfile=org.restlet.ext.spring-2.0.0.jar -Dpackaging=jar -DgeneratePom=true
+/home/templth/developpement/applications/apache-maven-2.0.9/bin/mvn install:install-file -DgroupId=com.noelios.restlet -DartifactId=org.restlet -Dversion=2.0.0-SNAPSHOT -Dfile=org.restlet-2.0.0.jar -Dpackaging=jar -DgeneratePom=true
