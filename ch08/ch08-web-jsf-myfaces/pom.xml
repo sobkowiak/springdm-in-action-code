@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia.ch08</groupId>
+	<artifactId>ch08-jsf-myfaces</artifactId>
+	<packaging>bundle</packaging>
+	<name>ch08-jsf-myfaces</name>
+	<description>JSF MyFaces Web App.</description>
+	<version>1.0-SNAPSHOT</version>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<springdm.version>1.2.0</springdm.version>
+		<spring.version>2.5.6</spring.version>
+		<myfaces.version>1.2.2</myfaces.version>
+		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
+		<felix.bundle.plugin.version>2.0.1</felix.bundle.plugin.version>
+	</properties>
+
+	<build>
+		<!-- resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>.</directory>
+				<includes>
+					<include>META-INF/*</include>
+				</includes>
+			</resource>
+		</resources -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.4.3</version>
+				<configuration>
+					<!-- need to fork otherwise some tests contexts are shared -->
+					<forkMode>always</forkMode>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${felix.bundle.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<!-- manifestLocation>META-INF</manifestLocation -->
+					<instructions>
+						<Private-Package>com.manning.sdmia.directory.web</Private-Package>
+						<Import-Package>
+							javax.faces;version="${myfaces.version}",
+							javax.faces.convert;version="${myfaces.version}",
+							javax.faces.event;version="${myfaces.version}",
+							javax.faces.webapp;version="${myfaces.version}",
+							org.apache.myfaces.application;version="${myfaces.version}",
+							org.apache.myfaces.application.jsp;version="${myfaces.version}",
+							org.apache.myfaces.config;version="${myfaces.version}",
+							org.apache.myfaces.config.annotation;version="${myfaces.version}",
+							org.apache.myfaces.config.element;version="${myfaces.version}",
+							org.apache.myfaces.config.impl;version="${myfaces.version}",
+							org.apache.myfaces.config.impl.digester;version="${myfaces.version}",
+							org.apache.myfaces.config.impl.digester.elements;version="${myfaces.version}",
+							org.apache.myfaces.context;version="${myfaces.version}",
+							org.apache.myfaces.context.servlet;version="${myfaces.version}",
+							org.apache.myfaces.convert;version="${myfaces.version}",
+							org.apache.myfaces.el;version="${myfaces.version}",
+							org.apache.myfaces.event;version="${myfaces.version}",
+							org.apache.myfaces.lifecycle;version="${myfaces.version}",
+							org.apache.myfaces.renderkit;version="${myfaces.version}",
+							org.apache.myfaces.renderkit.html;version="${myfaces.version}",
+							org.apache.myfaces.resource;version="${myfaces.version}",
+							org.apache.myfaces.taglib.core;version="${myfaces.version}",
+							org.apache.myfaces.taglib.html;version="${myfaces.version}",
+							org.apache.myfaces.util;version="${myfaces.version}",
+							org.apache.myfaces.webapp;version="${myfaces.version}",
+							org.springframework.beans.factory;version="${spring.version}",
+							org.springframework.osgi.web.context.support;version="${springdm.version}",
+							org.springframework.web.context;version="${spring.version}",
+							org.springframework.web.context.request;version="${spring.version}",
+							org.springframework.web.jsf;version="${spring.version}",
+							org.springframework.web.jsf.el;version="${spring.version}",
+							!com.manning.sdmia.directory.web,
+							com.manning.sdmia.directory*;version="${project.version}",
+							*</Import-Package>
+						<Include-Resource>src/main/resources,src/main/webapp</Include-Resource>
+						<Web-ContextPath>myfaces</Web-ContextPath>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.apache.myfaces</groupId>
+			<artifactId>myfaces-api</artifactId>
+			<version>${myfaces.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.myfaces</groupId>
+			<artifactId>myfaces-impl</artifactId>
+			<version>${myfaces.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.manning.sdmia.ch08</groupId>
+			<artifactId>ch08-directory</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+	</dependencies>
+
+</project>

@@ -1,0 +1,137 @@
+package com.manning.sdmia.web.jsf;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.Enumeration;
+import java.util.LinkedList;
+import java.util.List;
+
+public class SmartClassLoader extends ClassLoader {
+	private ClassLoader defaultClassLoader;
+	private List<ClassLoader> classloaders;
+
+	public SmartClassLoader(ClassLoader defaultClassLoader, List<ClassLoader> classloaders) {
+		this.defaultClassLoader = defaultClassLoader;
+		this.classloaders = classloaders;
+	}
+	
+	private LinkedList<ClassLoader> getClassloadersToTry() {
+		LinkedList classloadersToTry = new LinkedList<ClassLoader>();
+		classloadersToTry.add(defaultClassLoader);
+		classloadersToTry.addAll(classloaders);
+		return classloadersToTry;
+	}
+	
+	public void clearAssertionStatus() {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (clearAssertionStatus) = "+cl);
+			try {
+				cl.clearAssertionStatus();
+				return;
+			} catch(Exception ex) {}
+		}
+	}
+
+	public boolean equals(Object arg0) {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (equals) = "+cl);
+			try {
+				return cl.equals(arg0);
+			} catch(Exception ex) {}
+		}
+		return false;
+	}
+
+	public URL getResource(String name) {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (getResource - "+name+") = "+cl);
+			try {
+				return defaultClassLoader.getResource(name);
+			} catch(Exception ex) {}
+		}
+		return null;
+	}
+
+	public InputStream getResourceAsStream(String name) {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (getResourceAsStream - "+name+") = "+cl);
+			try {
+				return defaultClassLoader.getResourceAsStream(name);
+			} catch(Exception ex) {}
+		}
+		return null;
+	}
+
+	public Enumeration<URL> getResources(String name) throws IOException {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (getResources - "+name+") = "+cl);
+			try {
+				return defaultClassLoader.getResources(name);
+			} catch(Exception ex) {}
+		}
+		return null;
+	}
+
+	public int hashCode() {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (hashCode) = "+cl);
+			try {
+				return defaultClassLoader.hashCode();
+			} catch(Exception ex) {}
+		}
+		return 0;
+	}
+
+	public Class<?> loadClass(String name) throws ClassNotFoundException {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (loadClass - "+name+") = "+cl);
+			try {
+				return defaultClassLoader.loadClass(name);
+			} catch(Exception ex) {}
+		}
+		return null;
+	}
+
+	public void setClassAssertionStatus(String className, boolean enabled) {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (setClassAssertionStatus)= "+cl);
+			try {
+				defaultClassLoader.setClassAssertionStatus(className, enabled);
+				return;
+			} catch(Exception ex) {}
+		}
+	}
+
+	public void setDefaultAssertionStatus(boolean enabled) {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (setClassAssertionStatus)= "+cl);
+			try {
+				defaultClassLoader.setDefaultAssertionStatus(enabled);
+				return;
+			} catch(Exception ex) {}
+		}
+	}
+
+	public void setPackageAssertionStatus(String packageName, boolean enabled) {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (setPackageAssertionStatus) = "+cl);
+			try {
+				defaultClassLoader.setPackageAssertionStatus(packageName, enabled);
+				return;
+			} catch(Exception ex) {}
+		}
+	}
+
+	public String toString() {
+		for (ClassLoader cl : getClassloadersToTry()) {
+			System.out.println("cl (toString) = "+cl);
+			try {
+				return defaultClassLoader.toString();
+			} catch(Exception ex) {}
+		}
+		return null;
+	}
+	
+	
+}

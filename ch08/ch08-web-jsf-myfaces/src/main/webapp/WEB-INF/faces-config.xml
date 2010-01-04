@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE faces-config PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
+  "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+<faces-config>
+  <!-- Your entries go here. See
+       http://www.coreservlets.com/JSF-Tutorial/ -->
+	<lifecycle>
+		<phase-listener>com.manning.sdmia.web.jsf.LifeCycleListener</phase-listener>
+	</lifecycle>
+	
+	<application>
+		<variable-resolver>org.springframework.web.jsf.DelegatingVariableResolver</variable-resolver>
+		<!-- el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver -->
+	</application>
+
+	<!-- managed-bean>
+		<managed-bean-name>testBean</managed-bean-name>
+		<managed-bean-class>com.manning.sdmia.jsf.bean.TestBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean -->
+
+	<converter>
+		<converter-id>contactConverter</converter-id>
+		<converter-class>com.manning.sdmia.web.jsf.converter.ContactConverter</converter-class>
+	</converter>
+</faces-config>
