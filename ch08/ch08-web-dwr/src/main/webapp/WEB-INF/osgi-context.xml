@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+				http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/osgi
+				http://www.springframework.org/schema/osgi/spring-osgi.xsd
+	    http://www.directwebremoting.org/schema/spring-dwr
+    			http://www.directwebremoting.org/schema/spring-dwr-2.0.xsd">
+
+	<dwr:configuration>
+		<dwr:create javascript="contactService" type="spring">
+			<dwr:param name="beanName" value="contactService"/>
+			<dwr:convert type="bean" class="com.manning.sdmia.directory.model.Contact"/>
+		</dwr:create>
+	</dwr:configuration>
+
+	<dwr:controller id="dwrController" debug="true"/>
+
+	<!-- bean id="remoteContactService" class="com.manning.sdmia.dwr.service.RemoteContactService">
+		<property name="contactService" ref="contactService"/>
+		<dwr:remote javascript="contactService">
+			<dwr:convert type="bean" class="com.manning.sdmia.directory.model.Contact"/>
+		</dwr:remote>
+	</bean -->
+
+	<osgi:reference id="contactService"
+			interface="com.manning.sdmia.directory.service.ContactService">
+			<!-- context-class-loader="unmanaged" -->
+	</osgi:reference>
+
+</beans>

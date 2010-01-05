@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script type='text/javascript' src='/dwr/dwr/interface/contactService.js'></script>
+		<script type='text/javascript' src='/dwr/dwr/engine.js'></script>
+		<script type='text/javascript' src='/dwr/dwr/util.js'></script>
+
+		<script type="text/javascript">
+			function showContacts(contacts) {
+				//alert("bean : "+bean.id+", "+bean.name);
+				alert(contacts);
+				for(var cpt=0;cpt<contacts.length;cpt++) {
+				    alert("contact = "+contacts[cpt].firstname);
+				}
+			}
+
+			function getContacts() {
+				//alert("contactService = "+contactService);
+				contactService.getContacts(showContacts);
+			}
+
+		</script>
+	</head>
+	<body>
+		<a href="javascript:getContacts()">Get contacts</a><br/>
+	</body>
+</html>

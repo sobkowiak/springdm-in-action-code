@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.manning.sdmia.ch08</groupId>
+	<artifactId>ch08-dwr</artifactId>
+	<packaging>bundle</packaging>
+	<name>ch08-dwr</name>
+	<description>DWR Web App.</description>
+	<version>1.0-SNAPSHOT</version>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<springdm.version>1.2.0</springdm.version>
+		<spring.version>2.5.6</spring.version>
+		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
+		<felix.bundle.plugin.version>2.0.1</felix.bundle.plugin.version>
+	</properties>
+
+	<build>
+		<!-- resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>.</directory>
+				<includes>
+					<include>META-INF/*</include>
+				</includes>
+			</resource>
+		</resources -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.4.3</version>
+				<configuration>
+					<!-- need to fork otherwise some tests contexts are shared -->
+					<forkMode>always</forkMode>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${felix.bundle.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<!-- manifestLocation>META-INF</manifestLocation -->
+					<!-- manifestLocation>META-INF</manifestLocation -->
+					<instructions>
+						<Private-Package>com.manning.sdmia.web</Private-Package>
+						<Import-Package>
+							org.directwebremoting,
+							org.directwebremoting.convert,
+							org.directwebremoting.create,
+							org.directwebremoting.dwrp,
+							org.directwebremoting.extend,
+							org.directwebremoting.impl,
+							org.directwebremoting.proxy,
+							org.directwebremoting.proxy.dwr,
+							org.directwebremoting.servlet,
+							org.directwebremoting.spring,
+							org.springframework.osgi.web.context.support;version="${springdm.version}",
+							org.springframework.web.context;version="${spring.version}",
+							!com.manning.sdmia.web,
+							com.manning.sdmia.directory.service;version="${project.version}",
+							com.manning.sdmia.directory.model;version="${project.version}"
+						</Import-Package>
+						<Include-Resource>src/main/resources,src/main/webapp</Include-Resource>
+						<Web-ContextPath>dwr</Web-ContextPath>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.manning.sdmia.ch08</groupId>
+			<artifactId>ch08-directory</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.directwebremoting</groupId>
+			<artifactId>com.springsource.uk.ltd.getahead.dwr</artifactId>
+			<version>2.0.5</version>
+		</dependency>
+	</dependencies>
+
+</project>
