@@ -72,4 +72,15 @@ org.springframework.osgi,spring-osgi-test,2.0.0.M1
 
 - URL to access the Web application:
 
-http://localhost:8080/restlet/contacts
+http://localhost:8080/myfaces/contacts.jsf
+
+- Caution:
+
+The bundle javax.servlet, com.springsource.javax.servlet.jsp.jstl, 1.2.0 contains
+a wrong import package for the package javax.el. A correct bundle is provided
+in the bundles directory of the source code.
+
+You need to add the provided version of this bundle in the bundles/myfaces directory
+using the following mvn command:
+
+mvn install:install-file -DgroupId=javax.servlet -DartifactId=com.springsource.javax.servlet.jsp.jstl -Dversion=1.2.0 -Dfile=com.springsource.javax.servlet.jsp.jstl-1.2.0.jar -Dpackaging=jar -DgeneratePom=true
