@@ -1,0 +1,10 @@
+<module>
+
+	<!-- Inherit the core Web Toolkit stuff.                  -->
+	<inherits name='com.google.gwt.user.User'/>
+	<inherits name='com.manning.sdmia.directory.Directory'/>
+
+	<!-- Specify the app entry point class.                   -->
+	<entry-point class='com.manning.sdmia.web.gwt.client.DirectoryApplication'/>
+
+</module>
