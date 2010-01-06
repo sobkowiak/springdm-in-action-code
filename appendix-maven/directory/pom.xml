@@ -17,7 +17,7 @@
 		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
 		<slf4j.version>1.5.6</slf4j.version>
 		<h2.version>1.1.119</h2.version>
-		<bundlor.version>1.0.0.M6</bundlor.version>
+		<bundlor.version>1.0.0.RC1</bundlor.version>
 	</properties>
 
 
@@ -102,20 +102,23 @@
               <execution>
                 <id>bundlor</id>
                 <goals>
-                  <goal>transform</goal>
+                  <goal>bundlor</goal>
                 </goals>
               </execution>
             </executions>
             <configuration>
-              <manifestHeaders><![CDATA[Bundle-Name: ${project.artifactId}
-Bundle-Version: ${project.version}
-Bundle-SymbolicName: com.manning.sdmia.appb.${project.artifactId}
-Bundle-ManifestVersion: 2
-Implementation-Version: ${project.version}
-Version-Patterns: spring;pattern="[=.=.=.=, +1.0.0)"
-]]></manifestHeaders>
+				<bundleSymbolicName>com.manning.sdmia.appb.${project.artifactId}</bundleSymbolicName>
+				<bundleVersion>${project.version}</bundleVersion>
             </configuration>
           </plugin>
+		  <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>2.3</version>
+			<configuration>
+				<useDefaultManifestFile>true</useDefaultManifestFile>
+			</configuration>
+		  </plugin>
         </plugins>
       </build>
     </profile>

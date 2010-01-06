@@ -7,7 +7,7 @@ Bundle-Name: Directory DAO API
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_16
 Bundle-Version: 1.0.0
-Bnd-LastModified: 1254859042601
+Bnd-LastModified: 1262788179044
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.directory.dao;version="1.0.0",com.ma
  nning.sdmia.directory.domain;version="1.0.0"

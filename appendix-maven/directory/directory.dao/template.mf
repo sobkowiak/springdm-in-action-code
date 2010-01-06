@@ -1,0 +1,3 @@
+Bundle-ManifestVersion: 2
+Bundle-Name: ${project.name}
+Version-Patterns: spring;pattern="[=.=.=.=, +1.0.0)"

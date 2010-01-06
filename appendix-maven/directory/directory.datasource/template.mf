@@ -1,2 +1,6 @@
-Import-Template: org.springframework.*;version="${spring.version:spring}"
+Bundle-ManifestVersion: 2
+Bundle-Name: ${project.name}
+Import-Template:
+ org.springframework*;version="${spring.version:spring}"
 Import-Package: org.h2
+Version-Patterns: spring;pattern="[=.=.=.=, +1.0.0)"

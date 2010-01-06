@@ -1,2 +1,6 @@
-Import-Template: org.springframework.*;version="${spring.version:spring}"
-Import-Package: org.h2
+Bundle-ManifestVersion: 2
+Bundle-Name: ${project.name}
+Import-Package: org.h2,
+ org.springframework.jdbc.datasource;version="${spring.version:spring}",
+ org.springframework.jdbc.core;version="${spring.version:spring}" 
+Version-Patterns: spring;pattern="[=.=.=.=, +1.0.0)"

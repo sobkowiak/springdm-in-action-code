@@ -83,5 +83,24 @@
     </dependency>
     
 
-	</dependencies>
+  </dependencies>
+  
+  <profiles>
+    <profile>
+      <id>bundlor</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.springsource.bundlor</groupId>
+            <artifactId>com.springsource.bundlor.maven</artifactId>
+            <version>${bundlor.version}</version>
+            <configuration>
+				<enabled>false</enabled>              
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+  
 </project>
