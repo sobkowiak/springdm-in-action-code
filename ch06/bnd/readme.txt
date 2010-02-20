@@ -7,4 +7,4 @@ To test the OSGified DBCP, the sample comes with 2 projects:
   - dbcp-config-fragment: a fragment to add the H2 driver package into the DBCP bundle imported packages
   - datasource: a bundle with an activator that creates a connection pool and tests it.
 
-build (package Maven goal) both projects and launches the datasource.args pax-runner file (pax-runner --args=file:datasource.args). You should see a message on the console, telling the connection was successful.
+build (package Maven goal) both projects and launches the datasource.args pax-runner file (pax-run --args=file:datasource.args). You should see a message on the console, telling the connection was successful.

@@ -3,5 +3,5 @@ Bundle-SymbolicName: org.apache.commons.dbcp
 Bundle-Version: ${version}
 Bundle-Name: Commons DBCP
 Bundle-Description: DBCP connection pool
-Export-Package: org.apache.commons.dbcp*;version=${version}
-Import-Package: org.apache.commons.pool*;version=1.3.0,org.apache.commons.dbcp*;version=${version},*;resolution:=optional
+Export-Package: org.apache.commons.dbcp.*;version=${version}
+Import-Package: org.apache.commons.pool.*;version=1.3.0,org.apache.commons.dbcp.*;version=${version},*;resolution:=optional
