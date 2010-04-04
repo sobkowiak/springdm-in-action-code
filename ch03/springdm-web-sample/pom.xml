@@ -4,12 +4,13 @@
 	<groupId>com.manning.sdmia</groupId>
 	<artifactId>springdm-web-sample</artifactId>
 	<packaging>bundle</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>springdm-web-sample</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<springdm.version>2.0.0.M1</springdm.version>
 		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
+		<spring.version>3.0.2.RELEASE</spring.version>
 	</properties>
 
 	<dependencies>
@@ -41,6 +42,27 @@
 			<groupId>org.eclipse.osgi</groupId>
 			<artifactId>org.eclipse.osgi</artifactId>
 			<version>${equinox.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.context</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.aop</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.test</artifactId>
+			<version>${spring.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -163,6 +185,15 @@
 						<Include-Resource>src/main/webapp</Include-Resource>
 						<Web-ContextPath>springdm-web-sample</Web-ContextPath>
 					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
 				</configuration>
 			</plugin>
 		</plugins>

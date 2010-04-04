@@ -5,7 +5,10 @@ package com.manning.sdmia;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
+
 import org.osgi.framework.Bundle;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
 import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 public class SpringDmWebSampleTest extends
@@ -42,7 +45,7 @@ public class SpringDmWebSampleTest extends
 				"org.springframework.osgi, jasper.osgi, 5.5.23-SNAPSHOT",
 				"org.springframework.osgi, commons-el.osgi, 1.0-SNAPSHOT",
 				"org.springframework.osgi, jstl.osgi, 1.1.2-SNAPSHOT",
-				"com.manning.sdmia, springdm-web-sample, 1.0-SNAPSHOT" };
+				"com.manning.sdmia, springdm-web-sample, 1.0.0" };
 	}
 
 	private void testConnection(String address) throws Exception {
@@ -56,5 +59,11 @@ public class SpringDmWebSampleTest extends
 			con.disconnect();
 		}
 	}
+	
+	@Override
+	protected Resource getTestingFrameworkBundlesConfiguration() {
+		return new InputStreamResource(
+				SpringDmWebSampleTest.class.getResourceAsStream("boot-bundles.properties"));
+	}	
 
 }
