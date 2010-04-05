@@ -16,10 +16,10 @@ public class SpringDmWebSampleTest extends
 
 	public void testIntegration() throws Exception {
 		boolean bundleIsHereAndStarted = false;
-		for (Bundle currentBundle : bundleContext.getBundles()) {
-			if ("com.manning.sdmia.springdm-web-sample".equals(currentBundle
+		for (Bundle bundle : bundleContext.getBundles()) {
+			if ("com.manning.sdmia.springdm-web-sample".equals(bundle
 					.getSymbolicName())
-					&& currentBundle.getState() == Bundle.ACTIVE) {
+					&& bundle.getState() == Bundle.ACTIVE) {
 				bundleIsHereAndStarted = true;
 				break;
 			}
@@ -38,7 +38,7 @@ public class SpringDmWebSampleTest extends
 						+ getSpringDMVersion(),
 				"org.springframework.osgi, spring-osgi-web-extender,"
 						+ getSpringDMVersion(),
-				"org.springframework.osgi, servlet-api.osgi, 2.4-SNAPSHOT",
+				"javax.servlet, com.springsource.javax.servlet, 2.4.0",
 				"org.springframework.osgi, catalina.osgi, 5.5.23-SNAPSHOT",
 				"org.springframework.osgi, catalina.start.osgi, 1.0.0",
 				"org.springframework.osgi, jsp-api.osgi, 2.0-SNAPSHOT",
