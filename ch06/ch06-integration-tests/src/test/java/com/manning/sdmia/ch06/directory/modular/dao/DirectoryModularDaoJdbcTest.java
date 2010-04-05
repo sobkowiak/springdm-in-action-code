@@ -7,8 +7,8 @@ import javax.sql.DataSource;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.osgi.framework.ServiceReference;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
+import com.manning.sdmia.ch06.AbstractTest;
 import com.manning.sdmia.directory.dao.ContactDao;
 import com.manning.sdmia.directory.domain.Contact;
 
@@ -17,7 +17,7 @@ import com.manning.sdmia.directory.domain.Contact;
  * @author acogoluegnes
  *
  */
-public class DirectoryModularDaoJdbcTest extends AbstractConfigurableBundleCreatorTests {
+public class DirectoryModularDaoJdbcTest extends AbstractTest {
 	
 	/** Dummy property to dynamically add the import-package */
 	private BasicDataSource basicDataSource;

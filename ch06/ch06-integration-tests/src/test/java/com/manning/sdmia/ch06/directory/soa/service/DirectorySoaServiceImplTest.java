@@ -9,6 +9,7 @@ import org.osgi.framework.ServiceReference;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
+import com.manning.sdmia.ch06.AbstractTest;
 import com.manning.sdmia.directory.domain.Contact;
 import com.manning.sdmia.directory.service.ContactService;
 
@@ -17,7 +18,7 @@ import com.manning.sdmia.directory.service.ContactService;
  * @author acogoluegnes
  *
  */
-public class DirectorySoaServiceImplTest extends AbstractConfigurableBundleCreatorTests {
+public class DirectorySoaServiceImplTest extends AbstractTest {
 	
 	/** Dummy property to dynamically add the import-package */
 	private BasicDataSource basicDataSource;

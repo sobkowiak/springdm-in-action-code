@@ -1,10 +1,11 @@
 # options
 --p=equinox
---profiles=spring.dm,compendium
+--profiles=spring.dm/1.2.0,compendium
 --bootDelegation=javax.swing.*
+--vmOptions=-Dorg.ops4j.pax.logging.DefaultServiceLog.level=ERROR
 # provisioning
 mvn:com.manning.sdmia.ch06/shape/1.0.0@update
 mvn:com.manning.sdmia.ch06/paint/1.0.0@update
 mvn:com.manning.sdmia.ch06/paint.circle/1.0.0@update
 mvn:com.manning.sdmia.ch06/paint.square/1.0.0@update
-mvn:com.manning.sdmia.ch06/paint.triangle/1.0.0@update
+mvn:com.manning.sdmia.ch06/paint.triangle/1.0.0@updatep

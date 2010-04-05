@@ -12,13 +12,12 @@ import junit.framework.Assert;
 
 import org.apache.commons.dbcp.BasicDataSource;
 import org.osgi.framework.Bundle;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 /**
  * @author acogoluegnes
  *
  */
-public class OsgifiedDbcpTest extends AbstractConfigurableBundleCreatorTests {
+public class OsgifiedDbcpTest extends AbstractTest {
 	
 	/** Dummy property to dynamically add the import-package */
 	private BasicDataSource basicDataSource;

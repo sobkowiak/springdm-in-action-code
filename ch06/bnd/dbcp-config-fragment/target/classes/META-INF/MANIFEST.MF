@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Private-Package: .
+Built-By: acogoluegnes
+Tool: Bnd-0.0.311
+Bundle-Name: DBCP bundle fragment
+Created-By: Apache Maven Bundle Plugin
+Fragment-Host: org.apache.commons.dbcp
+Bundle-Version: 1.0.0
+Build-Jdk: 1.6.0_13
+Bnd-LastModified: 1248547122781
+Bundle-ManifestVersion: 2
+Import-Package: org.h2
+Bundle-SymbolicName: com.manning.sdmia.ch06.dbcp-fragment-config
+
