@@ -11,14 +11,12 @@ import junit.framework.Assert;
 
 import org.osgi.framework.ServiceReference;
 import org.springframework.context.ApplicationContext;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 /**
  * Checks context files are taken with a recursive directory wildcard pattern.
  * @author acogoluegnes
  */
-public class LoadingFromRecursiveWildcardTest extends
-		AbstractConfigurableBundleCreatorTests {
+public class LoadingFromRecursiveWildcardTest extends AbstractTest {
 
 	public void testLoadBundle() throws Exception {
 		ServiceReference [] refs = bundleContext.getAllServiceReferences(ApplicationContext.class.getName(), null);

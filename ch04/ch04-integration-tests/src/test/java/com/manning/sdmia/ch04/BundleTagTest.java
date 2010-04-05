@@ -6,14 +6,13 @@ package com.manning.sdmia.ch04;
 import junit.framework.Assert;
 
 import org.osgi.framework.Bundle;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 /**
  * @author acogoluegnes
  * 
  */
 public class BundleTagTest extends
-		AbstractConfigurableBundleCreatorTests {
+		AbstractTest {
 
 	public void testBundleContextAwareTest() throws Exception {
 		// a reference to a already installed bundle, Spring DM extender bundle

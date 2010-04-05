@@ -14,14 +14,14 @@ import junit.framework.Assert;
 
 import org.osgi.framework.ServiceReference;
 import org.springframework.context.ApplicationContext;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
+
+import com.manning.sdmia.ch04.AbstractTest;
 
 /**
  * Share services and consume them from a webapp.
  * @author acogoluegnes
  */
-public class ShareServicesTest extends
-		AbstractConfigurableBundleCreatorTests {
+public class ShareServicesTest extends AbstractTest {
 
 	public void testShareServices() throws Exception {
 		// waits a little so that everything is properlly deployed

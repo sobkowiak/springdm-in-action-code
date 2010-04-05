@@ -11,14 +11,12 @@ import junit.framework.Assert;
 import org.osgi.framework.ServiceReference;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.io.Resource;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 /**
  * Checks context files are taken from host and fragment bundles, some resource loading test.
  * @author acogoluegnes
  */
-public class LoadingWithFragmentTest extends
-		AbstractConfigurableBundleCreatorTests {
+public class LoadingWithFragmentTest extends AbstractTest {
 
 	public void testLoadBundle() throws Exception {
 		ServiceReference [] refs = bundleContext.getAllServiceReferences(ApplicationContext.class.getName(), null);

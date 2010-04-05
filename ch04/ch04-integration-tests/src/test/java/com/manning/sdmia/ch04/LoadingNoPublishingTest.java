@@ -9,14 +9,12 @@ import junit.framework.Assert;
 
 import org.osgi.framework.ServiceReference;
 import org.springframework.context.ApplicationContext;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 /**
  * 
  * @author acogoluegnes
  */
-public class LoadingNoPublishingTest extends
-		AbstractConfigurableBundleCreatorTests {
+public class LoadingNoPublishingTest extends AbstractTest {
 
 	public void testLoadSync() throws Exception {
 		Thread.sleep(500);

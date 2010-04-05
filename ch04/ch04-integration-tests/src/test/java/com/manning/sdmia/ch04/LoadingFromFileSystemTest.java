@@ -7,17 +7,14 @@ import java.util.jar.Manifest;
 
 import junit.framework.Assert;
 
-
 import org.osgi.framework.ServiceReference;
 import org.springframework.context.ApplicationContext;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 /**
  * @author acogoluegnes
  * 
  */
-public class LoadingFromFileSystemTest extends
-		AbstractConfigurableBundleCreatorTests {
+public class LoadingFromFileSystemTest extends AbstractTest {
 
 	public void testLoadBundle() throws Exception {
 		// waits for the app context is loaded properly in another thread

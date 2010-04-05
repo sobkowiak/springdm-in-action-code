@@ -11,14 +11,12 @@ import org.osgi.framework.Bundle;
 import org.osgi.framework.ServiceReference;
 import org.springframework.context.ApplicationContext;
 import org.springframework.osgi.context.event.OsgiBundleApplicationContextListener;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 /**
  * @author acogoluegnes
  *
  */
-public class ExtenderEventsTest extends
-		AbstractConfigurableBundleCreatorTests {
+public class ExtenderEventsTest extends AbstractTest {
 
 	/** just to import automatically the package */
 	private OsgiBundleApplicationContextListener listener;

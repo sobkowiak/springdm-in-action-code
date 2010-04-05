@@ -7,14 +7,13 @@ import junit.framework.Assert;
 
 import org.osgi.framework.BundleContext;
 import org.springframework.osgi.context.BundleContextAware;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 /**
  * @author acogoluegnes
  * 
  */
 public class BundleContextAwareTest extends
-		AbstractConfigurableBundleCreatorTests {
+		AbstractTest {
 	
 	/** just for the test to automatically adjust the generated manifest */
 	private BundleContextAware dummy;

@@ -5,14 +5,11 @@ package com.manning.sdmia.ch04;
 
 import java.util.jar.Manifest;
 
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
-
 /**
  * 
  * @author acogoluegnes
  */
-public class LoadingTimeoutTest extends
-		AbstractConfigurableBundleCreatorTests {
+public class LoadingTimeoutTest extends AbstractTest {
 
 	public void testLoadSync() throws Exception {
 		Thread.sleep(500);
