@@ -12,10 +12,10 @@ public class SpringDmSampleTest extends AbstractConfigurableBundleCreatorTests {
 
 	public void testIntegration() {
 		boolean bundleIsHereAndStarted = false;
-		for (Bundle currentBundle : bundleContext.getBundles()) {
-			if ("com.manning.sdmia.springdm-sample".equals(currentBundle
+		for (Bundle bundle : bundleContext.getBundles()) {
+			if ("com.manning.sdmia.springdm-sample".equals(bundle
 					.getSymbolicName())
-					&& currentBundle.getState() == Bundle.ACTIVE) {
+					&& bundle.getState() == Bundle.ACTIVE) {
 				bundleIsHereAndStarted = true;
 				break;
 			}
