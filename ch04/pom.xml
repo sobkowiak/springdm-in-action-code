@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.manning.sdmia</groupId>
 	<artifactId>ch04-samples</artifactId>
@@ -7,16 +8,16 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>ch04-samples</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<properties>
 		<springdm.version>2.0.0.M1</springdm.version>
-		<spring.version>3.0.0.RC1</spring.version>
+		<spring.version>3.0.2.RELEASE</spring.version>
 		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
 		<felix.bundle.plugin.version>2.0.1</felix.bundle.plugin.version>
 	</properties>
 
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>org.springframework.web</artifactId>
@@ -43,14 +44,14 @@
 			<version>${springdm.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
 			<artifactId>spring-osgi-web</artifactId>
 			<version>${springdm.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.osgi</groupId>
 			<artifactId>spring-osgi-web-extender</artifactId>
@@ -66,6 +67,13 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.test</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.aopalliance</groupId>
 			<artifactId>com.springsource.org.aopalliance</artifactId>
 			<version>1.0.0</version>
@@ -76,6 +84,31 @@
 			<groupId>org.eclipse.osgi</groupId>
 			<artifactId>org.eclipse.osgi</artifactId>
 			<version>${equinox.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>com.springsource.slf4j.api</artifactId>
+			<version>1.5.6</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>com.springsource.slf4j.log4j</artifactId>
+			<version>1.5.6</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>com.springsource.slf4j.org.apache.commons.logging</artifactId>
+			<version>1.5.6</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.log4j</groupId>
+			<artifactId>com.springsource.org.apache.log4j</artifactId>
+			<version>1.2.15</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -105,7 +138,7 @@
 
 		</plugins>
 	</build>
-	
+
 	<modules>
 		<module>ch04-web-repositorybundle</module>
 		<module>ch04-web-webapp</module>
@@ -113,11 +146,11 @@
 		<module>ch04-load-host-bundle</module>
 		<module>ch04-load-fragment-bundle</module>
 		<module>ch04-springbundle-wp</module>
-		<module>ch04-integration-tests</module>    
-  </modules>
-  
-  
-  <repositories>
+		<module>ch04-integration-tests</module>
+	</modules>
+
+
+	<repositories>
 
 		<repository>
 			<id>com.springsource.repository.bundles.release</id>
@@ -129,8 +162,8 @@
 			<id>com.springsource.repository.bundles.external</id>
 			<name>SpringSource EBR - External Bundle Releases</name>
 			<url>http://repository.springsource.com/maven/bundles/external</url>
-		</repository>		
-		
+		</repository>
+
 		<repository>
 			<id>spring-maven-milestone</id>
 			<name>Springframework Maven Repository</name>
@@ -138,5 +171,5 @@
 		</repository>
 
 	</repositories>
-  
+
 </project>
