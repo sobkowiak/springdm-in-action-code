@@ -39,20 +39,6 @@
 			<version>${springdm.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
-<!--		<dependency>-->
-<!--			<groupId>org.springframework</groupId>-->
-<!--			<artifactId>org.springframework.core</artifactId>-->
-<!--			<version>${spring.version}</version>-->
-<!--			<scope>test</scope>-->
-<!--		</dependency>-->
-<!---->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework</groupId>-->
-<!--			<artifactId>org.springframework.beans</artifactId>-->
-<!--			<version>${spring.version}</version>-->
-<!--			<scope>test</scope>-->
-<!--		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
