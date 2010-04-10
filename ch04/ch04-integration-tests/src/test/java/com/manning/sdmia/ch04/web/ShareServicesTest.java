@@ -58,7 +58,7 @@ public class ShareServicesTest extends AbstractTest {
 			"org.springframework, org.springframework.web, "+getSpringVersion(),
 			"org.springframework.osgi, spring-osgi-web," + getSpringDMVersion(),
 			"org.springframework.osgi, spring-osgi-web-extender," + getSpringDMVersion(),
-			"org.springframework.osgi, servlet-api.osgi, 2.5-SNAPSHOT",
+			"javax.servlet, com.springsource.javax.servlet, 2.4.0",
 			"org.springframework.osgi, catalina.osgi, 5.5.23-SNAPSHOT",
 			"org.springframework.osgi, catalina.start.osgi, 1.0.0",								
 			"org.springframework.osgi, jsp-api.osgi, 2.0-SNAPSHOT",
