@@ -5,6 +5,8 @@ Spring DM in action chapter 6 code samples
   - directoy module: contact application, with SOA and extreme-modular approaches
   - paint module: Spring-powered paint application
   - ch06-integration-tests folder: integration tests for all the modules
+  
+before running integration tests, run a "mvn install" command so that the Maven 2 local repository contains the JAR files.
 
 files with a "args" extension are configuration for PAX-RUNNER. You must build ("install goal") the modules before using as they refer to the Maven repository. Here the command:
 
@@ -15,3 +17,4 @@ If you use Windows:
 pax-run "--args=file:paint.args"
 
 do not forget to start the database (directory/database folder) before trying the directory samples!
+The directory sample has one web page (http://localhost:8080/directory/contacts.htm) that reads the contacts from the database. 

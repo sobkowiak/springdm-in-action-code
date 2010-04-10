@@ -1,6 +1,6 @@
 # options
 --p=equinox
---profiles=spring.dm/1.2.0,compendium
+--profiles=spring.dm/2.0.0.M1,spring/3.0.0.RELEASE,compendium
 --bootDelegation=javax.swing.*
 --vmOptions=-Dorg.ops4j.pax.logging.DefaultServiceLog.level=ERROR
 # provisioning
