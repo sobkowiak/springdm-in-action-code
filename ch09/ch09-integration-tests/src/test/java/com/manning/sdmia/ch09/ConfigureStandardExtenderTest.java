@@ -9,14 +9,12 @@ import org.osgi.framework.Bundle;
 import org.osgi.framework.ServiceReference;
 import org.springframework.osgi.context.event.OsgiBundleApplicationContextListener;
 import org.springframework.osgi.extender.OsgiBeanFactoryPostProcessor;
-import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 /**
  * @author acogoluegnes
  * 
  */
-public class ConfigureStandardExtenderTest extends
-		AbstractConfigurableBundleCreatorTests {
+public class ConfigureStandardExtenderTest extends AbstractOsgiTest {
 
 	/* for automatic import */
 	private OsgiBundleApplicationContextListener dummyListener;
@@ -39,15 +37,6 @@ public class ConfigureStandardExtenderTest extends
 			"{com.manning.sdmia.ch09.simplebundle=1}",
 			bundleContext.getService(ref).toString()
 		);		
-	}
-
-	private Bundle findBundle(String symbolicName) {
-		for (Bundle bundle : bundleContext.getBundles()) {
-			if (bundle.getSymbolicName().equals(symbolicName)) {
-				return bundle;
-			}
-		}
-		return null;
 	}
 
 	@Override

@@ -10,7 +10,6 @@ import org.osgi.framework.ServiceReference;
 import com.manning.sdmia.db.DatabaseCleaner;
 import com.manning.sdmia.db.DatabaseCleanerFactory;
 import com.manning.sdmia.db.DatabaseType;
-import com.manning.sdmia.db.internal.PostgreSqlDatabaseCleaner;
 
 
 /**

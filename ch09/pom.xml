@@ -10,7 +10,7 @@
 
 	<properties>
 		<springdm.version>2.0.0.M1</springdm.version>
-		<spring.version>3.0.0.RC1</spring.version>
+		<spring.version>3.0.2.RELEASE</spring.version>
 		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
 		<felix.bundle.plugin.version>2.0.1</felix.bundle.plugin.version>
 		<jetty.version>6.1.19</jetty.version>
@@ -68,9 +68,37 @@
 		
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>org.springframework.context.support</artifactId>
+			<artifactId>org.springframework.core</artifactId>
 			<version>${spring.version}</version>
 			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.beans</artifactId>
+			<version>${spring.version}</version>
+			<scope>compile</scope>
+		</dependency>		
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.context</artifactId>
+			<version>${spring.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.aop</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.test</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -78,6 +106,31 @@
 			<artifactId>com.springsource.org.aopalliance</artifactId>
 			<version>1.0.0</version>
 			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>com.springsource.slf4j.api</artifactId>
+			<version>1.5.6</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>com.springsource.slf4j.log4j</artifactId>
+			<version>1.5.6</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>com.springsource.slf4j.org.apache.commons.logging</artifactId>
+			<version>1.5.6</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.log4j</groupId>
+			<artifactId>com.springsource.org.apache.log4j</artifactId>
+			<version>1.2.15</version>
+			<scope>test</scope>
 		</dependency>
 
 
@@ -130,6 +183,7 @@
 		<module>implementation.provider</module>
 		<module>chained.classloader</module>
 		<module>ch09-integration-tests</module>
+		<module>ch09-integration-tests-tomcat6</module>
 	</modules>
 
 	<repositories>

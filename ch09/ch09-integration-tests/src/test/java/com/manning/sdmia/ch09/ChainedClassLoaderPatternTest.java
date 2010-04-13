@@ -3,15 +3,9 @@
  */
 package com.manning.sdmia.ch09;
 
-import java.net.URL;
-import java.util.HashSet;
-import java.util.Set;
-
 import junit.framework.Assert;
 
 import org.osgi.framework.ServiceReference;
-import org.springframework.aop.SpringProxy;
-import org.springframework.aop.framework.ProxyFactory;
 
 import com.manning.sdmia.aop.OsgiProxyFactory;
 import com.manning.sdmia.aspects.SecurityAspect;
