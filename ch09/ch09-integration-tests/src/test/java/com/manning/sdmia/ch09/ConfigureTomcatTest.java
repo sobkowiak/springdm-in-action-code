@@ -16,7 +16,7 @@ import junit.framework.Assert;
  */
 public class ConfigureTomcatTest extends AbstractOsgiTest {
 
-	public void testLaunchJettyWithConfigurationFragment() throws Exception {
+	public void testLaunchTomcatWithConfigurationFragment() throws Exception {
 		// waits a little for everything to be deployed correctly
 		Thread.sleep(5 *1000);
 		

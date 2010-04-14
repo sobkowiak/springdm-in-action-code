@@ -41,7 +41,7 @@ public class Tomcat6BritsTest extends AbstractOsgiTest {
 		col.add("javax.servlet, com.springsource.javax.servlet.jsp, 2.1.0");	
 		
 		col.add("javax.el, com.springsource.javax.el, 1.0.0");
-		col.add("org.apache.el, com.springsource.org.apache.el, 6.0.18");
+		col.add("org.apache.el, com.springsource.org.apache.el, 6.0.24");
 		
 		// web container
 		col.add("javax.activation, com.springsource.javax.activation, 1.1.1");
@@ -54,12 +54,12 @@ public class Tomcat6BritsTest extends AbstractOsgiTest {
 		col.add("javax.xml.bind, com.springsource.javax.xml.bind, 2.0.0");	
 		col.add("javax.xml.ws, com.springsource.javax.xml.ws, 2.1.1");
 		
-		col.add("org.apache.coyote, com.springsource.org.apache.coyote, 6.0.18");
-		col.add("org.apache.juli, com.springsource.org.apache.juli.extras, 6.0.18");		
+		col.add("org.apache.coyote, com.springsource.org.apache.coyote, 6.0.24");
+		col.add("org.apache.juli, com.springsource.org.apache.juli.extras, 6.0.24");		
 		
-		col.add("org.apache.catalina, com.springsource.org.apache.catalina, 6.0.18");
-		col.add("org.apache.jasper, com.springsource.org.apache.jasper, 6.0.18");		
-		col.add("org.apache.jasper, com.springsource.org.apache.jasper.org.eclipse.jdt, 6.0.18");			
+		col.add("org.apache.catalina, com.springsource.org.apache.catalina, 6.0.24");
+		col.add("org.apache.jasper, com.springsource.org.apache.jasper, 6.0.24");		
+		col.add("org.apache.jasper, com.springsource.org.apache.jasper.org.eclipse.jdt, 6.0.24");			
 		
 		col.add("javax.annotation, com.springsource.javax.annotation, 1.0.0");
 		

@@ -15,7 +15,6 @@ public class ManningContextPathStrategy extends DefaultContextPathStrategy imple
 
 	@Override
 	public String getContextPath(Bundle bundle) {
-		System.out.println("passe §§§");
 		return "/manningcontextpathstrategy";
 	}
 	

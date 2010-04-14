@@ -146,23 +146,23 @@
 			<groupId>org.apache.jasper</groupId>
 			<artifactId>com.springsource.org.apache.jasper
 			</artifactId>
-			<version>6.0.18</version>
+			<version>6.0.24</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.catalina</groupId>
 			<artifactId>com.springsource.org.apache.catalina
 			</artifactId>
-			<version>6.0.18</version>
+			<version>6.0.24</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.coyote</groupId>
 			<artifactId>com.springsource.org.apache.coyote</artifactId>
-			<version>6.0.18</version>
+			<version>6.0.24</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.juli</groupId>
 			<artifactId>com.springsource.org.apache.juli.extras</artifactId>
-			<version>6.0.18</version>
+			<version>6.0.24</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.annotation</groupId>
@@ -232,7 +232,7 @@
 			<groupId>org.apache.el</groupId>
 			<artifactId>com.springsource.org.apache.el
 			</artifactId>
-			<version>6.0.18</version>
+			<version>6.0.24</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
