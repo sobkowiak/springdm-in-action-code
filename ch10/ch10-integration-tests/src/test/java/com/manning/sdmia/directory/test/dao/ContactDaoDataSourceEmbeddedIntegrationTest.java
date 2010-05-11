@@ -7,6 +7,8 @@ import junit.framework.Assert;
 
 import org.h2.Driver;
 import org.osgi.framework.ServiceReference;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.SingleConnectionDataSource;
 import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
@@ -53,5 +55,11 @@ public class ContactDaoDataSourceEmbeddedIntegrationTest extends
 	protected boolean shouldWaitForSpringBundlesContextCreation() {
 		return false;
 	}
+	
+	@Override
+	protected Resource getTestingFrameworkBundlesConfiguration() {
+		return new InputStreamResource(
+				getClass().getResourceAsStream("/com/manning/sdmia/directory/test/boot-bundles.properties"));
+	}	
 	
 }

@@ -5,6 +5,8 @@ package com.manning.sdmia.directory.test.dao;
 
 import junit.framework.Assert;
 
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
@@ -46,6 +48,12 @@ public class ContactDaoServiceDataSourceIntegrationTest extends
 	
 	public void setContactDao(ContactDao contactDao) {
 		this.contactDao = contactDao;
+	}
+	
+	@Override
+	protected Resource getTestingFrameworkBundlesConfiguration() {
+		return new InputStreamResource(
+				getClass().getResourceAsStream("/com/manning/sdmia/directory/test/boot-bundles.properties"));
 	}
 	
 }

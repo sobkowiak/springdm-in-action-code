@@ -37,6 +37,7 @@ public class DirectoryDaoBundleActivatorSimpleTest {
 				if(service instanceof ContactDao) {
 					daoRegistered++;
 					return new MockServiceRegistration() {
+						@Override
 						public void unregister() {
 							daoRegistered--;
 						};

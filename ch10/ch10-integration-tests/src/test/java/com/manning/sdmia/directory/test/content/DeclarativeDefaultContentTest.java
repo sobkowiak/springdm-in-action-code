@@ -7,6 +7,8 @@ import java.util.Enumeration;
 
 import junit.framework.Assert;
 
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
 import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 import com.manning.sdmia.directory.domain.Contact;
@@ -28,6 +30,12 @@ public class DeclarativeDefaultContentTest extends AbstractConfigurableBundleCre
 		return new String [] {
 			"com.manning.sdmia.ch10, directory-domain, 1.0.0"
 		};
+	}
+	
+	@Override
+	protected Resource getTestingFrameworkBundlesConfiguration() {
+		return new InputStreamResource(
+				getClass().getResourceAsStream("/com/manning/sdmia/directory/test/boot-bundles.properties"));
 	}
 	
 }

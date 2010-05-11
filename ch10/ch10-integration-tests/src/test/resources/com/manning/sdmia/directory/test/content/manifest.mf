@@ -9,5 +9,6 @@ Bundle-Activator: org.springframework.osgi.test.JUnitTestActivator
 Import-Package: org.springframework.osgi.test,
  junit.framework,
  org.osgi.framework,
+ org.springframework.core.io,
  com.manning.sdmia.directory.domain
 
