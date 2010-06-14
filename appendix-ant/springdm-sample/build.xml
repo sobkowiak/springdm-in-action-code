@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="springdm-sample" default="package" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+
+  <property name="project.version" value="1.0.0"/>
+  <property name="build.srcDir" value="src/main/java"/>
+  <property name="build.resourceDir" value="src/main/resources"/>
+  <property name="build.finalName" value="springdm-sample-${project.version}"/>
+  <property name="build.dir" value="target"/>
+  <property name="build.outputDir" value="${build.dir}/classes"/>
+	
+  <property name="lib.dir" value="./lib"/>
+  <property name="build.testOutputDir" value="${build.dir}/test-classes"/>
+  <property name="build.testDir" value="src/test/java"/>
+  <property name="test.reports" value="${build.dir}/test-reports"/>
+  
+	
+  <path id="classpath"> 
+    <fileset dir="${lib.dir}">
+	  <include name="*.jar"/>
+	</fileset>
+  </path>
+
+  <target name="clean" description="Clean the output directory">
+    <delete dir="${build.dir}"/>
+  	<delete dir="${lib.dir}"/>
+  </target>
+
+  <target name="compile" description="Compile the code">
+    <mkdir dir="${build.outputDir}"/>
+    <javac destdir="${build.outputDir}" 
+           nowarn="false" 
+           debug="true" 
+           optimize="false" 
+           deprecation="true" 
+           target="1.5" 
+           verbose="false" 
+           fork="false" 
+           source="1.5">
+      <src>
+        <pathelement location="${build.srcDir}"/>
+      </src>
+    </javac>
+    <copy todir="${build.outputDir}">
+      <fileset dir="${build.resourceDir}"/>
+    </copy>
+  </target>  
+
+  <target name="package" depends="compile" description="Package as ordinary JAR">
+    <jar jarfile="${build.dir}/${build.finalName}.jar" 
+         compress="true" 
+         index="false" 
+         basedir="${build.outputDir}" />
+  </target>  
+  
+  <target name="package-bnd" depends="compile" description="Package the bundle with Bnd">
+    <taskdef resource="aQute/bnd/ant/taskdef.properties" />
+    <bnd files="build.bnd" classpath="${build.outputDir}" output="${build.dir}/${build.finalName}.jar"/>
+  </target>
+	
+  <target name="compile-tests" 
+	      depends="compile,resolve" 
+          description="Compile the test code">
+	    <mkdir dir="${build.testOutputDir}"/>
+	    <javac destdir="${build.testOutputDir}" 
+	           nowarn="false" 
+	           debug="true" 
+	           optimize="false" 
+	           deprecation="true" 
+	           target="1.5" 
+	           verbose="false" 
+	           fork="false" 
+	           source="1.5">
+	    <src>
+	      <pathelement location="${build.testDir}"/>
+	    </src>
+	    <classpath>
+	      <path refid="classpath"/>
+	    </classpath>
+    </javac>
+  </target>
+	
+  <target name="test" 
+	      depends="compile-tests, package-bnd"	   
+	      description="Run the test cases">
+  	<copy file="${build.dir}/${build.finalName}.jar" todir="${lib.dir}" />
+    <mkdir dir="${test.reports}"/>  	
+	<junit printSummary="yes" haltonerror="true" haltonfailure="true" fork="true" dir=".">	 
+	  <formatter type="xml"/>
+	  <formatter type="plain" usefile="false"/>
+	  <classpath>
+	    <path refid="classpath"/>
+	    <pathelement location="${build.testOutputDir}"/>
+	  </classpath>
+	  <batchtest todir="${test.reports}">
+	    <fileset dir="${build.testDir}">
+	      <include name="**/*Test.java"/>
+	    </fileset>
+	  </batchtest>
+    </junit>
+  </target>
+  
+  <target name="resolve" description="Retrieve dependencies with ivy">
+    <ivy:retrieve />
+  </target>
+
+</project>

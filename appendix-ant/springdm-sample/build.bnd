@@ -1,0 +1,7 @@
+Bundle-Name=springdm-sample
+Export-Package=com.manning.sdmia
+Import-Package=*
+Include-Resource=src/main/resources/
+Private-Package=com.manning.sdmia
+Bundle-SymbolicName=com.manning.sdmia.springdm-sample
+Bundle-Version=${project.version}
