@@ -1,8 +1,0 @@
-Manifest-Version: 1
-Bundle-Version: 1.0.0.SNAPSHOT
-Bundle-Name: com.manning.smdia.paxconstruct.dbapp.query.client [com.ma
- nning.sdmia.dbapp.query]
-Bundle-ManifestVersion: 2
-Import-Package: org.osgi.framework,org.osgi.util.tracker
-Bundle-SymbolicName: com.manning.smdia.paxconstruct.dbapp.query.client
-
