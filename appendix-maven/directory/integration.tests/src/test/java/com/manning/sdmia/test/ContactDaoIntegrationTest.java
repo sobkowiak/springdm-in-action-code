@@ -6,6 +6,8 @@ package com.manning.sdmia.test;
 import junit.framework.Assert;
 
 import org.osgi.framework.ServiceReference;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
 import org.springframework.osgi.test.AbstractConfigurableBundleCreatorTests;
 
 import com.manning.sdmia.directory.dao.ContactDao;
@@ -35,6 +37,12 @@ public class ContactDaoIntegrationTest extends
 			"org.springframework, spring-tx, "+getSpringVersion(),
 			"com.h2database, h2, 1.1.119"
 		};
+	}
+	
+	@Override
+	protected Resource getTestingFrameworkBundlesConfiguration() {
+		return new InputStreamResource(
+				ContactDaoIntegrationTest.class.getResourceAsStream("boot-bundles.properties"));
 	}
 	
 }

@@ -1,16 +1,16 @@
 Manifest-Version: 1.0
-Built-By: arnaud
+Built-By: acogoluegnes
 Tool: Bnd-0.0.357
 Bundle-Name: Directory DAO JDBC implementation
 Created-By: Apache Maven Bundle Plugin
 Bundle-Version: 1.0.0
-Build-Jdk: 1.6.0_16
-Bnd-LastModified: 1262788180357
+Build-Jdk: 1.6.0_20
+Bnd-LastModified: 1276765753164
 Bundle-ManifestVersion: 2
 Import-Package: com.manning.sdmia.directory.dao;version="1.0.0",com.ma
  nning.sdmia.directory.domain;version="1.0.0",javax.sql,org.springfram
- ework.jdbc.core;version="[3.0.0.RC1,4.0)",org.springframework.jdbc.co
- re.support;version="[3.0.0.RC1,4.0)"
+ ework.jdbc.core;version="[3.0.2.RELEASE,4.0)",org.springframework.jdb
+ c.core.support;version="[3.0.2.RELEASE,4.0)"
 Bundle-SymbolicName: com.manning.sdmia.appb.directory.dao.jdbc
 Originally-Created-By: Apache Maven Bundle Plugin
 

@@ -11,13 +11,13 @@
 
 	<properties>
 		<spring.dm.version>2.0.0.M1</spring.dm.version>
-		<spring.version>3.0.0.RC1</spring.version>
+		<spring.version>3.0.2.RELEASE</spring.version>
 		<spring.version.range>[${spring.version},4.0)</spring.version.range>
 		<felix.bundle.plugin.version>2.0.1</felix.bundle.plugin.version>
 		<equinox.version>3.5.1.R35x_v20090827</equinox.version>
 		<slf4j.version>1.5.6</slf4j.version>
 		<h2.version>1.1.119</h2.version>
-		<bundlor.version>1.0.0.RC1</bundlor.version>
+		<bundlor.version>1.0.0.RELEASE</bundlor.version>
 	</properties>
 
 
@@ -48,9 +48,9 @@
 	<pluginRepositories>
 	
 		<pluginRepository>
-			<id>com.springsource.repository.bundles.milestone</id>
+			<id>com.springsource.repository.bundles.release</id>
 			<name>SpringSource Enterprise Bundle Repository</name>
-			<url>http://repository.springsource.com/maven/bundles/milestone</url>
+    		<url>http://repository.springsource.com/maven/bundles/release</url>
 		</pluginRepository>
 
 	</pluginRepositories>
