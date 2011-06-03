@@ -23,7 +23,7 @@ public class EventBridgeTest extends AbstractConfigurableBundleCreatorTests {
 	}
 	
 	public void testEventBridge() throws Exception {
-		Bundle bundle = findBundle("springdm-sample");
+		Bundle bundle = findBundle("com.manning.sdmia.springdm-sample");
 		if (bundle!=null) {
 			bundle.update();
 		}
