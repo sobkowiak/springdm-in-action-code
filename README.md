@@ -1,6 +1,11 @@
 Spring DM in Action - Source Code
 =================================
 
+This repository contains the source code from the book [*Spring DM in Action*][cogoluegnes].
+
+Cloning and syncing with the SVN repository
+-------------------------------------------
+
 To clone this repository, please run following command:
    
     git clone git@github.com:sobkowiak/springdm-in-action-code.git
@@ -11,3 +16,4 @@ This repository contains a git mirror of http://springdm-in-action.googlecode.co
     git svn rebase
 
 
+[cogoluegnes]: http://www.manning.com/cogoluegnes/
