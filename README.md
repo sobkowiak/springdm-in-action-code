@@ -1,6 +1,6 @@
 # Spring DM in Action - Source Code
 
-This repository is a mirror for the [*Spring DM in Action*][cogoluegnes] source code officially located in [http://springdm-in-action.googlecode.com/svn/][cogoluegnes-code].
+This repository is a mirror for the [*Spring DM in Action*][cogoluegnes] source code officially located in [https://code.google.com/p/springdm-in-action/][cogoluegnes-code].
 
 ## Cloning and syncing with the SVN repository
 
@@ -15,4 +15,4 @@ If you want to track the changes from the original repository please run followi
 
 
 [cogoluegnes]: http://www.manning.com/cogoluegnes/
-[cogoluegnes-code]: http://springdm-in-action.googlecode.com/svn/
+[cogoluegnes-code]: https://code.google.com/p/springdm-in-action/
