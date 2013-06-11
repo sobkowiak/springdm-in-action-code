@@ -1,0 +1,259 @@
+
+# /ch02/
+/ch02/target
+
+# /ch02/ch02-jni-native-code/
+/ch02/ch02-jni-native-code/target
+
+# /ch02/ch02-osgi-consuming-services/
+/ch02/ch02-osgi-consuming-services/target
+
+# /ch02/ch02-osgi-consuming-services-tracker/
+/ch02/ch02-osgi-consuming-services-tracker/target
+
+# /ch02/ch02-osgi-events/
+/ch02/ch02-osgi-events/target
+
+# /ch02/ch02-osgi-native-code/
+/ch02/ch02-osgi-native-code/target
+
+# /ch02/ch02-osgi-persistant-storage/
+/ch02/ch02-osgi-persistant-storage/target
+
+# /ch02/ch02-osgi-print-bundles/
+/ch02/ch02-osgi-print-bundles/target
+
+# /ch02/ch02-osgi-providing-factory-services/
+/ch02/ch02-osgi-providing-factory-services/target
+
+# /ch02/ch02-osgi-providing-services/
+/ch02/ch02-osgi-providing-services/target
+
+# /ch02/ch02-osgi-ressource-search/
+/ch02/ch02-osgi-ressource-search/target
+
+# /ch05/ch05-exporting-service-simple/
+/ch05/ch05-exporting-service-simple/target
+
+# /ch05/ch05-osgi-tccl/
+/ch05/ch05-osgi-tccl/target
+
+# /ch05/ch05-referencing-service-annotation-simple/
+/ch05/ch05-referencing-service-annotation-simple/target
+
+# /ch05/ch05-referencing-service-xml-simple/
+/ch05/ch05-referencing-service-xml-simple/target
+
+# /ch06/
+/ch06/runner
+
+# /ch06/bnd/
+/ch06/bnd/runner
+
+# /ch07/ch07-dataaccess-simple/
+/ch07/ch07-dataaccess-simple/target
+
+# /ch07/ch07-hibernate-integration-tests/
+/ch07/ch07-hibernate-integration-tests/.project
+/ch07/ch07-hibernate-integration-tests/.classpath
+/ch07/ch07-hibernate-integration-tests/.settings
+/ch07/ch07-hibernate-integration-tests/target
+
+# /ch07/ch07-hibernate-simple/
+/ch07/ch07-hibernate-simple/.project
+/ch07/ch07-hibernate-simple/.classpath
+/ch07/ch07-hibernate-simple/.settings
+/ch07/ch07-hibernate-simple/target
+
+# /ch07/ch07-jdbc-datasource/
+/ch07/ch07-jdbc-datasource/.project
+/ch07/ch07-jdbc-datasource/.classpath
+/ch07/ch07-jdbc-datasource/.settings
+/ch07/ch07-jdbc-datasource/target
+
+# /ch07/ch07-jdbc-integration-tests/
+/ch07/ch07-jdbc-integration-tests/.classpath
+/ch07/ch07-jdbc-integration-tests/.project
+/ch07/ch07-jdbc-integration-tests/.settings
+/ch07/ch07-jdbc-integration-tests/target
+/ch07/ch07-jdbc-integration-tests/eclipse_config
+
+# /ch07/ch07-jdbc-simple/
+/ch07/ch07-jdbc-simple/.classpath
+/ch07/ch07-jdbc-simple/.project
+/ch07/ch07-jdbc-simple/.settings
+/ch07/ch07-jdbc-simple/target
+
+# /ch07/ch07-jpa-eclipselink-integration-tests/
+/ch07/ch07-jpa-eclipselink-integration-tests/.project
+/ch07/ch07-jpa-eclipselink-integration-tests/.classpath
+/ch07/ch07-jpa-eclipselink-integration-tests/.settings
+/ch07/ch07-jpa-eclipselink-integration-tests/target
+/ch07/ch07-jpa-eclipselink-integration-tests/eclipse_config
+
+# /ch07/ch07-jpa-eclipselink-simple/
+/ch07/ch07-jpa-eclipselink-simple/.project
+/ch07/ch07-jpa-eclipselink-simple/.classpath
+/ch07/ch07-jpa-eclipselink-simple/.settings
+/ch07/ch07-jpa-eclipselink-simple/target
+
+# /ch07/ch07-jpa-hibernatejpa-integration-tests/
+/ch07/ch07-jpa-hibernatejpa-integration-tests/.project
+/ch07/ch07-jpa-hibernatejpa-integration-tests/.classpath
+/ch07/ch07-jpa-hibernatejpa-integration-tests/.settings
+/ch07/ch07-jpa-hibernatejpa-integration-tests/target
+/ch07/ch07-jpa-hibernatejpa-integration-tests/eclipse_config
+
+# /ch07/ch07-jpa-hibernatejpa-simple/
+/ch07/ch07-jpa-hibernatejpa-simple/.project
+/ch07/ch07-jpa-hibernatejpa-simple/.classpath
+/ch07/ch07-jpa-hibernatejpa-simple/.settings
+/ch07/ch07-jpa-hibernatejpa-simple/target
+
+# /ch07/ch07-jpa-openjpa-integration-tests/
+/ch07/ch07-jpa-openjpa-integration-tests/.project
+/ch07/ch07-jpa-openjpa-integration-tests/.classpath
+/ch07/ch07-jpa-openjpa-integration-tests/.settings
+/ch07/ch07-jpa-openjpa-integration-tests/target
+/ch07/ch07-jpa-openjpa-integration-tests/eclipse_config
+
+# /ch07/ch07-jpa-openjpa-simple/
+/ch07/ch07-jpa-openjpa-simple/.project
+/ch07/ch07-jpa-openjpa-simple/.classpath
+/ch07/ch07-jpa-openjpa-simple/.settings
+/ch07/ch07-jpa-openjpa-simple/target
+
+# /ch07/com.springsource.com.mchange.v2.c3p0.config/
+/ch07/com.springsource.com.mchange.v2.c3p0.config/.project
+/ch07/com.springsource.com.mchange.v2.c3p0.config/.classpath
+/ch07/com.springsource.com.mchange.v2.c3p0.config/.settings
+/ch07/com.springsource.com.mchange.v2.c3p0.config/target
+
+# /ch07/container/
+/ch07/container/org.eclipse.osgi
+/ch07/container/*.log
+
+# /ch07/org.springframework.osgi.log4j.config/
+/ch07/org.springframework.osgi.log4j.config/.project
+/ch07/org.springframework.osgi.log4j.config/.classpath
+/ch07/org.springframework.osgi.log4j.config/.settings
+/ch07/org.springframework.osgi.log4j.config/target
+
+# /ch08/ch08-web-dwr/
+/ch08/ch08-web-dwr/.project
+/ch08/ch08-web-dwr/.classpath
+/ch08/ch08-web-dwr/.settings
+/ch08/ch08-web-dwr/target
+/ch08/ch08-web-dwr/work
+/ch08/ch08-web-dwr/eclipse_config
+
+# /ch08/ch08-web-dwr-integration-tests/
+/ch08/ch08-web-dwr-integration-tests/.project
+/ch08/ch08-web-dwr-integration-tests/.classpath
+/ch08/ch08-web-dwr-integration-tests/.settings
+/ch08/ch08-web-dwr-integration-tests/target
+/ch08/ch08-web-dwr-integration-tests/work
+/ch08/ch08-web-dwr-integration-tests/eclipse_config
+
+# /ch08/ch08-web-gwt/
+/ch08/ch08-web-gwt/.project
+/ch08/ch08-web-gwt/.classpath
+/ch08/ch08-web-gwt/.settings
+/ch08/ch08-web-gwt/target
+
+# /ch08/ch08-web-jsf-myfaces/
+/ch08/ch08-web-jsf-myfaces/.project
+/ch08/ch08-web-jsf-myfaces/.classpath
+/ch08/ch08-web-jsf-myfaces/.settings
+/ch08/ch08-web-jsf-myfaces/target
+
+# /ch08/ch08-web-jsf-myfaces-integration-tests/
+/ch08/ch08-web-jsf-myfaces-integration-tests/.project
+/ch08/ch08-web-jsf-myfaces-integration-tests/.classpath
+/ch08/ch08-web-jsf-myfaces-integration-tests/.settings
+/ch08/ch08-web-jsf-myfaces-integration-tests/target
+/ch08/ch08-web-jsf-myfaces-integration-tests/work
+/ch08/ch08-web-jsf-myfaces-integration-tests/eclipse_config
+
+# /ch08/ch08-web-restlet/
+/ch08/ch08-web-restlet/.project
+/ch08/ch08-web-restlet/.classpath
+/ch08/ch08-web-restlet/.settings
+/ch08/ch08-web-restlet/target
+
+# /ch08/ch08-web-restlet-integration-tests/
+/ch08/ch08-web-restlet-integration-tests/.project
+/ch08/ch08-web-restlet-integration-tests/.classpath
+/ch08/ch08-web-restlet-integration-tests/.settings
+/ch08/ch08-web-restlet-integration-tests/target
+/ch08/ch08-web-restlet-integration-tests/work
+/ch08/ch08-web-restlet-integration-tests/eclipse_config
+
+# /ch08/ch08-web-springmvc/
+/ch08/ch08-web-springmvc/.project
+/ch08/ch08-web-springmvc/.classpath
+/ch08/ch08-web-springmvc/.settings
+/ch08/ch08-web-springmvc/target
+/ch08/ch08-web-springmvc/eclipse_config
+/ch08/ch08-web-springmvc/META-INF
+
+# /ch08/ch08-web-springmvc-integration-tests/
+/ch08/ch08-web-springmvc-integration-tests/.project
+/ch08/ch08-web-springmvc-integration-tests/.classpath
+/ch08/ch08-web-springmvc-integration-tests/.settings
+/ch08/ch08-web-springmvc-integration-tests/target
+/ch08/ch08-web-springmvc-integration-tests/eclipse_config
+/ch08/ch08-web-springmvc-integration-tests/META-INF
+
+# /ch08/ch08-web-springws/
+/ch08/ch08-web-springws/.project
+/ch08/ch08-web-springws/.classpath
+/ch08/ch08-web-springws/.settings
+/ch08/ch08-web-springws/target
+/ch08/ch08-web-springws/eclipse_config
+/ch08/ch08-web-springws/work
+
+# /ch08/ch08-web-springws-integration-tests/
+/ch08/ch08-web-springws-integration-tests/.project
+/ch08/ch08-web-springws-integration-tests/.classpath
+/ch08/ch08-web-springws-integration-tests/.settings
+/ch08/ch08-web-springws-integration-tests/target
+/ch08/ch08-web-springws-integration-tests/eclipse_config
+/ch08/ch08-web-springws-integration-tests/work
+
+# /ch08/ch08-web-wicket/
+/ch08/ch08-web-wicket/.project
+/ch08/ch08-web-wicket/.classpath
+/ch08/ch08-web-wicket/.settings
+/ch08/ch08-web-wicket/target
+/ch08/ch08-web-wicket/eclipse_config
+/ch08/ch08-web-wicket/work
+
+# /ch08/ch08-web-wicket-integration-tests/
+/ch08/ch08-web-wicket-integration-tests/.project
+/ch08/ch08-web-wicket-integration-tests/.classpath
+/ch08/ch08-web-wicket-integration-tests/.settings
+/ch08/ch08-web-wicket-integration-tests/target
+/ch08/ch08-web-wicket-integration-tests/eclipse_config
+/ch08/ch08-web-wicket-integration-tests/work
+
+# /ch11/ch11-cm-integration-tests/
+/ch11/ch11-cm-integration-tests/.project
+/ch11/ch11-cm-integration-tests/.classpath
+/ch11/ch11-cm-integration-tests/.settings
+/ch11/ch11-cm-integration-tests/target
+/ch11/ch11-cm-integration-tests/eclipse_config
+
+# /ch11/ch11-event-bridge/
+/ch11/ch11-event-bridge/.project
+/ch11/ch11-event-bridge/.classpath
+/ch11/ch11-event-bridge/.settings
+/ch11/ch11-event-bridge/target
+/ch11/ch11-event-bridge/eclipse_config
+
+# /ch11/ch11-event-integration-tests/
+/ch11/ch11-event-integration-tests/.project
+/ch11/ch11-event-integration-tests/.classpath
+/ch11/ch11-event-integration-tests/.settings
+/ch11/ch11-event-integration-tests/target
+/ch11/ch11-event-integration-tests/eclipse_config
